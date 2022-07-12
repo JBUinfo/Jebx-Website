@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'PIX-L';
+    src: url('../../assets/PIX-L___.otf'); /* IE9 Compat Modes */
+}
+
+.header{
+    width: 100%;
+    padding-left: 16px;
+    background-color: #111;
+    position: fixed;
+    height: 32px;
+
+    font-family: 'PIX-L';
+    color: #f0ffff;
+    line-height: 24px;
+    font-size: 20px;
+}

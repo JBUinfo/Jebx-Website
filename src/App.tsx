@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 
 import Header from './components/header/header.component';
@@ -8,10 +8,12 @@ const App: React.FC = () => {
   return (
     <div className='big-box-container'>
       <Header/>
-      <Routes>
-        <Route path='/' element={<HomePage/>} />
-        <Route path='/home' element={<HomePage/>} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage/>} />
+          <Route path='/home' element={<HomePage/>} />
+        </Routes>
+      </Router>
     </div>
   );
 };

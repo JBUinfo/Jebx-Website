@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'nk57';
+    src: url('../../assets/nk57-monospace-no-eb.ttf'); /* IE9 Compat Modes */
+}
+
+
+.home-container .first-container{
+    height: 100vh;
+}
+
+.intro-container{
+    height: 60vh;
+    background-color: #111;
+    width: 400px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+}
+
+.intro-top{
+    height: 10%;
+}
+
+.intro-main{
+    height: 90%;
+
+    font-family: "nk57";
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: 4px;
+
+    padding: 0px 20px;
+}
+
+.intro-main .text{
+    margin: 0;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-main .text .green{
+    color: #4dfe28;
+}

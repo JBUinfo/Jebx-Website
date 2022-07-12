@@ -1,0 +1,10 @@
+{
+    "INTRO_TOP":{
+        "es":"No se",
+        "en":"i don't know"
+    },
+    "INTRO_MAIN":{
+        "es":["Soy bueno :P,", "pero quiero:", "ser mejor"],
+        "en":["I'm cool :P,", "but I want to:", "be better"]
+    }
+}
