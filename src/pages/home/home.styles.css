@@ -3,12 +3,27 @@
     src: url('../../assets/nk57-monospace-no-eb.ttf'); /* IE9 Compat Modes */
 }
 
+*{
+    font-family: "nk57";
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+
+.home-container{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+}
 
 .home-container .first-container{
     height: 100vh;
+    position: relative;
 }
 
-.intro-container{
+.first-container .intro{
     height: 60vh;
     background-color: #111;
     width: 400px;
@@ -18,22 +33,16 @@
     left: 200px;
 }
 
-.intro-top{
+.intro .top{
     height: 10%;
 }
 
-.intro-main{
+.intro .main{
     height: 90%;
-
-    font-family: "nk57";
-    font-size: 32px;
-    color: #ffffff;
-    letter-spacing: 4px;
-
     padding: 0px 20px;
 }
 
-.intro-main .text{
+.main .text{
     margin: 0;
     position: relative;
     top: 40%;
@@ -41,6 +50,112 @@
     transform: translate(-50%, -50%);
 }
 
-.intro-main .text .green{
+.green{
     color: #4dfe28;
+}
+.black{
+    color: #111;
+}
+.home-container .second-container{
+    height: 100vh;
+    position: relative;
+}
+
+.second-container .explanation{
+    width: 100%;
+    padding-left: 10vw;
+    padding-top: 100px;
+}
+
+.explanation .title{
+
+}
+
+.explanation .description{
+    font-size: 16px;
+}
+
+.second-container .center{
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center .searchbox{
+
+}
+
+.center .searchbox input{
+    font-family: 'PIX-L';
+    padding: 0px 8px 8px 8px;
+    border-radius: 16px;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 7))}
+}
+
+@keyframes scroll-right {
+    0% { transform: translateX(calc(-200px * 7)); }
+    100% { transform: translateX(0)}
+}
+
+.center .carroussel{
+    margin-top: 80px;
+    width: 60%;
+    height: 300px;
+    overflow:hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.carroussel::before{
+    background: linear-gradient(to right, #292828 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.carroussel::after{
+    /*background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    */right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+    /*Ojito
+    top: none;
+    width: 100%;
+    */
+}
+
+.carroussel .line{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carroussel .left{
+    width: 100%;
+    animation: scroll-left 20s linear infinite;
+}
+
+.carroussel .right{
+    width: 100%;
+    animation: scroll-right 20s linear infinite;
+}
+
+
+.line .word{
+    text-align: center;
+    min-width: 200px;
 }
