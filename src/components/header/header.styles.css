@@ -9,9 +9,20 @@
     background-color: #111;
     position: fixed;
     height: 32px;
+    z-index: 3;
 
     font-family: 'PIX-L';
     color: #f0ffff;
     line-height: 24px;
     font-size: 20px;
+}
+
+.header .right{
+    float: right;
+    width: 150px;
+    text-align: center;
+}
+
+.header .right *{
+    margin-right: 10px;
 }

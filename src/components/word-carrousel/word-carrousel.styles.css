@@ -1,0 +1,90 @@
+.center .searchbox input{
+    font-family: 'PIX-L';
+    padding: 0px 8px 8px 8px;
+    border-radius: 16px;
+}
+
+.center .carroussel{
+    margin-top: 80px;
+    width: 60%;
+    max-width: 1150px;
+    height: 300px;
+    position: absolute;
+
+    overflow:hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.carroussel::before{
+    background: linear-gradient(to right, #292828 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.carroussel::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300px;
+    width: 200px;
+    z-index: 2;
+
+    background: linear-gradient(to right, #292828 0%,rgba(255,255,255,0) 100%);
+    transform: rotateZ(180deg);
+    content: "";
+}
+
+.carroussel .line{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 12))}
+}
+
+@keyframes scroll-right {
+    0% { transform: translateX(calc(-200px * 12)); }
+    100% { transform: translateX(0)}
+}
+
+.carroussel .left{
+    width: 100%;
+    animation: scroll-left 40s linear infinite;
+}
+
+.carroussel .right{
+    width: 100%;
+    animation: scroll-right 40s linear infinite;
+}
+
+.line .word{
+    text-align: center;
+    min-width: 200px;
+}
+
+@keyframes zoom-in {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.16)}
+}
+
+@keyframes zoom-out {
+    0% { transform: scale(1); }
+    100% { transform: scale(0.7)}
+}
+
+.line .found{
+    color: white;
+    animation: zoom-in 1s forwards ;
+}
+
+.line .not-found{
+    opacity: 0.2;
+    animation: zoom-out 1s forwards ;
+}
