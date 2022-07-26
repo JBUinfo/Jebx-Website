@@ -1,10 +1,30 @@
-{
-    "INTRO_TOP":{
-        "es":"No se",
-        "en":"i don't know"
+{    
+    "NAVBAR":{
+        "es":["Jebx |", "resumen |", "tecnologías |", "trabajos |", "sobre mi"],
+        "en":["Jebx |", "resume |", "tech |", "works |", "me"]
     },
-    "INTRO_MAIN":{
+    "HOME_FIRST_TITLE":{
         "es":["Soy bueno :P,", "pero quiero:", "ser mejor"],
         "en":["I'm cool :P,", "but I want to:", "be better"]
+    },
+    "HOME_FIRST_DESCRIPTION":{
+        "es":"Programador autodidacta apasionado por el aprendizaje. Optimizo y automatizo todos los procesos que estén en mi mano. Tengo una alta capacidad de análisis y resolución de problemas.",
+        "en":"Self-taught programmer passionate about learning. I optimize and automate all the processes that are in my hand. I have a high capacity for analysis and problem solving."
+    },
+    "HOME_SECOND_TITLE":{
+        "es":["Dedicado a", "TODO"],
+        "en":["Dedicated to", "EVERYTHING"]
+    },
+    "HOME_SECOND_DESCRIPTION":{
+        "es":["Tengo más de 6 años de experiencia como programador y siempre he estado ", "aprendiendo nuevas tecnologías y lenguajes.", "Aqui, puedes sumergirte y buscar en mi piscina de conocmientos"],
+        "en":["I have more than 6 years of experience as a programmer and i have been always", "learning news technologies and languages.", "Here, you can swim and search in my knowledge pool"]
+    },
+    "HOME_THIRD_TITLE":{
+        "es":["Proyectos, trabajos y...", "MÁS PROYECTOS"],
+        "en":["Projects, works and...", "MORE PROJECTS"]
+    },
+    "HOME_THIRD_DESCRIPTION":{
+        "es":["El origen de mi conocmiento proviene de los proyectos personales.", "Es por ello que les he dedicado mucho más tiempo a estos que a ganar dinero."],
+        "en":["The origin of my knowledge is from personal projects.", "That's why i have dedicated a lot of more time in them than making money."]
     }
 }

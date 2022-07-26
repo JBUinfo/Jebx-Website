@@ -11,31 +11,35 @@ const WordCarrousel = (): JSX.Element => {
     "NodeJS":"word",
     "Python":"word",
     "HTML":"word",
-    "CSS":"word",
+    "Solidity":"word",
     "C++":"word",
-    "A":"word",
-    "B":"word",
-    "C":"word",
-    "D":"word",
-    "E":"word",
-    "F":"word",
+    "Bootstrap":"word",
+    "CSS":"word",
+    "Git":"word",
+    "Blue Prism":"word",
+    "JWT":"word",
+    "React":"word",
+    "Trading view":"word",
+    "SQL":"word",
   }
   const default1Keys: string[] = Object.keys(defaultWords1);
   const default1Length: number = default1Keys.length;
 
   const defaultWords2: IWords = {
-    "Elastic":"word",
+    "Mustache JS":"word",
     "Bash":"word",
     "Socket.io":"word",
     "PHP":"word",
     "Angular":"word",
-    "Java":"word",
-    "Docker":"word",
+    "NMap":"word",
+    "Styled Components":"word",
     "ASM":"word",
-    "A":"word",
-    "B":"word",
-    "C":"word",
-    "D":"word",
+    "Docker":"word",
+    "jQuery":"word",
+    "Elastic":"word",
+    "Semantic UI":"word",
+    "Figma":"word",
+    "MongoDB":"word",
   }
   const default2Keys: string[] = Object.keys(defaultWords2);
   const default2Length: number = default2Keys.length;
@@ -48,18 +52,23 @@ const WordCarrousel = (): JSX.Element => {
     let values: string[] = event.target.value.trim().toUpperCase().split(",");
     let Tword1: IWords = {...defaultWords1};
     let Tword2: IWords = {...defaultWords2};
+    let find: boolean = false;
     values = values.filter(value => value.trim() !== "");    
     if(values.length){
       default1Keys.map( word => {
         Tword1[word] = "word not-found"
-        values.some((value)=>( word.toUpperCase().includes(value.trim()) && ( Tword1[word] = "word found")))
+        values.some((value)=>( word.toUpperCase().includes(value.trim())))  && ( Tword1[word] = "word found blue") && (find = true);
         return null;
       })
       default2Keys.map( word => {
         Tword2[word] = "word not-found"
-        values.some((value)=>( word.toUpperCase().includes(value.trim()) && ( Tword2[word] = "word found")))
+        values.some((value)=>( word.toUpperCase().includes(value.trim()))) && ( Tword2[word] = "word found blue") && (find = true);
         return null;
       })
+    }
+    if(!find){
+      Tword1= {...defaultWords1};
+      Tword2= {...defaultWords2};
     }
     setQuery(event.target.value);
     setWords1(Tword1);
@@ -89,7 +98,7 @@ const WordCarrousel = (): JSX.Element => {
         <input
           value={query}
           onChange={inputHandler}
-          placeholder="C#, NodeJS, React..."
+          placeholder={ "C#, NodeJS, React..." }
           className={ "black" }
         />
       </div>

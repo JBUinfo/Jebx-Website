@@ -1,3 +1,4 @@
+
 .center .searchbox input{
     font-family: 'PIX-L';
     padding: 0px 8px 8px 8px;
@@ -46,27 +47,28 @@
 
 @keyframes scroll-left {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-200px * 12))}
+    100% { transform: translateX(calc(-250px * 14))}
 }
 
 @keyframes scroll-right {
-    0% { transform: translateX(calc(-200px * 12)); }
+    0% { transform: translateX(calc(-250px * 14)); }
     100% { transform: translateX(0)}
 }
 
 .carroussel .left{
     width: 100%;
-    animation: scroll-left 40s linear infinite;
+    animation: scroll-left 60s linear infinite;
 }
 
 .carroussel .right{
     width: 100%;
-    animation: scroll-right 40s linear infinite;
+    animation: scroll-right 60s linear infinite;
 }
 
 .line .word{
     text-align: center;
-    min-width: 200px;
+    min-width: 250px;
+    font-size: 30px;
 }
 
 @keyframes zoom-in {
@@ -87,4 +89,17 @@
 .line .not-found{
     opacity: 0.2;
     animation: zoom-out 1s forwards ;
+}
+
+@media (max-width: 600px)  {
+    .section-container .center{
+        margin-top: 24px;
+    }
+    .center .searchbox input{
+        font-size: 20px;
+    }
+    .center .carroussel{
+        width: 100%;
+    }
+    
 }
