@@ -20,7 +20,9 @@ const WordCarrousel = (): JSX.Element => {
     "JWT":"word",
     "React":"word",
     "Trading view":"word",
-    "SQL":"word",
+    "MySQL":"word",
+    "Axios":"word",
+    "WPF":"word",
   }
   const default1Keys: string[] = Object.keys(defaultWords1);
   const default1Length: number = default1Keys.length;
@@ -40,6 +42,8 @@ const WordCarrousel = (): JSX.Element => {
     "Semantic UI":"word",
     "Figma":"word",
     "MongoDB":"word",
+    "Redux":"word",
+    "Express.js":"word",
   }
   const default2Keys: string[] = Object.keys(defaultWords2);
   const default2Length: number = default2Keys.length;

@@ -5,7 +5,6 @@ const Header = (): JSX.Element => {
     <div className={ 'header' }>
       <div className={"left"}>
         <Link to="/">Jebx |</Link>
-        <Link to="/resume">resume |</Link>
         <Link to="/tech">tech |</Link>
         <Link to="/work">work |</Link>
         <Link to="/me">me</Link>

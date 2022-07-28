@@ -26,5 +26,17 @@
     "HOME_THIRD_DESCRIPTION":{
         "es":["El origen de mi conocmiento proviene de los proyectos personales.", "Es por ello que les he dedicado mucho más tiempo a estos que a ganar dinero."],
         "en":["The origin of my knowledge is from personal projects.", "That's why i have dedicated a lot of more time in them than making money."]
+    },
+    "TECH_FIRST_TITLE":{
+        "es":"He tenido experiencia usando estas tecnologías.",
+        "en":"I have had experience in this technologies."
+    },
+    "WORK_FIRST_TITLE":{
+        "es":"Es dificil convencerme de quedarme...",
+        "en":"It's hard to convince me to stay..."
+    },
+    "months":{
+        "es":"meses",
+        "en":"months"
     }
 }

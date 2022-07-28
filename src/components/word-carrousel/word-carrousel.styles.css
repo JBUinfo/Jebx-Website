@@ -47,11 +47,11 @@
 
 @keyframes scroll-left {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 14))}
+    100% { transform: translateX(calc(-250px * 16))}
 }
 
 @keyframes scroll-right {
-    0% { transform: translateX(calc(-250px * 14)); }
+    0% { transform: translateX(calc(-250px * 16)); }
     100% { transform: translateX(0)}
 }
 
