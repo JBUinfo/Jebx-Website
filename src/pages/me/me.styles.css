@@ -1,0 +1,56 @@
+.me-container *{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.myself-container{
+    display: flex;
+    flex-flow: row;
+    width: 60%;
+}
+.profPic-container{
+    width: 512px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.my-desc{
+    width: 50%;
+}
+
+.my-desc .center{
+    margin-top: 0px;
+}
+
+.short-desc{
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: #f8a8ff 0px 0px 20px;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+}
+
+.short-desc span{
+    font-style: italic;
+    font-size: 14px;
+    color: #292828;
+}
+
+.about-me{
+    margin-top: 30px;
+    width: 80%;
+}
+
+.my-music{
+    width: 80%;
+}
+
+.long-desc{
+    margin-top: 40px;
+}
+
+.long-desc span{
+    letter-spacing: 2px;
+}

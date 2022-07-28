@@ -1,180 +1,119 @@
 import './timeline.styles.css'
+import text_website from "../../assets/text-website.json";
 
 const Timeline = (): JSX.Element => {
   interface IProject {
     shortTitle: string,
-    title: string,
-    description: string,
-    date: string
+    description: string
   }
   const projects: IProject[] = [
     {
-      shortTitle: "Pokemon (High School)",
-      title: "",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
+      shortTitle: text_website.TECH_PROJECT_TITLES["pokemon"].en,
+      description: "",
     },
     {
-      shortTitle: "Social Network (High School)",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["socialNetwork"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Wordpress websites",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["movistar"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Movistar (Accenture)",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["wordpress"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "R.A.T.",
-      title: "Remote Access Tool",
+      shortTitle: text_website.TECH_PROJECT_TITLES["rat"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "File sortener",
-      title: "",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
-    },
-    {
-      shortTitle: "Udemy downloader",
-      title: "",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
-    },
-    {
-      shortTitle: "Covid management dashboard",
-      title: "",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
-    },
-    {
-      shortTitle: "Meliá's network",
-      title: "",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
-    },
-    {
-      shortTitle: "Instagram bots",
-      title: "",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
-    },
-    {
-      shortTitle: "Challenge websites",
-      title: "",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
-    },
-    {
-      shortTitle: "Strools",
-      title: "Strools - The Twitch streaming tool",
+      shortTitle: text_website.TECH_PROJECT_TITLES["strools"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!", 
-      date: ""
     },
     {
-      shortTitle: "Krebor management",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["fileSortener"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "CUDA",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["udemy"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Malware analysis",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["meliaAnalysis"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "My definitive set-up",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["covid"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Binance candles",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["instagram"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Bot Trading",
-      title: "My first crypto trading bot",
+      shortTitle: text_website.TECH_PROJECT_TITLES["cuda"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Poocoin script",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["malwareAnalysis"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Internet radio",
-      title: "NodeJS Radio",
+      shortTitle: text_website.TECH_PROJECT_TITLES["kreborManagement"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "A.M.P.A.",
-      title: "A.M.P.A.",
+      shortTitle: text_website.TECH_PROJECT_TITLES["poocoin"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Jazztel (NTT Data)",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["challengeWebsites"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Wildprint",
-      title: "Wildprint.es",
+      shortTitle: text_website.TECH_PROJECT_TITLES["ampa"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Bookmarks to MP4",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["radio"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "This website",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["binance"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Smart contracts",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["tradingBot"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Trading dashboard",
-      title: "From order to success",
+      shortTitle: text_website.TECH_PROJECT_TITLES["jazztel"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
     },
     {
-      shortTitle: "Krebor Website",
-      title: "",
+      shortTitle: text_website.TECH_PROJECT_TITLES["wildprint"].en,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
-      date: ""
+    },
+    {
+      shortTitle: text_website.TECH_PROJECT_TITLES["bookmarks"].en,
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
+    },
+    {
+      shortTitle: text_website.TECH_PROJECT_TITLES["thisWebsite"].en,
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
+    },
+    {
+      shortTitle: text_website.TECH_PROJECT_TITLES["smartContracts"].en,
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
+    },
+    {
+      shortTitle: text_website.TECH_PROJECT_TITLES["kreborWebsite"].en,
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
+    },
+    {
+      shortTitle: text_website.TECH_PROJECT_TITLES["tradingDashboard"].en,
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
     },
   ]
   

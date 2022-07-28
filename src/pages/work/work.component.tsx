@@ -11,22 +11,22 @@ const Container = (): JSX.Element => {
   const front: IProject[] = [
     {
       year:2017,
-      title: "WifiAir (3 "+text_website.months.en+")",
-      languages: "WiFi antennas installation"
+      title: "WifiAir (3 "+text_website.SINGLE_WORDS["months"].en+")",
+      languages: text_website.WORK_OFFICIAL_WORKS.en[1]
     },
     {
       year:2019,
-      title: "Movistar - Accenture (3 "+text_website.months.en+")",
+      title: "Movistar - Accenture (3 "+text_website.SINGLE_WORDS["months"].en+")",
       languages: "Blueprism"
     },
     {
       year:2020,
-      title: "MBVR - Covid management dashboard (3 "+text_website.months.en+")",
+      title: "MBVR - "+ text_website.WORK_OFFICIAL_WORKS.en[2] +"(3 "+text_website.SINGLE_WORDS["months"].en+")",
       languages: "React, Redux, CSS, Styled Components, React Semantic UI"
     },
     {
       year:2022,
-      title: "Jazztel website - NTT Data (3 "+text_website.months.en+")",
+      title: text_website.TECH_PROJECT_TITLES["jazztel"].en +"(3 "+text_website.SINGLE_WORDS["months"].en+")",
       languages: "AngularJS"
     }
   ]
@@ -39,14 +39,14 @@ const Container = (): JSX.Element => {
         </div>
       </div>
       <div className={"center"}>
-        OFFICIAL WORKS
+        {text_website.WORK_OFFICIAL_WORKS.en[0]}
       </div>
       <div className={"center"}>
         <div className="tech-list-front-end">
           {front.map((f, i)=>(
             <ul key={i}>
               <li>
-                <span className={"y"+f.year}>{f.year} - </span>
+                <span className={"y"+f.year}>{"{"+f.year+"}"} - </span>
                 <span>{f.title}</span>
               </li>
               <ul>

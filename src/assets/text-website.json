@@ -1,7 +1,7 @@
 {    
     "NAVBAR":{
-        "es":["Jebx |", "resumen |", "tecnologías |", "trabajos |", "sobre mi"],
-        "en":["Jebx |", "resume |", "tech |", "works |", "me"]
+        "es":["tecnología |", "trabajo |", "sobre mi"],
+        "en":["tech |", "work |", "me"]
     },
     "HOME_FIRST_TITLE":{
         "es":["Soy bueno :P,", "pero quiero:", "ser mejor"],
@@ -31,12 +31,258 @@
         "es":"He tenido experiencia usando estas tecnologías.",
         "en":"I have had experience in this technologies."
     },
+    "TECH_PROJECT_TITLES":{
+        "pokemon":{
+            "es":"Minijuego de Pokemon (Instituto)",
+            "en":"Pokemon minigame (High Scool)"
+        },
+        "socialNetwork":{
+            "es":"Red social (Instituto)",
+            "en":"Social networks (High Scool)"
+        },
+        "movistar":{
+            "es":"Movistar (Accenture)",
+            "en":"Movistar (Accenture)"
+        },
+        "wordpress":{
+            "es":"Webs con Wordpress",
+            "en":"Websites with Wordpress"
+        },
+        "rat":{
+            "es":"Herramienta de acceso remoto",
+            "en":"Remote Access Tool"
+        },
+        "strools":{
+            "es":"Strools",
+            "en":"Strools"
+        },
+        "covid":{
+            "es":"Panel de administración de covid",
+            "en":"Covid management dashboard"
+        },
+        "instagram":{
+            "es":"Bots para Instagram",
+            "en":"Instagram bots"
+        },
+        "cuda":{
+            "es":"CUDA",
+            "en":"CUDA"
+        },
+        "kreborManagement":{
+            "es":"Programa de administración de Krebor",
+            "en":"Krebor management program"
+        },
+        "poocoin":{
+            "es":"Poocoin script",
+            "en":"Poocoin script"
+        },
+        "ampa":{
+            "es":"A.M.P.A.",
+            "en":"A.M.P.A."
+        },
+        "radio":{
+            "es":"Internet radio",
+            "en":"Internet radio"
+        },
+        "binance":{
+            "es":"Descargador de velas de Binance",
+            "en":"Binance's candles downloader"
+        },
+        "tradingBot":{
+            "es":"Bot de trading",
+            "en":"Trading bot"
+        },
+        "wildprint":{
+            "es":"Wildprint.es",
+            "en":"Wildprint.es"
+        },
+        "bookmarks":{
+            "es":"Youtube bookmarks a MP4",
+            "en":"Youtube bookmarks to MP4"
+        },
+        "tradingDashboard":{
+            "es":"Panel de administracion de trading",
+            "en":"Trading dashboard"
+        },
+        "jazztel":{
+            "es":"Web de Jazztel (NTT Data)",
+            "en":"Jazztel's Website (NTT Data)"
+        },
+        "thisWebsite":{
+            "es":"Esta web",
+            "en":"This website"
+        },
+        "kreborWebsite":{
+            "es":"Web de Krebor",
+            "en":"Krebor's Website"
+        },
+        "fileSortener":{
+            "es":"Script para ordenar ficheros",
+            "en":"File sortener script"
+        },
+        "udemy":{
+            "es":"Udemy downloader",
+            "en":"Udemy downloader"
+        },
+        "meliaAnalysis":{
+            "es":"Analisis de la red de Meliá",
+            "en":"Meliá's network analysis"
+        },
+        "challengeWebsites":{
+            "es":"Sitios webs de retos",
+            "en":"Challenge websites"
+        },
+        "malwareAnalysis":{
+            "es":"Analisis de malware (TFM y curso de Virustotal)",
+            "en":"Malware analysis (TFM and Virustotal's course)"
+        },
+        "smartContracts":{
+            "es":"Contratos inteligentes",
+            "en":"Smart contracts"
+        }
+    },
+    "TECH_PROJECT_DESCRIPTIONS":{
+        "pokemon":{
+            "es":"Minijuego de Pokemon (Instituto)",
+            "en":"Pokemon minigame (High Scool)"
+        },
+        "socialNetwork":{
+            "es":"Red social (Instituto)",
+            "en":"Social networks (High Scool)"
+        },
+        "movistar":{
+            "es":"Movistar (Accenture)",
+            "en":"Movistar (Accenture)"
+        },
+        "wordpress":{
+            "es":"Webs con Wordpress",
+            "en":"Websites with Wordpress"
+        },
+        "rat":{
+            "es":"Herramienta de acceso remoto",
+            "en":"Remote Access Tool"
+        },
+        "strools":{
+            "es":"Strools",
+            "en":"Strools"
+        },
+        "covid":{
+            "es":"Panel de administración de covid",
+            "en":"Covid management dashboard"
+        },
+        "instagram":{
+            "es":"Bots para Instagram",
+            "en":"Instagram bots"
+        },
+        "cuda":{
+            "es":"CUDA",
+            "en":"CUDA"
+        },
+        "kreborManagement":{
+            "es":"Programa de administración de Krebor",
+            "en":"Krebor management program"
+        },
+        "poocoin":{
+            "es":"Poocoin script",
+            "en":"Poocoin script"
+        },
+        "ampa":{
+            "es":"A.M.P.A.",
+            "en":"A.M.P.A."
+        },
+        "radio":{
+            "es":"Internet radio",
+            "en":"Internet radio"
+        },
+        "binance":{
+            "es":"Descargador de velas de Binance",
+            "en":"Binance's candles downloader"
+        },
+        "tradingBot":{
+            "es":"Bot de trading",
+            "en":"Trading bot"
+        },
+        "wildprint":{
+            "es":"Wildprint.es",
+            "en":"Wildprint.es"
+        },
+        "bookmarks":{
+            "es":"Youtube bookmarks a MP4",
+            "en":"Youtube bookmarks to MP4"
+        },
+        "tradingDashboard":{
+            "es":"Panel de administracion de trading",
+            "en":"Trading dashboard"
+        },
+        "jazztel":{
+            "es":"Web de Jazztel (NTT Data)",
+            "en":"Jazztel's Website (NTT Data)"
+        },
+        "thisWebsite":{
+            "es":"Esta web",
+            "en":"This website"
+        },
+        "kreborWebsite":{
+            "es":"Web de Krebor",
+            "en":"Krebor's Website"
+        },
+        "fileSortener":{
+            "es":"Script para ordenar ficheros",
+            "en":"File sortener script"
+        },
+        "udemy":{
+            "es":"Udemy downloader",
+            "en":"Udemy downloader"
+        },
+        "meliaAnalysis":{
+            "es":"Analisis de la red de Meliá",
+            "en":"Meliá's network analysis"
+        },
+        "challengeWebsites":{
+            "es":"Sitios webs de retos",
+            "en":"Challenge websites"
+        },
+        "malwareAnalysis":{
+            "es":"Analisis de malware (TFM y curso de Virustotal)",
+            "en":"Malware analysis (TFM and Virustotal's course)"
+        },
+        "smartContracts":{
+            "es":"Contratos inteligentes",
+            "en":"Smart contracts"
+        }
+    },
     "WORK_FIRST_TITLE":{
         "es":"Es dificil convencerme de quedarme...",
         "en":"It's hard to convince me to stay..."
     },
-    "months":{
-        "es":"meses",
-        "en":"months"
+    "WORK_OFFICIAL_WORKS":{
+        "es":["TRABAJOS OFICIALES", "Instalación de antenas WiFi","Panel de administración covid"],
+        "en":["OFFICIAL WORKS", "WiFi antennas installation","Covid management dashboard"]
+    },
+    "ME_SHORT_DESCRIPTION":{
+        "es":"Optimizar a 0 segundos",
+        "en":"Optimize it up to 0 seconds"
+    },
+    "ME_ABOUT_ME":{
+        "es":["Sobre mi", "Me gustan los videojuegos y tengo un canal de Twitch", "Tengo más proyectos y libros que tiempo en esta vida", "Amo la filosofia"],
+        "en":["About me", "I like video games and have a Twitch channel", "I have more projects and books than time in this life", "I love philosophy"]
+    },
+    "ME_FAVORITE_SONGS":{
+        "es":["Canciones favoritas", "Cualquier canción de C.Tangana"],
+        "en":["Favorite songs", "Any C.Tangana song"]
+    },
+    "ME_LONG_DESC":{
+        "es":"Lo primero de todo, queria agradecerte el hecho de haber mirado mi web y mostrar interes en conocerme. Si te ha impresionado la web, creeme que yo lo estoy más. Soy realmente malo eligiendo colores y creando diseños. Decirte tambien que soy una persona que le encanta aprender y siempre intento ser el mejor en todo lo que hago. Suelo mirar mucho Stackoverflow para ver 'performances' de codigos y técnologias porque, si algo se puede optimizar, lo haré.",
+        "en":"First of all, i want to thank you for having looked at my website and showing interest in meeting me. If you are impressed by the website, believe me i'm more. I'm really bad at choosing colors and creating designs. Also tell you that i'm a person who loves to learn and i always try to be the best in everything I do. I usually look at Stackoverflow a lot to see 'performances' of codes and technologies because if something can be optimized, i'll."
+    },
+    "SINGLE_WORDS":{
+        "months":{
+            "es":"meses",
+            "en":"months"
+        },
+        "others":{
+            "es":"OTROS",
+            "en":"OTHERS"
+        }
     }
 }

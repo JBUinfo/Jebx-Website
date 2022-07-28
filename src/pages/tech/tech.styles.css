@@ -1,3 +1,7 @@
+ul{
+    list-style-type: none;
+}
+
 .y2018{
     color: #92c1ea;
 }
@@ -34,7 +38,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    width: 59%;
+    width: 60%;
 }
 
 @keyframes zoom-logo {
@@ -85,7 +89,7 @@
 .tech-list-front-end{
     display: flex;
     flex-flow: column;
-    width: 59%;
+    width: 60%;
 }
 
 .tech-list-front-end ul{
@@ -93,9 +97,10 @@
 }
 
 .tech-list-front-end li span{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .tech-list-front-end ul ul li span{
+    font-size: 16px;
     color: #ff9200;
 }
