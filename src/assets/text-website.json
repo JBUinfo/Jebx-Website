@@ -264,12 +264,12 @@
         "en":"Optimize it up to 0 seconds"
     },
     "ME_ABOUT_ME":{
-        "es":["Sobre mi", "Me gustan los videojuegos y tengo un canal de Twitch", "Tengo más proyectos y libros que tiempo en esta vida", "Amo la filosofia"],
-        "en":["About me", "I like video games and have a Twitch channel", "I have more projects and books than time in this life", "I love philosophy"]
+        "es":["Sobre mi", "- Me gustan los videojuegos y tengo un canal de Twitch", "- Tengo más proyectos y libros que tiempo en esta vida", "- Amo la filosofia"],
+        "en":["About me", "- I like video games and have a Twitch channel", "- I have more projects and books than time in this life", "- I love philosophy"]
     },
     "ME_FAVORITE_SONGS":{
-        "es":["Canciones favoritas", "Cualquier canción de C.Tangana"],
-        "en":["Favorite songs", "Any C.Tangana song"]
+        "es":["Canciones favoritas", "- Cualquier canción de C.Tangana"],
+        "en":["Favorite songs", "- Any C.Tangana song"]
     },
     "ME_LONG_DESC":{
         "es":"Lo primero de todo, queria agradecerte el hecho de haber mirado mi web y mostrar interes en conocerme. Si te ha impresionado la web, creeme que yo lo estoy más. Soy realmente malo eligiendo colores y creando diseños. Decirte tambien que soy una persona que le encanta aprender y siempre intento ser el mejor en todo lo que hago. Suelo mirar mucho Stackoverflow para ver 'performances' de codigos y técnologias porque, si algo se puede optimizar, lo haré.",

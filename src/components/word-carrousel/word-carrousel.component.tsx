@@ -44,7 +44,7 @@ const WordCarrousel = (): JSX.Element => {
     "MongoDB":"word",
     "Redux":"word",
     "Express.js":"word",
-  }
+  }//firebase
   const default2Keys: string[] = Object.keys(defaultWords2);
   const default2Length: number = default2Keys.length;
   

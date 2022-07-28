@@ -21,12 +21,12 @@ const Container = (): JSX.Element => {
     },
     {
       year:2020,
-      title: "MBVR - "+ text_website.WORK_OFFICIAL_WORKS.en[2] +"(3 "+text_website.SINGLE_WORDS["months"].en+")",
+      title: "MBVR - "+ text_website.WORK_OFFICIAL_WORKS.en[2] +" (3 "+text_website.SINGLE_WORDS["months"].en+")",
       languages: "React, Redux, CSS, Styled Components, React Semantic UI"
     },
     {
       year:2022,
-      title: text_website.TECH_PROJECT_TITLES["jazztel"].en +"(3 "+text_website.SINGLE_WORDS["months"].en+")",
+      title: text_website.TECH_PROJECT_TITLES["jazztel"].en +" (3 "+text_website.SINGLE_WORDS["months"].en+")",
       languages: "AngularJS"
     }
   ]

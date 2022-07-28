@@ -38,37 +38,37 @@ const Container = (): JSX.Element => {
     src: string
   }
   const images: IImage[] = [
-    {name:"redux",src:redux},
-    {name:"wpf",src:wpf},
-    {name:"typescript",src:typescript},
-    {name:"tradingView",src:tradingView},
-    {name:"styledComponents",src:styledComponents},
-    {name:"solidity",src:solidity},
-    {name:"socketio",src:socketio},
-    {name:"semanticUI",src:semanticUI},
-    {name:"react",src:react},
+    {name:"Redux",src:redux},
+    {name:"WPF",src:wpf},
+    {name:"Typescript",src:typescript},
+    {name:"Trading View",src:tradingView},
+    {name:"Styled Components",src:styledComponents},
+    {name:"Solidity",src:solidity},
+    {name:"Socket.IO",src:socketio},
+    {name:"Semantic UI",src:semanticUI},
+    {name:"React",src:react},
     {name:"R",src:R},
-    {name:"python",src:python},
-    {name:"php",src:php},
-    {name:"nodejs",src:nodejs},
-    {name:"angular",src:angular},
-    {name:"assembly",src:assembly},
-    {name:"bash",src:bash},
-    {name:"blueprism",src:blueprism},
-    {name:"bootstrap",src:bootstrap},
-    {name:"cSharp",src:cSharp},
-    {name:"css",src:css},
-    {name:"docker",src:docker},
-    {name:"elastic",src:elastic},
-    {name:"figma",src:figma},
-    {name:"git",src:git},
-    {name:"html",src:html},
-    {name:"javascript",src:javascript},
-    {name:"jquery",src:jquery},
-    {name:"jwt",src:jwt},
-    {name:"mongoDB",src:mongoDB},
-    {name:"mysql",src:mysql},
-    {name:"nmap",src:nmap},
+    {name:"Python",src:python},
+    {name:"PHP",src:php},
+    {name:"NodeJS",src:nodejs},
+    {name:"Angular",src:angular},
+    {name:"Assembly",src:assembly},
+    {name:"Bash",src:bash},
+    {name:"Blueprism",src:blueprism},
+    {name:"Bootstrap",src:bootstrap},
+    {name:"C#",src:cSharp},
+    {name:"CSS",src:css},
+    {name:"Docker",src:docker},
+    {name:"Elasticsearch",src:elastic},
+    {name:"Figma",src:figma},
+    {name:"Git",src:git},
+    {name:"HTML",src:html},
+    {name:"Javascript",src:javascript},
+    {name:"JQuery",src:jquery},
+    {name:"JWT",src:jwt},
+    {name:"MongoDB",src:mongoDB},
+    {name:"MySQL",src:mysql},
+    {name:"Nmap",src:nmap},
   ]
 
   interface IProject {
@@ -272,7 +272,7 @@ const Container = (): JSX.Element => {
           {images.map((image,i)=>{
             return(
               <div className="each-img-container">
-                <img key={i} src={image.src} className={"img-logo"}/>
+                <img key={i} alt={image.name} src={image.src} className={"img-logo"}/>
                 <span> {image.name} </span>
               </div>
             )

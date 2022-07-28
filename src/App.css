@@ -1,6 +1,11 @@
 *{
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 body{

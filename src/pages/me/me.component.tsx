@@ -8,7 +8,7 @@ const Container = (): JSX.Element => {
       <div className={"center"}>
         <div className="myself-container">
           <div className={"profPic-container"}>
-            <img src={profPic} />
+            <img src={profPic} alt={"me"}/>
           </div>
           <div className={"my-desc"}>
             <div className={"center"}>
@@ -33,16 +33,16 @@ const Container = (): JSX.Element => {
                 </ul>
               </div> 
               <div className={"my-music"}>
-                <h2>{text_website.ME_ABOUT_ME.en[0]}</h2>
+                <h2>{text_website.ME_FAVORITE_SONGS.en[0]}</h2>
                 <ul>
                   <li>
-                    As it was - Harry Styles
+                    - As it was - Harry Styles
                   </li>
                   <li>
-                    Save your tears - The Weeknd
+                    - Save your tears - The Weeknd
                   </li>
                   <li>
-                    {text_website.ME_ABOUT_ME.en[1]}
+                    {text_website.ME_FAVORITE_SONGS.en[1]}
                   </li>
                 </ul>
               </div>

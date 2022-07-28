@@ -2,10 +2,10 @@
 .scroll-box{
     height: 60%;
     width: 99vw;
-    overflow: scroll;
     margin-top: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
-
 .timeline-box{
     height: 50%;
     width: 100%;

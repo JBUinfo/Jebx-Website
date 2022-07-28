@@ -31,6 +31,6 @@
     text-align: center;
 }
 
-.header .right *{
+.header .right a{
     margin-right: 10px;
 }
