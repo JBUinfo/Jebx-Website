@@ -107,5 +107,7 @@
     .center .carroussel{
         width: 100%;
     }
-    
+    .line .word{
+        min-width: 150px;
+    }
 }

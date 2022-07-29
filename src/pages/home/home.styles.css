@@ -12,7 +12,7 @@
 
 .section-container{
     scroll-snap-align: start;
-    height: calc( 100vh - 50px );
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -172,13 +172,14 @@
 }
 
 @media only screen and (max-width: 1281px) {
+    
     .home-container{
         scroll-snap-type: none;
     }
 
     .section-container {
         scroll-snap-align: start;
-        height: 90vh;
+        height: calc( 100vh - 50px );
     }
 }
 
