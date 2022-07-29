@@ -1,288 +1,332 @@
-{    
-    "NAVBAR":{
-        "es":["tecnología |", "trabajo |", "sobre mi"],
-        "en":["tech |", "work |", "me"]
+{
+  "NAVBAR": {
+    "es": ["tecnología |", "trabajo |", "sobre mi"],
+    "en": ["tech |", "work |", "me"]
+  },
+  "HOME_FIRST_TITLE": {
+    "es": ["Soy bueno :P,", "pero quiero:", "ser mejor"],
+    "en": ["I'm cool :P,", "but I want to:", "be better"]
+  },
+  "HOME_FIRST_DESCRIPTION": {
+    "es": "Programador autodidacta apasionado por el aprendizaje. Optimizo y automatizo todos los procesos que estén en mi mano. Tengo una alta capacidad de análisis y resolución de problemas.",
+    "en": "Self-taught programmer passionate about learning. I optimize and automate all the processes that are in my hand. I have a high capacity for analysis and problem solving."
+  },
+  "HOME_SECOND_TITLE": {
+    "es": ["Dedicado a", "TODO"],
+    "en": ["Dedicated to", "EVERYTHING"]
+  },
+  "HOME_SECOND_DESCRIPTION": {
+    "es": [
+      "Tengo más de 6 años de experiencia como programador y siempre he estado ",
+      "aprendiendo nuevas tecnologías y lenguajes.",
+      "Aqui, puedes sumergirte y buscar en mi piscina de conocmientos"
+    ],
+    "en": [
+      "I have more than 6 years of experience as a programmer and i have been always",
+      "learning news technologies and languages.",
+      "Here, you can swim and search in my knowledge pool"
+    ]
+  },
+  "HOME_THIRD_TITLE": {
+    "es": ["Proyectos, trabajos y...", "MÁS PROYECTOS"],
+    "en": ["Projects, works and...", "MORE PROJECTS"]
+  },
+  "HOME_THIRD_DESCRIPTION": {
+    "es": [
+      "El origen de mi conocmiento proviene de los proyectos personales.",
+      "Es por ello que les he dedicado mucho más tiempo a estos que a ganar dinero."
+    ],
+    "en": [
+      "The origin of my knowledge is from personal projects.",
+      "That's why i have dedicated a lot of more time in them than making money."
+    ]
+  },
+  "TECH_FIRST_TITLE": {
+    "es": "He tenido experiencia usando estas tecnologías.",
+    "en": "I have had experience in this technologies."
+  },
+  "TECH_PROJECT_TITLES": {
+    "pokemon": {
+      "es": "Minijuego de Pokemon (Instituto)",
+      "en": "Pokemon minigame (High Scool)"
     },
-    "HOME_FIRST_TITLE":{
-        "es":["Soy bueno :P,", "pero quiero:", "ser mejor"],
-        "en":["I'm cool :P,", "but I want to:", "be better"]
+    "socialNetwork": {
+      "es": "Red social (Instituto)",
+      "en": "Social networks (High Scool)"
     },
-    "HOME_FIRST_DESCRIPTION":{
-        "es":"Programador autodidacta apasionado por el aprendizaje. Optimizo y automatizo todos los procesos que estén en mi mano. Tengo una alta capacidad de análisis y resolución de problemas.",
-        "en":"Self-taught programmer passionate about learning. I optimize and automate all the processes that are in my hand. I have a high capacity for analysis and problem solving."
+    "movistar": {
+      "es": "Movistar - Accenture",
+      "en": "Movistar - Accenture"
     },
-    "HOME_SECOND_TITLE":{
-        "es":["Dedicado a", "TODO"],
-        "en":["Dedicated to", "EVERYTHING"]
+    "wordpress": {
+      "es": "Webs con Wordpress",
+      "en": "Websites with Wordpress"
     },
-    "HOME_SECOND_DESCRIPTION":{
-        "es":["Tengo más de 6 años de experiencia como programador y siempre he estado ", "aprendiendo nuevas tecnologías y lenguajes.", "Aqui, puedes sumergirte y buscar en mi piscina de conocmientos"],
-        "en":["I have more than 6 years of experience as a programmer and i have been always", "learning news technologies and languages.", "Here, you can swim and search in my knowledge pool"]
+    "rat": {
+      "es": "Herramienta de acceso remoto",
+      "en": "Remote Access Tool"
     },
-    "HOME_THIRD_TITLE":{
-        "es":["Proyectos, trabajos y...", "MÁS PROYECTOS"],
-        "en":["Projects, works and...", "MORE PROJECTS"]
+    "strools": {
+      "es": "Strools",
+      "en": "Strools"
     },
-    "HOME_THIRD_DESCRIPTION":{
-        "es":["El origen de mi conocmiento proviene de los proyectos personales.", "Es por ello que les he dedicado mucho más tiempo a estos que a ganar dinero."],
-        "en":["The origin of my knowledge is from personal projects.", "That's why i have dedicated a lot of more time in them than making money."]
+    "covid": {
+      "es": "Panel de administración de covid",
+      "en": "Covid management dashboard"
     },
-    "TECH_FIRST_TITLE":{
-        "es":"He tenido experiencia usando estas tecnologías.",
-        "en":"I have had experience in this technologies."
+    "instagram": {
+      "es": "Bots para Instagram",
+      "en": "Instagram bots"
     },
-    "TECH_PROJECT_TITLES":{
-        "pokemon":{
-            "es":"Minijuego de Pokemon (Instituto)",
-            "en":"Pokemon minigame (High Scool)"
-        },
-        "socialNetwork":{
-            "es":"Red social (Instituto)",
-            "en":"Social networks (High Scool)"
-        },
-        "movistar":{
-            "es":"Movistar - Accenture",
-            "en":"Movistar - Accenture"
-        },
-        "wordpress":{
-            "es":"Webs con Wordpress",
-            "en":"Websites with Wordpress"
-        },
-        "rat":{
-            "es":"Herramienta de acceso remoto",
-            "en":"Remote Access Tool"
-        },
-        "strools":{
-            "es":"Strools",
-            "en":"Strools"
-        },
-        "covid":{
-            "es":"Panel de administración de covid",
-            "en":"Covid management dashboard"
-        },
-        "instagram":{
-            "es":"Bots para Instagram",
-            "en":"Instagram bots"
-        },
-        "cuda":{
-            "es":"CUDA",
-            "en":"CUDA"
-        },
-        "kreborManagement":{
-            "es":"Programa de administración de Krebor",
-            "en":"Krebor management program"
-        },
-        "poocoin":{
-            "es":"Poocoin script",
-            "en":"Poocoin script"
-        },
-        "ampa":{
-            "es":"A.M.P.A.",
-            "en":"A.M.P.A."
-        },
-        "radio":{
-            "es":"Internet radio",
-            "en":"Internet radio"
-        },
-        "binance":{
-            "es":"Descargador de velas de Binance",
-            "en":"Binance's candles downloader"
-        },
-        "tradingBot":{
-            "es":"Bot de trading",
-            "en":"Trading bot"
-        },
-        "wildprint":{
-            "es":"Wildprint",
-            "en":"Wildprint"
-        },
-        "bookmarks":{
-            "es":"Youtube bookmarks a MP4",
-            "en":"Youtube bookmarks to MP4"
-        },
-        "tradingDashboard":{
-            "es":"Panel de administracion de trading",
-            "en":"Trading dashboard"
-        },
-        "jazztel":{
-            "es":"Web de Jazztel (NTT Data)",
-            "en":"Jazztel's Website (NTT Data)"
-        },
-        "thisWebsite":{
-            "es":"Esta web",
-            "en":"This website"
-        },
-        "kreborWebsite":{
-            "es":"Web de Krebor",
-            "en":"Krebor's Website"
-        },
-        "fileSortener":{
-            "es":"Script para ordenar ficheros",
-            "en":"File sortener script"
-        },
-        "udemy":{
-            "es":"Udemy downloader",
-            "en":"Udemy downloader"
-        },
-        "meliaAnalysis":{
-            "es":"Analisis de la red de Meliá",
-            "en":"Meliá's network analysis"
-        },
-        "challengeWebsites":{
-            "es":"Sitios webs de retos",
-            "en":"Challenge websites"
-        },
-        "malwareAnalysis":{
-            "es":"Analisis de malware (TFM y curso de Virustotal)",
-            "en":"Malware analysis (TFM and Virustotal's course)"
-        },
-        "smartContracts":{
-            "es":"Contratos inteligentes",
-            "en":"Smart contracts"
-        }
+    "cuda": {
+      "es": "CUDA",
+      "en": "CUDA"
     },
-    "TECH_PROJECT_DESCRIPTIONS":{
-        "pokemon":{
-            "es":"Minijuego de Pokemon (Instituto)",
-            "en":"Pokemon minigame (High Scool)"
-        },
-        "socialNetwork":{
-            "es":"Red social (Instituto)",
-            "en":"Social networks (High Scool)"
-        },
-        "movistar":{
-            "es":"Movistar (Accenture)",
-            "en":"Movistar (Accenture)"
-        },
-        "wordpress":{
-            "es":"Webs con Wordpress",
-            "en":"Websites with Wordpress"
-        },
-        "rat":{
-            "es":"Herramienta de acceso remoto",
-            "en":"Remote Access Tool"
-        },
-        "strools":{
-            "es":"Strools",
-            "en":"Strools"
-        },
-        "covid":{
-            "es":"Panel de administración de covid",
-            "en":"Covid management dashboard"
-        },
-        "instagram":{
-            "es":"Bots para Instagram",
-            "en":"Instagram bots"
-        },
-        "cuda":{
-            "es":"CUDA",
-            "en":"CUDA"
-        },
-        "kreborManagement":{
-            "es":"Programa de administración de Krebor",
-            "en":"Krebor management program"
-        },
-        "poocoin":{
-            "es":"Poocoin script",
-            "en":"Poocoin script"
-        },
-        "ampa":{
-            "es":"A.M.P.A.",
-            "en":"A.M.P.A."
-        },
-        "radio":{
-            "es":"Internet radio",
-            "en":"Internet radio"
-        },
-        "binance":{
-            "es":"Descargador de velas de Binance",
-            "en":"Binance's candles downloader"
-        },
-        "tradingBot":{
-            "es":"Bot de trading",
-            "en":"Trading bot"
-        },
-        "wildprint":{
-            "es":"Wildprint.es",
-            "en":"Wildprint.es"
-        },
-        "bookmarks":{
-            "es":"Youtube bookmarks a MP4",
-            "en":"Youtube bookmarks to MP4"
-        },
-        "tradingDashboard":{
-            "es":"Panel de administracion de trading",
-            "en":"Trading dashboard"
-        },
-        "jazztel":{
-            "es":"Web de Jazztel (NTT Data)",
-            "en":"Jazztel's Website (NTT Data)"
-        },
-        "thisWebsite":{
-            "es":"Esta web",
-            "en":"This website"
-        },
-        "kreborWebsite":{
-            "es":"Web de Krebor",
-            "en":"Krebor's Website"
-        },
-        "fileSortener":{
-            "es":"Script para ordenar ficheros",
-            "en":"File sortener script"
-        },
-        "udemy":{
-            "es":"Udemy downloader",
-            "en":"Udemy downloader"
-        },
-        "meliaAnalysis":{
-            "es":"Analisis de la red de Meliá",
-            "en":"Meliá's network analysis"
-        },
-        "challengeWebsites":{
-            "es":"Sitios webs de retos",
-            "en":"Challenge websites"
-        },
-        "malwareAnalysis":{
-            "es":"Analisis de malware (TFM y curso de Virustotal)",
-            "en":"Malware analysis (TFM and Virustotal's course)"
-        },
-        "smartContracts":{
-            "es":"Contratos inteligentes",
-            "en":"Smart contracts"
-        }
+    "kreborManagement": {
+      "es": "Programa de administración de Krebor",
+      "en": "Krebor management program"
     },
-    "WORK_FIRST_TITLE":{
-        "es":"Es dificil convencerme de quedarme...",
-        "en":"It's hard to convince me to stay..."
+    "poocoin": {
+      "es": "Poocoin script",
+      "en": "Poocoin script"
     },
-    "WORK_OFFICIAL_WORKS":{
-        "es":["TRABAJOS OFICIALES", "Instalación de antenas WiFi","Panel de administración covid"],
-        "en":["OFFICIAL WORKS", "WiFi antennas installation","Covid management dashboard"]
+    "ampa": {
+      "es": "A.M.P.A.",
+      "en": "A.M.P.A."
     },
-    "ME_SHORT_DESCRIPTION":{
-        "es":"Optimizar a 0 segundos",
-        "en":"Optimize it up to 0 seconds"
+    "radio": {
+      "es": "Internet radio",
+      "en": "Internet radio"
     },
-    "ME_ABOUT_ME":{
-        "es":["Sobre mi", "- Me gustan los videojuegos y tengo un canal de Twitch", "- Tengo más proyectos y libros que tiempo en esta vida", "- Amo la filosofia"],
-        "en":["About me", "- I like video games and have a Twitch channel", "- I have more projects and books than time in this life", "- I love philosophy"]
+    "binance": {
+      "es": "Descargador de velas de Binance",
+      "en": "Binance's candles downloader"
     },
-    "ME_FAVORITE_SONGS":{
-        "es":["Canciones favoritas", "- Cualquier canción de C.Tangana"],
-        "en":["Favorite songs", "- Any C.Tangana song"]
+    "tradingBot": {
+      "es": "Bot de trading",
+      "en": "Trading bot"
     },
-    "ME_LONG_DESC":{
-        "es":"Lo primero de todo, queria agradecerte el hecho de haber mirado mi web y mostrar interes en conocerme. Si te ha impresionado la web, creeme que yo lo estoy más (No soy el mejor eligiendo colores y creando diseños :P). Decirte tambien que soy una persona que le encanta aprender y siempre intento ser el mejor en todo lo que hago. Suelo mirar mucho Stackoverflow para ver 'performances' de codigos y técnologias porque, si algo se puede optimizar, lo haré.",
-        "en":"First of all, i want to thank you for having looked at my website and showing interest in meeting me. If you are impressed by the website, believe me i'm more (I'm not the best choosing colors and creating designs :P). Also tell you that i'm a person who loves to learn and i always try to be the best in everything I do. I usually look at Stackoverflow a lot to see 'performances' of codes and technologies because if something can be optimized, i'll."
+    "wildprint": {
+      "es": "Wildprint",
+      "en": "Wildprint"
     },
-    "SINGLE_WORDS":{
-        "months":{
-            "es":"meses",
-            "en":"months"
-        },
-        "others":{
-            "es":"OTROS",
-            "en":"OTHERS"
-        }
+    "bookmarks": {
+      "es": "Youtube bookmarks a MP4",
+      "en": "Youtube bookmarks to MP4"
+    },
+    "tradingDashboard": {
+      "es": "Panel de administracion de trading",
+      "en": "Trading dashboard"
+    },
+    "jazztel": {
+      "es": "Web de Jazztel (NTT Data)",
+      "en": "Jazztel's Website (NTT Data)"
+    },
+    "thisWebsite": {
+      "es": "Esta web",
+      "en": "This website"
+    },
+    "kreborWebsite": {
+      "es": "Web de Krebor",
+      "en": "Krebor's Website"
+    },
+    "fileSortener": {
+      "es": "Script para ordenar ficheros",
+      "en": "File sortener script"
+    },
+    "udemy": {
+      "es": "Udemy downloader",
+      "en": "Udemy downloader"
+    },
+    "meliaAnalysis": {
+      "es": "Analisis de la red de Meliá",
+      "en": "Meliá's network analysis"
+    },
+    "challengeWebsites": {
+      "es": "Sitios webs de retos",
+      "en": "Challenge websites"
+    },
+    "malwareAnalysis": {
+      "es": "Analisis de malware (TFM y curso de Virustotal)",
+      "en": "Malware analysis (TFM and Virustotal's course)"
+    },
+    "smartContracts": {
+      "es": "Contratos inteligentes",
+      "en": "Smart contracts"
     }
+  },
+  "TECH_PROJECT_DESCRIPTIONS": {
+    "pokemon": {
+      "es": "Fue un minijuego que simulaba batallas pokemon. Si ganabas X partidas, conseguias un pokemon aleatorio. Tuvimos que recrear todo el sistema de elementos (agua, fuego, veneno...) y hacer batallas de 3 vs 3.",
+      "en": "It was a minigame that simulated pokemon battles. If you won X games, you got a random pokemon. We had to recreate the whole system of elements (water, fire, poison...) and do 3 vs 3 battles."
+    },
+    "socialNetwork": {
+      "es": "Proyecto individual de final de grado. Recreé Twitter con la adición de un chat global. Aquí es donde aprendí que MongoDB no es el mejor haciendo 'SELECT' pero si 'INSERT' ",
+      "en": "Individual project of the end of the degree. I recreated Twitter with the addition of a global chat. This is where I learned that MongoDB is not the best at doing 'SELECT' but 'INSERT'."
+    },
+    "movistar": {
+      "es": "Descubrí la existencia de programas RPA como Blueprism (y de lo lentos que pueden llegar a ser). Sugerí usar requests directas para optimizar x10 el programa. Antes de esto, me dedicaba a hacer scrappers...",
+      "en": "I discovered the existence of RPA programs like Blueprism (and how slow they can be). I suggested using direct requests to optimize x10 the program. Before this, I was doing scrappers..."
+    },
+    "wordpress": {
+      "es": "Me llegaron algunas solicitudes para realizar o editar algunas webs en wordpress. En este momento dejó de gustarme PHP. No es optimo!",
+      "en": "I received some requests to make or edit some websites in wordpress. At this point I stopped liking PHP. It's not optimal!"
+    },
+    "rat": {
+      "es": "Mi primer proyecto en C++ y C#. Tenia funciones como: compartir pantalla, conexión directa a la consola sin ssh, administrador de archivos sin ftp... Trabajé sin librerias y a nivel de bytes. No sabia que un 'compartir pantalla' iba a ser un verdadero reto.",
+      "en": "My first project in C++ and C#. It had functions such as: screen sharing, direct connection to the console without ssh, file manager without ftp... I worked without libraries and at the byte level. I didn't know that 'screen sharing' was going to be a real challenge."
+    },
+    "strools": {
+      "es": "Poco despues de empezar en Twitch ya queria automatizar funciones. Tiene funciones como: coger el titulo de YT de la cancion que suene en el momento, autodonar cajas de Streamloots y, en un futuro, añadir delay durante el stream. Lector, te reto a recrear la funcion de YT!",
+      "en": "Shortly after I started on Twitch I wanted to automate functions. It has functions such as: take the YT title of the song that sounds at the moment, self-donate Streamloots boxes and, in the future, add delay during the stream. Reader, I challenge you to recreate the function of YT!"
+    },
+    "fileSortener": {
+      "es": "Tenía en mi propiedad varias bases de datos (en texto plano) y queria ordenar el contenido de todas en ficheros. Recreé el programa en NodeJS, C++, C# y Bash. No sabia que las letras rusas no eran aceptadas en las funciones base de algunos lenguajes... Además, descubrí las 'pools' de MongoDB",
+      "en": "I owned several databases (in plain text) and I wanted to sort the contents of all of them into files. I recreated the program in NodeJS, C++, C# and Bash. I did not know that Russian letters were not accepted in the base functions of some languages... In addition, I discovered the 'pools' of MongoDB"
+    },
+    "udemy": {
+      "es": "Me cansé de no poder ver los cursos de manera offline, así pues, creé un programa para almacenar copias de seguridad offline. A los pocos meses añadieron encriptación en el login y ya no funciona. Tengo pendiente recrearlo...",
+      "en": "I got tired of not being able to watch the courses offline, so I created a program to store backups offline. A few months later they added encryption in the login and it no longer works. I have yet to recreate it..."
+    },
+    "meliaAnalysis": {
+      "es": "Me llamaron del Melia de Alicante para que analizar la red del hotel. Por privacidad, no puedo mencionar nada más :P.",
+      "en": "They called me from the Melia in Alicante to analyze the hotel network. For privacy, I can't mention anything else :P."
+    },
+    "covid": {
+      "es": "Me contrataron en una empresa para realizar un programa que permitia a los trabajadores entrar a una instalación dependiendo de si tenia fiebre o no. Yo me encargaba del dashboard del administrador que se conectaba con los dispositivos instalados en las puertas.",
+      "en": "I was hired at a company to do a program that allowed workers to enter a facility depending on whether they had a fever or not. I was in charge of the administrator's dashboard that connected with the devices installed in the doors."
+    },
+    "instagram": {
+      "es": "Hice 2 bots para instagram. 1. Un bot para dar likes, dejar comentarios y seguir a gente. 2. Un bot para descargar todos los mensajes directos de tu cuenta. Haciendo este bot descubrí un fallo de seguirdad en IG.",
+      "en": "I made 2 bots for instagram. 1. A bot to give likes, leave comments and follow people. 2. A bot to download all direct messages from your account. Doing this bot I discovered a security bug in IG."
+    },
+    "cuda": {
+      "es": "Estudié un curso de NVIDIA y me volví loco al descubrir las velocidad que se podían alcanzar con esta tecnología. Meses después me sirvió para ayudar a un amigo físico optimizando su programa (De 10min a 30s).",
+      "en": "I studied an NVIDIA course and went crazy to discover the speed that could be achieved with this technology. Months later it helped me to help a physical friend by optimizing his program (from 10min to 30s)."
+    },
+    "malwareAnalysis": {
+      "es": "Ingresé en un curso impartido por los empleados de Virustotal. Ya tenia conocimientos de antes pero... me volví a enamorar de la Ingenieria Inversa!!! Espero trabajar de ello en un futuro.",
+      "en": "I entered a course taught by Virustotal employees. I already had knowledge from before but... I fell in love with Reverse Engineering again!!! I hope to work on it in the future."
+    },
+    "kreborManagement": {
+      "es": "La empresa Krebor Technology necesitaba un programa para la administración de su almacén e inventario. C#, WPF y SQLite fueron necesarios para hacer este proyecto. Aprendí que imprimir un documento desde C# puede complicarse un poco.",
+      "en": "Krebor Technology needed a program for the management of its warehouse and inventory. C#, WPF and SQLite were needed to do this project. I learned that printing a document from C# can get a little complicated."
+    },
+    "poocoin": {
+      "es": "Después de estar dias, semanas y meses mirando gráficas me pregunté 'por que no hacer un script que avise cuando el precio llega a X?', y eso es lo que hice. Nunca antes habia reproducido un sonido con base64 desde el propio navegador. Hice algo así como una extensión para chrome.",
+      "en": "After spending days, weeks and months looking at graphs I wondered 'why not make a script that warns when the price reaches X?', and that's what I did. Never before had I played a sound with base64 from the browser itself. I made something like an extension for chrome."
+    },
+    "challengeWebsites": {
+      "es": "Después de que Amazon me contactase para que trabajara con ellos tuve que hacer un test que no conseguí pasar. Después de eso me dediqué durante semanas a realizar pruebas en webs como hackerrank, codewars, acepta el reto!, hack the box...",
+      "en": "After Amazon contacted me to work with them I had to do a test that I couldn't pass. After that I dedicated myself for weeks to perform tests on websites such as hackerrank, codewars, acepta el reto!, hack the box..."
+    },
+    "ampa": {
+      "es": "Me llamaron para implementar un sistema de inscripción y pago en un web de un ampa (Asociación de Madres y Padres de Alumnos). Mi primer sistema de pago implementado!",
+      "en": "They called me to implement a registration and payment system on a website of an ampa (Association of Mothers and Fathers of Students). My first payment system implemented!"
+    },
+    "radio": {
+      "es": "Detestaba hacer viajes con muchos amigos y no poder escuchar la misma musica en los diferentes coches. Cree una radio donde el admin colocaba la URL de YT, se descargaba en el servidor y se añadia a la sala donde quisieras. La musica se reproducia de forma aleatoria y en bucle (como una radio).",
+      "en": "I hated taking trips with a lot of friends and not being able to listen to the same music in different cars. Create a radio where the admin placed the YT URL, downloaded it to the server, and added it to the room wherever you wanted. The music was played randomly and in a loop (like a radio)."
+    },
+    "binance": {
+      "es": "Ese momento cuando se te ocurre una estrategia que te hará ganar dinero pero necesitas hacer backtesting y no puedes... Creé este script para descargarte TODAS las velas en TODAS las temporalidades de la cryptomoneda que quieras.",
+      "en": "That moment when you come up with a strategy that will make you money but you need to backtest and you can't... I created this script to download ALL the candles in ALL the temporalities of the cryptocurrency you want."
+    },
+    "tradingBot": {
+      "es": "Comencé a crear un bot de trading pero lo dejé a medias debido a que necesitaba trabajar. Se quedó en la fase de backtesting (Quedan la fase de estadisticas y conexión con Binance).",
+      "en": "I started creating a trading bot but left it halfway because I needed to work. It stayed in the backtesting phase (The statistics phase and the Binance connection phase remain)."
+    },
+
+    "jazztel": {
+      "es": "Necesitaba dinero y trabajé en NTT Data durante 3 meses. Fui colocado en la web de jazztel para encontrar y solucionar bugs.",
+      "en": "I needed money and worked at NTT Data for 3 months. I was placed on the jazztel website to find and fix bugs."
+    },
+    "wildprint": {
+      "es": "Una empresa dedicada a la enseñanza del mundo animal me contactó para que les hiciera su web. Apliqué mis conocimientos de React + Redux. wildprint.es",
+      "en": "A company dedicated to teaching the animal world contacted me to make their website. I applied my knowledge of React + Redux. wildprint.es"
+    },
+    "bookmarks": {
+      "es": "Un amigo me pidió crear un script que descargase todos los videos de YT que tenía guardados en los marcadores de Chrome. Además, había que descargarlos dentro con sus respectivas carpetas. Aquí descubrí lo mal que exporta Chrome los marcadores.",
+      "en": "A friend asked me to create a script that would download all the YT videos I had saved in Chrome bookmarks. In addition, they had to be downloaded inside with their respective folders. Here I discovered how badly Chrome exports bookmarks."
+    },
+
+    "thisWebsite": {
+      "es": "Posiblemente uno de los proyectos que más satisfecho me han dejado. Normalmente nunca elijo yo el diseño pero... en este caso si!",
+      "en": "Possibly one of the projects that have left me the most satisfied. Normally I never choose the design but... in this case yes!"
+    },
+    "smartContracts": {
+      "es": "Un juego de NFTs necesitaba un programador de Smart Contracts. Coincidía con que yo me estaba leyendo la documentación de solidity y de Ethereum. Así pues, me dispuse a crear 5 smart contracts.",
+      "en": "An NFTs video game needed a Smart Contracts programmer. It coincided with the fact that I was reading the solidity and Ethereum documentation. So, I set out to create 5 smart contracts."
+    },
+    "kreborWebsite": {
+      "es": "Krebor Technology S.L. necesita expandirse y no hay mejor forma que a través de internet. A la espera de recibir más información, espero lanzar su web en 2023.",
+      "en": "Krebor Technology S.L. needs to expand and there is no better way than through the internet. Waiting to receive more information, I hope to launch the website in 2023."
+    },
+    "tradingDashboard": {
+      "es": "Con la esperanza de volver al mundo del trading, haré un panel de administración para todos mis trades.",
+      "en": "Hoping to return to the world of trading, I will make a management panel for all my trades."
+    }
+  },
+  "WORK_FIRST_TITLE": {
+    "es": "Es dificil convencerme de quedarme...",
+    "en": "It's hard to convince me to stay..."
+  },
+  "WORK_OFFICIAL_WORKS": {
+    "wifiair": {
+      "es": "WifiAir (3 meses)",
+      "en": "WifiAir (3 months)"
+    },
+    "accenture": {
+      "es": "Movistar - Accenture (3 meses)",
+      "en": "Movistar - Accenture (3 months)"
+    },
+    "mbvr": {
+      "es": "MBVR - (3 meses)",
+      "en": "MBVR - (3 months)"
+    },
+    "nttdata": {
+      "es": "Jazztel - NTT Data (3 meses)",
+      "en": "Jazztel - NTT Data (3 months)"
+    },
+    "officialWorks": {
+      "es": "TRABAJOS OFICIALES",
+      "en": "OFFICIAL WORKS"
+    }
+  },
+  "ME_SHORT_DESCRIPTION": {
+    "es": "Optimizar a 0 segundos",
+    "en": "Optimize it up to 0 seconds"
+  },
+  "ME_ABOUT_ME": {
+    "es": [
+      "Sobre mi",
+      "- Me gustan los videojuegos y tengo un canal de Twitch",
+      "- Tengo más proyectos y libros que tiempo en esta vida",
+      "- Amo la filosofia"
+    ],
+    "en": [
+      "About me",
+      "- I like video games and have a Twitch channel",
+      "- I have more projects and books than time in this life",
+      "- I love philosophy"
+    ]
+  },
+  "ME_FAVORITE_SONGS": {
+    "es": ["Canciones favoritas", "- Cualquier canción de C.Tangana"],
+    "en": ["Favorite songs", "- Any C.Tangana song"]
+  },
+  "ME_LONG_DESC": {
+    "es": "Lo primero de todo, queria agradecerte el hecho de haber mirado mi web y mostrar interes en conocerme. Si te ha impresionado la web, creeme que yo lo estoy más (No soy el mejor eligiendo colores y creando diseños :P). Decirte tambien que soy una persona que le encanta aprender y siempre intento ser el mejor en todo lo que hago. Suelo mirar mucho Stackoverflow para ver 'performances' de codigos y técnologias porque, si algo se puede optimizar, lo haré.",
+    "en": "First of all, i want to thank you for having looked at my website and showing interest in meeting me. If you are impressed by the website, believe me i'm more (I'm not the best choosing colors and creating designs :P). Also tell you that i'm a person who loves to learn and i always try to be the best in everything I do. I usually look at Stackoverflow a lot to see 'performances' of codes and technologies because if something can be optimized, i'll."
+  },
+  "SINGLE_WORDS": {
+    "months": {
+      "es": "meses",
+      "en": "months"
+    },
+    "others": {
+      "es": "OTROS",
+      "en": "OTHERS"
+    }
+  }
 }

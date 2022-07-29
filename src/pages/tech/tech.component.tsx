@@ -1,5 +1,7 @@
 import "./tech.styles.css";
+import { LanguageContext } from "../../language-context";
 import text_website from "../../assets/text-website.json";
+
 import angular from "./imgs/angular.png";
 import assembly from "./imgs/assembly.png";
 import bash from "./imgs/bash.png";
@@ -34,312 +36,342 @@ import redux from "./imgs/redux.png";
 
 const Container = (): JSX.Element => {
   interface IImage {
-    name: string,
-    src: string
+    name: string;
+    src: string;
   }
   const images: IImage[] = [
-    {name:"Redux",src:redux},
-    {name:"WPF",src:wpf},
-    {name:"Typescript",src:typescript},
-    {name:"Trading View",src:tradingView},
-    {name:"Styled Components",src:styledComponents},
-    {name:"Solidity",src:solidity},
-    {name:"Socket.IO",src:socketio},
-    {name:"Semantic UI",src:semanticUI},
-    {name:"React",src:react},
-    {name:"R",src:R},
-    {name:"Python",src:python},
-    {name:"PHP",src:php},
-    {name:"NodeJS",src:nodejs},
-    {name:"Angular",src:angular},
-    {name:"Assembly",src:assembly},
-    {name:"Bash",src:bash},
-    {name:"Blueprism",src:blueprism},
-    {name:"Bootstrap",src:bootstrap},
-    {name:"C#",src:cSharp},
-    {name:"CSS",src:css},
-    {name:"Docker",src:docker},
-    {name:"Elasticsearch",src:elastic},
-    {name:"Figma",src:figma},
-    {name:"Git",src:git},
-    {name:"HTML",src:html},
-    {name:"Javascript",src:javascript},
-    {name:"JQuery",src:jquery},
-    {name:"JWT",src:jwt},
-    {name:"MongoDB",src:mongoDB},
-    {name:"MySQL",src:mysql},
-    {name:"Nmap",src:nmap},
-  ]
+    { name: "Redux", src: redux },
+    { name: "WPF", src: wpf },
+    { name: "Typescript", src: typescript },
+    { name: "Trading View", src: tradingView },
+    { name: "Styled Components", src: styledComponents },
+    { name: "Solidity", src: solidity },
+    { name: "Socket.IO", src: socketio },
+    { name: "Semantic UI", src: semanticUI },
+    { name: "React", src: react },
+    { name: "R", src: R },
+    { name: "Python", src: python },
+    { name: "PHP", src: php },
+    { name: "NodeJS", src: nodejs },
+    { name: "Angular", src: angular },
+    { name: "Assembly", src: assembly },
+    { name: "Bash", src: bash },
+    { name: "Blueprism", src: blueprism },
+    { name: "Bootstrap", src: bootstrap },
+    { name: "C#", src: cSharp },
+    { name: "CSS", src: css },
+    { name: "Docker", src: docker },
+    { name: "Elasticsearch", src: elastic },
+    { name: "Figma", src: figma },
+    { name: "Git", src: git },
+    { name: "HTML", src: html },
+    { name: "Javascript", src: javascript },
+    { name: "JQuery", src: jquery },
+    { name: "JWT", src: jwt },
+    { name: "MongoDB", src: mongoDB },
+    { name: "MySQL", src: mysql },
+    { name: "Nmap", src: nmap },
+  ];
 
   interface IProject {
-    year: number,
-    title: string,
-    languages: string
+    year: number;
+    title: { es: string; en: string };
+    languages: string;
   }
 
   const front: IProject[] = [
     {
-      year:2018,
-      title: text_website.TECH_PROJECT_TITLES["pokemon"].en,
-      languages: "HTML, CSS"
+      year: 2018,
+      title: text_website.TECH_PROJECT_TITLES["pokemon"],
+      languages: "HTML, CSS",
     },
     {
-      year:2019,
-      title: text_website.TECH_PROJECT_TITLES["socialNetwork"].en,
-      languages: "HTML, CSS, Bootstrap"
+      year: 2019,
+      title: text_website.TECH_PROJECT_TITLES["socialNetwork"],
+      languages: "HTML, CSS, Bootstrap",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["wordpress"].en,
-      languages: "HTML, CSS, Javascript"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["wordpress"],
+      languages: "HTML, CSS, Javascript",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["rat"].en,
-      languages: "Windows forms, WPF"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["rat"],
+      languages: "Windows forms, WPF",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["strools"].en,
-      languages: "Windows forms, WPF"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["strools"],
+      languages: "Windows forms, WPF",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["covid"].en,
-      languages: "React, Redux, CSS, Styled Components, React Semantic UI"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["covid"],
+      languages: "React, Redux, CSS, Styled Components, React Semantic UI",
     },
     {
-      year:2021,
-      title: text_website.TECH_PROJECT_TITLES["kreborManagement"].en,
-      languages: "Windows forms, WPF"
+      year: 2021,
+      title: text_website.TECH_PROJECT_TITLES["kreborManagement"],
+      languages: "Windows forms, WPF",
     },
     {
-      year:2021,
-      title: text_website.TECH_PROJECT_TITLES["poocoin"].en,
-      languages: "Javascript"
+      year: 2021,
+      title: text_website.TECH_PROJECT_TITLES["poocoin"],
+      languages: "Javascript",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["radio"].en,
-      languages: "React, CSS, Javascript"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["radio"],
+      languages: "React, CSS, Javascript",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["ampa"].en,
-      languages: "CSS, Javascript"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["ampa"],
+      languages: "CSS, Javascript",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["jazztel"].en,
-      languages: "AngularJS"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["jazztel"],
+      languages: "AngularJS",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["wildprint"].en,
-      languages: "React, Redux, HTML, CSS"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["wildprint"],
+      languages: "React, Redux, HTML, CSS",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["thisWebsite"].en,
-      languages: "React, TS, HTML, CSS"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["thisWebsite"],
+      languages: "React, TS, HTML, CSS",
     },
     {
-      year:2023,
-      title: text_website.TECH_PROJECT_TITLES["tradingDashboard"].en,
-      languages: "React, Tailwind, HTML, CSS"
+      year: 2023,
+      title: text_website.TECH_PROJECT_TITLES["tradingDashboard"],
+      languages: "React, Tailwind, HTML, CSS",
     },
     {
-      year:2023,
-      title: text_website.TECH_PROJECT_TITLES["kreborWebsite"].en,
-      languages: "React, Redux, HTML, CSS"
-    }
-  ]
+      year: 2023,
+      title: text_website.TECH_PROJECT_TITLES["kreborWebsite"],
+      languages: "React, Redux, HTML, CSS",
+    },
+  ];
   const back: IProject[] = [
     {
-      year:2018,
-      title: text_website.TECH_PROJECT_TITLES["pokemon"].en,
-      languages: "PHP, Mysql"
+      year: 2018,
+      title: text_website.TECH_PROJECT_TITLES["pokemon"],
+      languages: "PHP, Mysql",
     },
     {
-      year:2019,
-      title: text_website.TECH_PROJECT_TITLES["socialNetwork"].en,
-      languages: "Socket.io, NodeJS, MongoDB"
+      year: 2019,
+      title: text_website.TECH_PROJECT_TITLES["socialNetwork"],
+      languages: "Socket.io, NodeJS, MongoDB",
     },
     {
-      year:2019,
-      title: text_website.TECH_PROJECT_TITLES["movistar"].en,
-      languages: "Blueprint"
+      year: 2019,
+      title: text_website.TECH_PROJECT_TITLES["movistar"],
+      languages: "Blueprint",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["wordpress"].en,
-      languages: "PHP, MySQL"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["wordpress"],
+      languages: "PHP, MySQL",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["rat"].en,
-      languages: "C#, C++"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["rat"],
+      languages: "C#, C++",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["strools"].en,
-      languages: "C#"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["strools"],
+      languages: "C#",
     },
     {
-      year:2021,
-      title: text_website.TECH_PROJECT_TITLES["kreborManagement"].en,
-      languages: "C#, SQLite"
+      year: 2021,
+      title: text_website.TECH_PROJECT_TITLES["kreborManagement"],
+      languages: "C#, SQLite",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["radio"].en,
-      languages: "NodeJS, Socket.io"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["radio"],
+      languages: "NodeJS, Socket.io",
     },
     {
-      year:2023,
-      title: text_website.TECH_PROJECT_TITLES["tradingDashboard"].en,
-      languages: "NodeJS, MongoDB"
-    }
-  ]
-  
+      year: 2023,
+      title: text_website.TECH_PROJECT_TITLES["tradingDashboard"],
+      languages: "NodeJS, MongoDB",
+    },
+  ];
+
   const others: IProject[] = [
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["fileSortener"].en,
-      languages: "Bash, C++, C#, NodeJS, MongoDB"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["fileSortener"],
+      languages: "Bash, C++, C#, NodeJS, MongoDB",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["udemy"].en,
-      languages: "Python"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["udemy"],
+      languages: "Python",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["meliaAnalysis"].en,
-      languages: "NMap, Bash"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["meliaAnalysis"],
+      languages: "NMap, Bash",
     },
     {
-      year:2020,
-      title: text_website.TECH_PROJECT_TITLES["instagram"].en,
-      languages: "C#, Python"
+      year: 2020,
+      title: text_website.TECH_PROJECT_TITLES["instagram"],
+      languages: "C#, Python",
     },
     {
-      year:2021,
-      title: text_website.TECH_PROJECT_TITLES["challengeWebsites"].en,
-      languages: "Bash, C++, NodeJS, Python"
+      year: 2021,
+      title: text_website.TECH_PROJECT_TITLES["challengeWebsites"],
+      languages: "Bash, C++, NodeJS, Python",
     },
     {
-      year:2021,
-      title: text_website.TECH_PROJECT_TITLES["cuda"].en,
-      languages: "CUDA, C++, Python"
+      year: 2021,
+      title: text_website.TECH_PROJECT_TITLES["cuda"],
+      languages: "CUDA, C++, Python",
     },
     {
-      year:2021,
-      title: text_website.TECH_PROJECT_TITLES["malwareAnalysis"].en,
-      languages: "Forensic software"
+      year: 2021,
+      title: text_website.TECH_PROJECT_TITLES["malwareAnalysis"],
+      languages: "Forensic software",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["binance"].en,
-      languages: "Python"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["binance"],
+      languages: "Python",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["tradingBot"].en,
-      languages: "NodeJS, Python"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["tradingBot"],
+      languages: "NodeJS, Python",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["bookmarks"].en,
-      languages: "NodeJS"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["bookmarks"],
+      languages: "NodeJS",
     },
     {
-      year:2022,
-      title: text_website.TECH_PROJECT_TITLES["smartContracts"].en,
-      languages: "Solidity"
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["smartContracts"],
+      languages: "Solidity",
     },
-  ]
+  ];
   return (
     <div className={"section-container"}>
       <div className={"explanation"}>
         <div className={"title"}>
-          {text_website.TECH_FIRST_TITLE.en}
+          <LanguageContext.Consumer>
+            {({ language }) => <>{text_website.TECH_FIRST_TITLE[language!]}</>}
+          </LanguageContext.Consumer>
         </div>
       </div>
 
       <div className={"center"}>
         <div className="img-logo-container">
-          {images.map((image,i)=>{
-            return(
+          {images.map((image, i) => {
+            return (
               <div className="each-img-container">
-                <img key={i} alt={image.name} src={image.src} className={"img-logo"}/>
+                <img
+                  key={i}
+                  alt={image.name}
+                  src={image.src}
+                  className={"img-logo"}
+                />
                 <span> {image.name} </span>
               </div>
-            )
+            );
           })}
         </div>
       </div>
-      <div className={"center"}>
-        FRONT END
-      </div>
+      <div className={"center"}>FRONT END</div>
       <div className={"center"}>
         <div className="tech-list-front-end">
-          {front.map((f, i)=>(
-            <ul key={i}>
-              <li>
-                <span className={"y"+f.year}>{"{"+f.year+"}"} - </span>
-                <span>{f.title}</span>
-              </li>
-              <ul>
-                <li>
-                <span>{f.languages}</span>
-                </li>
-              </ul>
-            </ul>
-          ))}
-          
+          <LanguageContext.Consumer>
+            {({ language }) => (
+              <>
+                {front.map((f, i) => (
+                  <ul key={i}>
+                    <li>
+                      <span className={"y" + f.year}>
+                        {"{" + f.year + "}"} -{" "}
+                      </span>
+                      <span>{f.title[language!]}</span>
+                    </li>
+                    <ul>
+                      <li>
+                        <span>{f.languages}</span>
+                      </li>
+                    </ul>
+                  </ul>
+                ))}
+              </>
+            )}
+          </LanguageContext.Consumer>
         </div>
       </div>
-      
-      <div className={"center"}>
-        BACK END
-      </div>
+
+      <div className={"center"}>BACK END</div>
       <div className={"center"}>
         <div className="tech-list-front-end">
-        {back.map((f, i)=>(
-            <ul key={i}>
-              <li>
-                <span className={"y"+f.year}>{"{"+f.year+"}"} - </span>
-                <span>{f.title}</span>
-              </li>
-              <ul>
-                <li>
-                <span>{f.languages}</span>
-                </li>
-              </ul>
-            </ul>
-          ))}
+          <LanguageContext.Consumer>
+            {({ language }) => (
+              <>
+                {back.map((f, i) => (
+                  <ul key={i}>
+                    <li>
+                      <span className={"y" + f.year}>
+                        {"{" + f.year + "}"} -{" "}
+                      </span>
+                      <span>{f.title[language!]}</span>
+                    </li>
+                    <ul>
+                      <li>
+                        <span>{f.languages}</span>
+                      </li>
+                    </ul>
+                  </ul>
+                ))}
+              </>
+            )}
+          </LanguageContext.Consumer>
         </div>
       </div>
 
       <div className={"center"}>
-        {text_website.SINGLE_WORDS["others"].en}
+        <LanguageContext.Consumer>
+          {({ language }) => (
+            <>{text_website.SINGLE_WORDS["others"][language!]}</>
+          )}
+        </LanguageContext.Consumer>
       </div>
       <div className={"center"}>
         <div className="tech-list-front-end">
-        {others.map((f, i)=>(
-            <ul key={i}>
-              <li>
-                <span className={"y"+f.year}>{"{"+f.year+"}"} - </span>
-                <span>{f.title}</span>
-              </li>
-              <ul>
-                <li>
-                <span>{f.languages}</span>
-                </li>
-              </ul>
-            </ul>
-          ))}
+          <LanguageContext.Consumer>
+            {({ language }) => (
+              <>
+                {others.map((f, i) => (
+                  <ul key={i}>
+                    <li>
+                      <span className={"y" + f.year}>
+                        {"{" + f.year + "}"} -{" "}
+                      </span>
+                      <span>{f.title[language!]}</span>
+                    </li>
+                    <ul>
+                      <li>
+                        <span>{f.languages}</span>
+                      </li>
+                    </ul>
+                  </ul>
+                ))}
+              </>
+            )}
+          </LanguageContext.Consumer>
         </div>
       </div>
     </div>
@@ -347,11 +379,7 @@ const Container = (): JSX.Element => {
 };
 
 const TechPage = (): JSX.Element => {
-  return (
-    <div className={"tech-container"}>
-        {Container()}
-    </div>
-  );
+  return <div className={"tech-container"}>{Container()}</div>;
 };
 
 export default TechPage;

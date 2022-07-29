@@ -1,4 +1,6 @@
 import './header.styles.css';
+import {LanguageContext} from '../../language-context';
+
 import text_website from "../../assets/text-website.json";
 import { Link } from "react-router-dom";
 const Header = (): JSX.Element => {
@@ -20,6 +22,17 @@ const Header = (): JSX.Element => {
         <a href="mailto:javierbuinfo@gmail.com">
           <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20Zm8-7L4 8v10h16V8Zm0-2l8-5H4ZM4 8V6v12Z"></path></svg>
         </a>
+        <LanguageContext.Consumer>
+          {
+          ({language, toggleLanguage}) => (
+            "es" === language ? 
+            (
+              <svg onClick={toggleLanguage} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 72 72"><path fill="#f1b31c" d="M5 17h62v38H5z"></path><path fill="#d22f27" d="M23 33v7a2.006 2.006 0 0 1-2 2h-4a2.006 2.006 0 0 1-2-2v-7M5 17h62v9H5zm0 29h62v9H5z"></path><path fill="#f1b31c" d="M19 33h4v4h-4z"></path><circle cx="19" cy="37" r="1.5" fill="#6a462f"></circle><path fill="none" stroke="#6a462f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M27 33v9m-16-9v9m4-12a8.568 8.568 0 0 1 4-1m4 1a8.568 8.568 0 0 0-4-1m-4 4h8m0 0v7a2.006 2.006 0 0 1-2 2h-4a2.006 2.006 0 0 1-2-2v-7m-5 9h2m14 0h2"></path><path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 17h62v38H5z"></path></svg>
+            ):(
+              <svg onClick={toggleLanguage} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 32 24"><mask id="IconifyId1824ae1bb8fd117ee180" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse"><path fill="#fff" d="M0 0h32v24H0z"></path></mask><g fill="none" mask="url(#IconifyId1824ae1bb8fd117ee180)"><path fill="#F7FCFF" fillRule="evenodd" d="M0 0h32v24H0V0z" clipRule="evenodd"></path><path fill="#E31D1C" fillRule="evenodd" d="M0 14.667v2h32v-2H0zm0 3.666v2h32v-2H0zm0-11v2h32v-2H0zM0 22v2h32v-2H0zm0-11v2h32v-2H0zM0 0v2h32V0H0zm0 3.667v2h32v-2H0z" clipRule="evenodd"></path><path fill="#2E42A5" d="M0 0h20v13H0z"></path><path fill="#F7FCFF" fillRule="evenodd" d="m1.722 2.939l-.726.509l.245-.906l-.645-.574h.843l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm4 0l-.726.509l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm3.274.509l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zM.996 7.449l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74H.596l.645.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm3.274.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zM.996 11.449l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74H.596l.645.574l-.245.905zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.905l-.702-.508zm3.274.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.905zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.905l-.702-.508zm3.274-7.49l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.843l.645.574l-.245.906zm.726 3.49l-.726.51l.245-.906l-.645-.574h.843l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm-.726 4.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.843l.645.574l-.245.905zM3.722 4.938l-.726.51l.245-.906l-.645-.574h.843l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm3.274.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.843l.645.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm-8.726 4.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.843l.645.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm3.274.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.906zm4.726-4.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm-.726 4.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.906z" clipRule="evenodd"></path></g></svg>
+            )
+          )}
+        </LanguageContext.Consumer>
         </div>
     </div>
   );

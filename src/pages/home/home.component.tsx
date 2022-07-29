@@ -1,5 +1,6 @@
 import TypeIt from "typeit-react";
 import { useState, useEffect } from 'react';
+import {LanguageContext} from '../../language-context';
 
 import "./home.styles.css";
 import img1 from "./imgs/wall1.jpg";
@@ -47,32 +48,39 @@ const FirstContainer = (): JSX.Element => {
           </div>
         </div>
         <div className={"main"}>
-          <div className={"text"}>
-          <TypeIt
-              getBeforeInit={(instance) => {
-                instance
-                  .options({ speed: 50, lifeLike: false })
-                  .type(text_website.HOME_FIRST_TITLE.en[0])
-                  .pause(750)
-                  .delete(4)
-                  .type(",")
-                  .pause(300)
-                  .break()
-                  .type(text_website.HOME_FIRST_TITLE.en[1])
-                  .pause(300)
-                  .break()
-                  .type(
-                    "<span class='green'>" +
-                      text_website.HOME_FIRST_TITLE.en[2] +
-                      "</span>"
-                  )
-                  .flush();
-                return instance;
-              }}
-            />
-            <br />
-            <br />
-            <div className={"intro-description description"}>{text_website.HOME_FIRST_DESCRIPTION.en}</div>
+          <div className={"text"}>            
+            <LanguageContext.Consumer>
+              {({language}) => (
+                <>
+                  <TypeIt
+                    getBeforeInit={(instance) => {
+                      instance
+                        .options({ speed: 50, lifeLike: false })
+                        .type(text_website.HOME_FIRST_TITLE[language!][0])
+                        .pause(750)
+                        .delete(4)
+                        .type(",")
+                        .pause(300)
+                        .break()
+                        .type(text_website.HOME_FIRST_TITLE[language!][1])
+                        .pause(300)
+                        .break()
+                        .type(
+                          "<span class='green'>" +
+                            text_website.HOME_FIRST_TITLE[language!][2] +
+                            "</span>"
+                        )
+                        .flush();
+                      return instance;
+                    }}
+                  />
+                  <br />
+                  <br />
+                  <div className={"intro-description description"}>{text_website.HOME_FIRST_DESCRIPTION[language!]}</div>
+                </>
+              )}
+            </LanguageContext.Consumer>
+            
           </div>
         </div>
       </div>
@@ -84,18 +92,23 @@ const SecondContainer = (): JSX.Element => {
   return (
     <div className={"section-container"}>
       <div className={"explanation"}>
-        <div className={"title"}>
-          {text_website.HOME_SECOND_TITLE.en[0]} <span className={"blue"}>{text_website.HOME_SECOND_TITLE.en[1]}</span>
-        </div>
-        <div className={"description"}>
-          {text_website.HOME_SECOND_DESCRIPTION.en[0]} <br />
-          {text_website.HOME_SECOND_DESCRIPTION.en[1]}
-        </div>
-        <div className={"little-description"}>
-        {text_website.HOME_SECOND_DESCRIPTION.en[2]}
-        </div>
+        <LanguageContext.Consumer>
+          {({language}) => (
+            <>
+              <div className={"title"}>
+                {text_website.HOME_SECOND_TITLE[language!][0]} <span className={"blue"}>{text_website.HOME_SECOND_TITLE[language!][1]}</span>
+              </div>
+              <div className={"description"}>
+                {text_website.HOME_SECOND_DESCRIPTION[language!][0]} <br />
+                {text_website.HOME_SECOND_DESCRIPTION[language!][1]}
+              </div>
+              <div className={"little-description"}>
+              {text_website.HOME_SECOND_DESCRIPTION[language!][2]}
+              </div>
+            </>
+          )}
+        </LanguageContext.Consumer>
       </div>
-
       <div className={"center"}>
         <WordCarrousel />
       </div>
@@ -107,13 +120,19 @@ const ThirdContainer = (): JSX.Element => {
   return (
     <div className={"section-container"}>
       <div className={"explanation"}>
-        <div className={"title"}>
-          {text_website.HOME_THIRD_TITLE.en[0]} <span className={"orange"}>{text_website.HOME_THIRD_TITLE.en[1]}</span>
-        </div>
-        <div className={"description"}>
-        {text_website.HOME_THIRD_DESCRIPTION.en[0]}<br/>
-        {text_website.HOME_THIRD_DESCRIPTION.en[1]}
-        </div>
+      <LanguageContext.Consumer>
+          {({language}) => (
+            <>
+              <div className={"title"}>
+                {text_website.HOME_THIRD_TITLE[language!][0]} <span className={"orange"}>{text_website.HOME_THIRD_TITLE[language!][1]}</span>
+              </div>
+              <div className={"description"}>
+              {text_website.HOME_THIRD_DESCRIPTION[language!][0]}<br/>
+              {text_website.HOME_THIRD_DESCRIPTION[language!][1]}
+              </div>
+            </>
+          )}
+        </LanguageContext.Consumer>
       </div>
       <Timeline/>
     </div>

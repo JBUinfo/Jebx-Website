@@ -1,102 +1,101 @@
-
-.scroll-box{
-    height: 60%;
-    width: 99vw;
-    margin-top: 100px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+.scroll-box {
+  height: 60%;
+  width: 99vw;
+  margin-top: 100px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-.timeline-box{
-    height: 50%;
-    width: 100%;
-    display: flex;
-}
-
-.left-box{
-    height: 100%;
-    width: 50%;
-    border-right: solid 5px #111 ;
+.timeline-box {
+  height: 50%;
+  width: 100%;
+  display: flex;
 }
 
-.left-title{
-    position: relative;
+.left-box {
+  height: 100%;
+  width: 50%;
+  border-right: solid 5px #111;
 }
 
-.left-desc{
-    display: flex;
+.left-title {
+  position: relative;
 }
 
-.left-box .timeline-title{
-    float: right;
-    top: 50%;
-    position: relative;
-    margin-right: 20px;
+.left-desc {
+  display: flex;
 }
 
-.timeline-description{
-    max-width: 80%;
-    display: block;
-    font-size: 0.5em;
-    margin: auto;
+.left-box .timeline-title {
+  float: right;
+  top: 50%;
+  position: relative;
+  margin-right: 20px;
 }
 
-.right-box{
-    height: 100%;
-    width: 50%;
-    border-left: solid 5px orange ;
-    align-items: center;
-    display: flex;
+.timeline-description {
+  max-width: 80%;
+  display: block;
+  font-size: 0.5em;
+  margin: auto;
 }
 
-.right-box .timeline-title{
-    margin-left: 20px;
+.right-box {
+  height: 100%;
+  width: 50%;
+  border-left: solid 5px orange;
+  align-items: center;
+  display: flex;
 }
-.right-box .timeline-description{
-    margin-left: 20px;
+
+.right-box .timeline-title {
+  margin-left: 20px;
+}
+.right-box .timeline-description {
+  margin-left: 20px;
 }
 
 .timeline-title {
-    background-color: orange;
-    font-size: 0.5em;
-    width: 50%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: center;
+  background-color: orange;
+  font-size: 0.5em;
+  width: 50%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
 }
 @media only screen and (max-width: 700px) {
-    .timeline-box{
-        height: 75%;
-    }
- }
+  .timeline-box {
+    height: 75%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
-    .timeline-title{
-        width: 85%;
-    }
+  .timeline-title {
+    width: 85%;
+  }
 
-    .scroll-box {
-        height: 55%;
-        margin-top: 50px;
-     }
+  .scroll-box {
+    height: 55%;
+    margin-top: 50px;
+  }
 
-    .timeline-description {
-        font-size: 0.45em;
-    }
- }
+  .timeline-description {
+    font-size: 0.45em;
+  }
+}
 
- @media only screen and (max-height: 400px) {
-    .timeline-box{
-        height: 75%;
-    }
+@media only screen and (max-height: 400px) {
+  .timeline-box {
+    height: 75%;
+  }
 
-    .scroll-box {
-        height: 40%;
-        margin-top: 50px;
-    }
-    .timeline-description {
-        font-size: 0.45em;
-    }
- }
+  .scroll-box {
+    height: 40%;
+    margin-top: 50px;
+  }
+  .timeline-description {
+    font-size: 0.45em;
+  }
+}
 /*
 .timeline-title::before {
     content: '';

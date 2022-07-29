@@ -1,46 +1,50 @@
 @font-face {
-    font-family: 'PIX-L';
-    src: url('../../assets/PIX-L___.otf'); /* IE9 Compat Modes */
+  font-family: "PIX-L";
+  src: url("../../assets/PIX-L___.otf"); /* IE9 Compat Modes */
 }
 
-.header{
-    width: 100%;
-    padding-left: 16px;
-    background-color: #111;
-    position: fixed;
-    height: 32px;
-    z-index: 3;
+.header {
+  width: 100%;
+  padding-left: 16px;
+  background-color: #111;
+  position: fixed;
+  height: 32px;
+  z-index: 3;
 }
-.header .left{
-    height: 32px;
-    float: left;
-    display: flex;
-}
-
-.header .left a{
-    font-family: 'PIX-L';
-    color: #f0ffff;
-    line-height: 24px;
-    font-size: 0.6em;
-    margin: 0px 4px;
+.header .left {
+  height: 32px;
+  float: left;
+  display: flex;
 }
 
-.header .right{
-    float: right;
-    width: 150px;
-    text-align: center;
+.header .left a {
+  font-family: "PIX-L";
+  color: #f0ffff;
+  line-height: 24px;
+  font-size: 0.6em;
+  margin: 0px 4px;
 }
 
-.header .right a{
-    margin-right: 10px;
+.header .right {
+  float: right;
+  width: 200px;
+  text-align: center;
+}
+
+.header .right a {
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
-    .header .right{
-        width: 90px;
-    }
+  .header .left a {
+    line-height: 32px;
+    font-size: 0.6em;
+  }
+  .header .right {
+    width: 120px;
+  }
 
-    .header .right a svg{
-        width: 0.8em;
-    }
- }
+  .header .right a svg {
+    width: 0.8em;
+  }
+}
