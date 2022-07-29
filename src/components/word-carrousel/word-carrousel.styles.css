@@ -68,7 +68,7 @@
 .line .word{
     text-align: center;
     min-width: 250px;
-    font-size: 30px;
+    font-size: 0.7em;
 }
 
 @keyframes zoom-in {
@@ -91,12 +91,18 @@
     animation: zoom-out 1s forwards ;
 }
 
-@media (max-width: 600px)  {
+@media only screen and (max-width: 600px)  {
     .section-container .center{
         margin-top: 24px;
     }
+    .searchbox{
+        width: 90%;
+    }
     .center .searchbox input{
-        font-size: 20px;
+        width: 100%;
+        font-size: 0.6em;
+        line-height: 2em;
+        padding: 0px 10px;
     }
     .center .carroussel{
         width: 100%;

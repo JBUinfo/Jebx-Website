@@ -41,8 +41,8 @@
             "en":"Social networks (High Scool)"
         },
         "movistar":{
-            "es":"Movistar (Accenture)",
-            "en":"Movistar (Accenture)"
+            "es":"Movistar - Accenture",
+            "en":"Movistar - Accenture"
         },
         "wordpress":{
             "es":"Webs con Wordpress",
@@ -93,8 +93,8 @@
             "en":"Trading bot"
         },
         "wildprint":{
-            "es":"Wildprint.es",
-            "en":"Wildprint.es"
+            "es":"Wildprint",
+            "en":"Wildprint"
         },
         "bookmarks":{
             "es":"Youtube bookmarks a MP4",
@@ -272,8 +272,8 @@
         "en":["Favorite songs", "- Any C.Tangana song"]
     },
     "ME_LONG_DESC":{
-        "es":"Lo primero de todo, queria agradecerte el hecho de haber mirado mi web y mostrar interes en conocerme. Si te ha impresionado la web, creeme que yo lo estoy más. Soy realmente malo eligiendo colores y creando diseños. Decirte tambien que soy una persona que le encanta aprender y siempre intento ser el mejor en todo lo que hago. Suelo mirar mucho Stackoverflow para ver 'performances' de codigos y técnologias porque, si algo se puede optimizar, lo haré.",
-        "en":"First of all, i want to thank you for having looked at my website and showing interest in meeting me. If you are impressed by the website, believe me i'm more. I'm really bad at choosing colors and creating designs. Also tell you that i'm a person who loves to learn and i always try to be the best in everything I do. I usually look at Stackoverflow a lot to see 'performances' of codes and technologies because if something can be optimized, i'll."
+        "es":"Lo primero de todo, queria agradecerte el hecho de haber mirado mi web y mostrar interes en conocerme. Si te ha impresionado la web, creeme que yo lo estoy más (No soy el mejor eligiendo colores y creando diseños :P). Decirte tambien que soy una persona que le encanta aprender y siempre intento ser el mejor en todo lo que hago. Suelo mirar mucho Stackoverflow para ver 'performances' de codigos y técnologias porque, si algo se puede optimizar, lo haré.",
+        "en":"First of all, i want to thank you for having looked at my website and showing interest in meeting me. If you are impressed by the website, believe me i'm more (I'm not the best choosing colors and creating designs :P). Also tell you that i'm a person who loves to learn and i always try to be the best in everything I do. I usually look at Stackoverflow a lot to see 'performances' of codes and technologies because if something can be optimized, i'll."
     },
     "SINGLE_WORDS":{
         "months":{

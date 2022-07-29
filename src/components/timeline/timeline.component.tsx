@@ -9,7 +9,7 @@ const Timeline = (): JSX.Element => {
   const projects: IProject[] = [
     {
       shortTitle: text_website.TECH_PROJECT_TITLES["pokemon"].en,
-      description: "",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi molestias commodi magnam cumque ad, nemo error eius pariatur maiores nostrum ipsa nulla. Placeat aperiam ullam iste dolore, dignissimos quos!",
     },
     {
       shortTitle: text_website.TECH_PROJECT_TITLES["socialNetwork"].en,

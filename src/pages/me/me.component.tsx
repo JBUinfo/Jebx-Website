@@ -19,7 +19,7 @@ const Container = (): JSX.Element => {
                 </span>
               </div>    
               <div className={"about-me"}>
-                <h2>{text_website.ME_ABOUT_ME.en[0]}</h2>
+                <span>{text_website.ME_ABOUT_ME.en[0]}</span>
                 <ul>
                   <li>
                     {text_website.ME_ABOUT_ME.en[1]}
@@ -33,7 +33,7 @@ const Container = (): JSX.Element => {
                 </ul>
               </div> 
               <div className={"my-music"}>
-                <h2>{text_website.ME_FAVORITE_SONGS.en[0]}</h2>
+                <span>{text_website.ME_FAVORITE_SONGS.en[0]}</span>
                 <ul>
                   <li>
                     - As it was - Harry Styles
