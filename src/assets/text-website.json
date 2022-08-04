@@ -1,6 +1,6 @@
 {
   "NAVBAR": {
-    "es": ["tecnología |", "trabajo |", "sobre mi"],
+    "es": ["tecn |", "trabajo |", "yo"],
     "en": ["tech |", "work |", "me"]
   },
   "HOME_FIRST_TITLE": {
@@ -12,19 +12,19 @@
     "en": "Self-taught programmer passionate about learning. I optimize and automate all the processes that are in my hand. I have a high capacity for analysis and problem solving."
   },
   "HOME_SECOND_TITLE": {
-    "es": ["Dedicado a", "TODO"],
-    "en": ["Dedicated to", "EVERYTHING"]
+    "es": ["Preparado para", "TODO"],
+    "en": ["Prepared to", "EVERYTHING"]
   },
   "HOME_SECOND_DESCRIPTION": {
     "es": [
       "Tengo más de 6 años de experiencia como programador y siempre he estado ",
       "aprendiendo nuevas tecnologías y lenguajes.",
-      "Aqui, puedes sumergirte y buscar en mi piscina de conocmientos"
+      "Estos son los lenguajes, frameworks y tecnologías que he aprendido. Busca el que quieras!"
     ],
     "en": [
       "I have more than 6 years of experience as a programmer and i have been always",
       "learning news technologies and languages.",
-      "Here, you can swim and search in my knowledge pool"
+      "These are the languages, frameworks and technologies i have learned. Find the one you want!"
     ]
   },
   "HOME_THIRD_TITLE": {
@@ -33,7 +33,7 @@
   },
   "HOME_THIRD_DESCRIPTION": {
     "es": [
-      "El origen de mi conocmiento proviene de los proyectos personales.",
+      "El origen de mi conocimiento proviene de los proyectos personales.",
       "Es por ello que les he dedicado mucho más tiempo a estos que a ganar dinero."
     ],
     "en": [
@@ -268,8 +268,8 @@
     }
   },
   "WORK_FIRST_TITLE": {
-    "es": "Es dificil convencerme de quedarme...",
-    "en": "It's hard to convince me to stay..."
+    "es": "Paso a paso...",
+    "en": "Step by step..."
   },
   "WORK_OFFICIAL_WORKS": {
     "wifiair": {
@@ -291,6 +291,24 @@
     "officialWorks": {
       "es": "TRABAJOS OFICIALES",
       "en": "OFFICIAL WORKS"
+    }
+  },
+  "WORK_DESCIPTION_WORKS": {
+    "wifiair": {
+      "es": "Instalacion de antenas wifi",
+      "en": "WiFi antennas installation"
+    },
+    "accenture": {
+      "es": "Blueprism",
+      "en": "Blueprism"
+    },
+    "mbvr": {
+      "es": "React, Redux, CSS, Styled Components, React Semantic UI",
+      "en": "React, Redux, CSS, Styled Components, React Semantic UI"
+    },
+    "nttdata": {
+      "es": "AngularJS",
+      "en": "AngularJS"
     }
   },
   "ME_SHORT_DESCRIPTION": {

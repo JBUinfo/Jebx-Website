@@ -114,6 +114,37 @@
   animation: zoom-out 1s forwards;
 }
 
+@media only screen and (max-width: 1367px) {
+  .section-container .center {
+    margin-top: 24px;
+  }
+  .center .searchbox input {
+    font-size: 0.8em;
+  }
+  .line .word {
+    min-width: 175px;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-175px * 16));
+    }
+  }
+  
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(calc(-175px * 16));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+
 @media only screen and (max-width: 600px) {
   .section-container .center {
     margin-top: 24px;

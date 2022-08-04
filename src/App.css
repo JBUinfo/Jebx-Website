@@ -35,14 +35,17 @@ ul {
   list-style-type: none;
 }
 
-@media only screen and (max-width: 1281px) {
+@media only screen and (max-width: 1367px) {
   * {
-    font-size: 29px;
+    font-size: 28px;
+    letter-spacing: 2px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   * {
     font-size: 24px;
+    letter-spacing: 3px;
   }
+  
 }

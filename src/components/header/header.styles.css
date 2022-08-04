@@ -23,6 +23,9 @@
   line-height: 24px;
   font-size: 0.6em;
   margin: 0px 4px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
 }
 
 .header .right {
@@ -34,11 +37,15 @@
 .header .right a {
   margin-right: 10px;
 }
+.header .right img {
+  margin-bottom: 3px;
+}
+
 
 @media only screen and (max-width: 600px) {
   .header .left a {
     line-height: 32px;
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   .header .right {
     width: 120px;

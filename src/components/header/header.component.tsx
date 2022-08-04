@@ -1,17 +1,22 @@
 import './header.styles.css';
 import {LanguageContext} from '../../language-context';
+import idiom_flag from './imgs/idiom_flag.png';
 
 import text_website from "../../assets/text-website.json";
 import { Link } from "react-router-dom";
 const Header = (): JSX.Element => {
   return (
     <div className={ 'header' }>
-      <div className={"left"}>
-        <Link to="/">Jebx |</Link>
-        <Link to="/tech">{text_website.NAVBAR.en[0]}</Link>
-        <Link to="/work">{text_website.NAVBAR.en[1]}</Link>
-        <Link to="/me">{text_website.NAVBAR.en[2]}</Link>
-      </div>
+      <LanguageContext.Consumer>
+        {({ language }) => (
+          <div className={"left"}>
+            <Link to="/">Jebx |</Link>
+            <Link to="/tech">{text_website.NAVBAR[language!][0]}</Link>
+            <Link to="/work">{text_website.NAVBAR[language!][1]}</Link>
+            <Link to="/me">{text_website.NAVBAR[language!][2]}</Link>
+          </div>
+        )}
+      </LanguageContext.Consumer>
       <div className={"right"}>
         <a href="https://github.com/JBUinfo">
           <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
@@ -24,13 +29,8 @@ const Header = (): JSX.Element => {
         </a>
         <LanguageContext.Consumer>
           {
-          ({language, toggleLanguage}) => (
-            "es" === language ? 
-            (
-              <svg onClick={toggleLanguage} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 72 72"><path fill="#f1b31c" d="M5 17h62v38H5z"></path><path fill="#d22f27" d="M23 33v7a2.006 2.006 0 0 1-2 2h-4a2.006 2.006 0 0 1-2-2v-7M5 17h62v9H5zm0 29h62v9H5z"></path><path fill="#f1b31c" d="M19 33h4v4h-4z"></path><circle cx="19" cy="37" r="1.5" fill="#6a462f"></circle><path fill="none" stroke="#6a462f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M27 33v9m-16-9v9m4-12a8.568 8.568 0 0 1 4-1m4 1a8.568 8.568 0 0 0-4-1m-4 4h8m0 0v7a2.006 2.006 0 0 1-2 2h-4a2.006 2.006 0 0 1-2-2v-7m-5 9h2m14 0h2"></path><path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 17h62v38H5z"></path></svg>
-            ):(
-              <svg onClick={toggleLanguage} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 32 24"><mask id="IconifyId1824ae1bb8fd117ee180" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse"><path fill="#fff" d="M0 0h32v24H0z"></path></mask><g fill="none" mask="url(#IconifyId1824ae1bb8fd117ee180)"><path fill="#F7FCFF" fillRule="evenodd" d="M0 0h32v24H0V0z" clipRule="evenodd"></path><path fill="#E31D1C" fillRule="evenodd" d="M0 14.667v2h32v-2H0zm0 3.666v2h32v-2H0zm0-11v2h32v-2H0zM0 22v2h32v-2H0zm0-11v2h32v-2H0zM0 0v2h32V0H0zm0 3.667v2h32v-2H0z" clipRule="evenodd"></path><path fill="#2E42A5" d="M0 0h20v13H0z"></path><path fill="#F7FCFF" fillRule="evenodd" d="m1.722 2.939l-.726.509l.245-.906l-.645-.574h.843l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm4 0l-.726.509l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm3.274.509l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zM.996 7.449l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74H.596l.645.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm3.274.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zM.996 11.449l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74H.596l.645.574l-.245.905zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.905l-.702-.508zm3.274.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.905zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.905l-.702-.508zm3.274-7.49l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.843l.645.574l-.245.906zm.726 3.49l-.726.51l.245-.906l-.645-.574h.843l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm-.726 4.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.843l.645.574l-.245.905zM3.722 4.938l-.726.51l.245-.906l-.645-.574h.843l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm3.274.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.843l.645.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm-8.726 4.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.843l.645.574l-.245.906zm4.726-.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm3.274.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.906zm4.726-4.51l-.726.51l.245-.906l-.644-.574h.842l.282-.74l.331.74h.718l-.564.574l.218.906l-.702-.51zm-.726 4.51l.726-.51l.702.51l-.218-.906l.564-.574h-.718l-.331-.74l-.282.74h-.842l.644.574l-.245.906z" clipRule="evenodd"></path></g></svg>
-            )
+          ({toggleLanguage}) => (
+              <img src={idiom_flag} onClick={toggleLanguage} />
           )}
         </LanguageContext.Consumer>
         </div>

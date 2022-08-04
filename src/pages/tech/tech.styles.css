@@ -104,6 +104,12 @@
   color: #ff9200;
 }
 
+@media only screen and (max-width: 1367px){
+  .tech-container .section-container .center {
+    margin-top: 60px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .img-logo-container {
     width: 90%;

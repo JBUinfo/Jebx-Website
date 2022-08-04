@@ -68,6 +68,21 @@
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 1367px){
+  .me-container .section-container {
+    padding-bottom: 150px;
+  }
+
+  .me-container .section-container > .center {
+    margin-top: 60px;
+  }
+
+  .me-container * ul{
+    padding: 0px;
+    font-size: 0.85em;
+  }
+}
+
 @media only screen and (max-width: 1281px) {
   .myself-container {
     width: 80%;

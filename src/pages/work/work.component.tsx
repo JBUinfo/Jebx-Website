@@ -6,29 +6,29 @@ const Container = (): JSX.Element => {
   interface IProject {
     year: number;
     title: { es: string; en: string };
-    languages: string;
+    desciptions: { es: string; en: string };
   }
 
   const front: IProject[] = [
     {
       year: 2017,
       title: text_website.WORK_OFFICIAL_WORKS["wifiair"],
-      languages: "WiFi antennas installation",
+      desciptions: text_website.WORK_DESCIPTION_WORKS['wifiair'],
     },
     {
       year: 2019,
       title: text_website.WORK_OFFICIAL_WORKS["accenture"],
-      languages: "Blueprism",
+      desciptions: text_website.WORK_DESCIPTION_WORKS['accenture'],
     },
     {
       year: 2020,
       title: text_website.WORK_OFFICIAL_WORKS["mbvr"],
-      languages: "React, Redux, CSS, Styled Components, React Semantic UI",
+      desciptions: text_website.WORK_DESCIPTION_WORKS['mbvr'],
     },
     {
       year: 2022,
       title: text_website.WORK_OFFICIAL_WORKS["nttdata"],
-      languages: "AngularJS",
+      desciptions: text_website.WORK_DESCIPTION_WORKS['nttdata'],
     },
   ];
 
@@ -63,7 +63,7 @@ const Container = (): JSX.Element => {
                     </li>
                     <ul>
                       <li>
-                        <span>{f.languages}</span>
+                        <span>{f.desciptions[language!]}</span>
                       </li>
                     </ul>
                   </ul>
