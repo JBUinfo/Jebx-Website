@@ -21,6 +21,51 @@ const FirstContainer = (): JSX.Element => {
     return () => clearInterval(timer);
   });
 
+  const introES = (<TypeIt
+    getBeforeInit={(instance) => {
+      instance
+        .options({ speed: 50, lifeLike: false })
+        .type(text_website.HOME_FIRST_TITLE["es"][0])
+        .pause(750)
+        .delete(4)
+        .type(",")
+        .pause(300)
+        .break()
+        .type(text_website.HOME_FIRST_TITLE["es"][1])
+        .pause(300)
+        .break()
+        .type(
+          "<span class='green'>" +
+            text_website.HOME_FIRST_TITLE["es"][2] +
+            "</span>"
+        )
+        .flush();
+      return instance;
+    }}
+  />)
+
+  const introEN = (<TypeIt
+    getBeforeInit={(instance) => {
+      instance
+        .options({ speed: 50, lifeLike: false })
+        .type(text_website.HOME_FIRST_TITLE["en"][0])
+        .pause(750)
+        .delete(4)
+        .type(",")
+        .pause(300)
+        .break()
+        .type(text_website.HOME_FIRST_TITLE["en"][1])
+        .pause(300)
+        .break()
+        .type(
+          "<span class='green'>" +
+            text_website.HOME_FIRST_TITLE["en"][2] +
+            "</span>"
+        )
+        .flush();
+      return instance;
+    }}
+  />)
   return (
     <div className={"section-container"}>
       <div className={"img-filter"}></div>
@@ -52,28 +97,7 @@ const FirstContainer = (): JSX.Element => {
             <LanguageContext.Consumer>
               {({language}) => (
                 <>
-                  <TypeIt
-                    getBeforeInit={(instance) => {
-                      instance
-                        .options({ speed: 50, lifeLike: false })
-                        .type(text_website.HOME_FIRST_TITLE[language!][0])
-                        .pause(750)
-                        .delete(4)
-                        .type(",")
-                        .pause(300)
-                        .break()
-                        .type(text_website.HOME_FIRST_TITLE[language!][1])
-                        .pause(300)
-                        .break()
-                        .type(
-                          "<span class='green'>" +
-                            text_website.HOME_FIRST_TITLE[language!][2] +
-                            "</span>"
-                        )
-                        .flush();
-                      return instance;
-                    }}
-                  />
+                  {"es" === language ? ( <>{introES}</> ) : (introEN)}
                   <br />
                   <br />
                   <div className={"intro-description description"}>{text_website.HOME_FIRST_DESCRIPTION[language!]}</div>
