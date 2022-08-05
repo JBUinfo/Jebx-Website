@@ -10,10 +10,10 @@ const Header = (): JSX.Element => {
       <LanguageContext.Consumer>
         {({ language }) => (
           <div className={"left"}>
-            <Link to="/">Jebx |</Link>
-            <Link to="/tech">{text_website.NAVBAR[language!][0]}</Link>
-            <Link to="/work">{text_website.NAVBAR[language!][1]}</Link>
-            <Link to="/me">{text_website.NAVBAR[language!][2]}</Link>
+            <Link to="/"><span>Jebx</span></Link>
+            <Link to="/tech"><span>{text_website.NAVBAR[language!][0]}</span></Link>
+            <Link to="/work"><span>{text_website.NAVBAR[language!][1]}</span></Link>
+            <Link to="/me"><span>{text_website.NAVBAR[language!][2]}</span></Link>
           </div>
         )}
       </LanguageContext.Consumer>

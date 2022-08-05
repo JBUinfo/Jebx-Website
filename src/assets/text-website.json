@@ -1,7 +1,7 @@
 {
   "NAVBAR": {
-    "es": ["tecn |", "trabajo |", "yo"],
-    "en": ["tech |", "work |", "me"]
+    "es": ["tecn", "trabajo", "yo"],
+    "en": ["tech", "work", "me"]
   },
   "HOME_FIRST_TITLE": {
     "es": ["Soy bueno :P,", "pero quiero:", "ser mejor"],
@@ -312,8 +312,8 @@
     }
   },
   "ME_SHORT_DESCRIPTION": {
-    "es": "Optimizar a 0 segundos",
-    "en": "Optimize it up to 0 seconds"
+    "es": "Si se puede optimizar, yo lo haré",
+    "en": "If it can be optimized, i will do it"
   },
   "ME_ABOUT_ME": {
     "es": [
