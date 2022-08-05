@@ -30,7 +30,7 @@ const Header = (): JSX.Element => {
         <LanguageContext.Consumer>
           {
           ({toggleLanguage}) => (
-              <img src={idiom_flag} onClick={toggleLanguage} />
+              <img alt={ "Spanish and english flag. Click to change idiom." }src={idiom_flag} onClick={toggleLanguage} />
           )}
         </LanguageContext.Consumer>
         </div>
