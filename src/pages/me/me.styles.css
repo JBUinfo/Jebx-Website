@@ -28,6 +28,8 @@
   width: 512px;
   height: 400px;
   overflow: hidden;
+  background-position: 50%;
+  background-size: cover;
 }
 
 .my-desc {

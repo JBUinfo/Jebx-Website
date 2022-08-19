@@ -1,6 +1,6 @@
 import "./me.styles.css";
 import text_website from "../../assets/text-website.json";
-import profPic from "./imgs/wall1.jpg";
+import profPic from "./imgs/cipher citizen 869.png";
 import { LanguageContext } from "../../language-context";
 
 const Container = (): JSX.Element => {
@@ -11,8 +11,7 @@ const Container = (): JSX.Element => {
           {({ language }) => (
             <>
               <div className="myself-container">
-                <div className={"profPic-container"}>
-                  <img src={profPic} alt={"me"} />
+                <div className={"profPic-container"} style={{backgroundImage:`url("${profPic}")`}}>
                 </div>
                 <div className={"my-desc"}>
                   <div className={"center"}>
