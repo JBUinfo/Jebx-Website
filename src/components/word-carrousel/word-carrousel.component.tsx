@@ -9,6 +9,7 @@ const WordCarrousel = (): JSX.Element => {
     "C#": "word",
     NodeJS: "word",
     Python: "word",
+    "Web3.js": "word",
     HTML: "word",
     Solidity: "word",
     "C++": "word",
@@ -43,7 +44,8 @@ const WordCarrousel = (): JSX.Element => {
     MongoDB: "word",
     Redux: "word",
     "Express.js": "word",
-  }; //firebase
+    firebase: "word",
+  };
   const default2Keys: string[] = Object.keys(defaultWords2);
   const default2Length: number = default2Keys.length;
 

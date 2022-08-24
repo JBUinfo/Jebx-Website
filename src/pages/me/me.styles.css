@@ -41,6 +41,7 @@
 }
 
 .short-desc {
+  padding: 0px 18px;
   margin-top: 20px;
   border-radius: 5px;
   box-shadow: #f8a8ff 0px 0px 20px;

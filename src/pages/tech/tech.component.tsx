@@ -33,6 +33,7 @@ import tradingView from "./imgs/trading view.png";
 import typescript from "./imgs/typescript.png";
 import wpf from "./imgs/wpf.png";
 import redux from "./imgs/redux.png";
+import web3js from "./imgs/web3js.png";
 
 const Container = (): JSX.Element => {
   interface IImage {
@@ -46,6 +47,7 @@ const Container = (): JSX.Element => {
     { name: "Trading View", src: tradingView },
     { name: "Styled Components", src: styledComponents },
     { name: "Solidity", src: solidity },
+    { name: "Web3.js", src: web3js },
     { name: "Socket.IO", src: socketio },
     { name: "Semantic UI", src: semanticUI },
     { name: "React", src: react },
@@ -144,6 +146,11 @@ const Container = (): JSX.Element => {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["thisWebsite"],
       languages: "React, TS, HTML, CSS",
+    },
+    {
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["smartContracts"],
+      languages: "Web3.js",
     },
     {
       year: 2023,
