@@ -1,53 +1,15 @@
 import { useState } from "react";
 import "./word-carrousel.styles.css";
-
+import { languages1, languages2, IWords } from "./types"
 const WordCarrousel = (): JSX.Element => {
-  interface IWords {
-    [key: string]: string;
-  } // (word) : (css class)
-  const defaultWords1: IWords = {
-    "C#": "word",
-    NodeJS: "word",
-    Python: "word",
-    "Web3.js": "word",
-    HTML: "word",
-    Solidity: "word",
-    "C++": "word",
-    Bootstrap: "word",
-    CSS: "word",
-    Git: "word",
-    "Blue Prism": "word",
-    JWT: "word",
-    React: "word",
-    "Trading view": "word",
-    MySQL: "word",
-    Axios: "word",
-    WPF: "word",
-  };
-  const default1Keys: string[] = Object.keys(defaultWords1);
-  const default1Length: number = default1Keys.length;
 
-  const defaultWords2: IWords = {
-    "Mustache JS": "word",
-    Bash: "word",
-    "Socket.io": "word",
-    PHP: "word",
-    Angular: "word",
-    NMap: "word",
-    "Styled Components": "word",
-    ASM: "word",
-    Docker: "word",
-    jQuery: "word",
-    Elastic: "word",
-    "Semantic UI": "word",
-    Figma: "word",
-    MongoDB: "word",
-    Redux: "word",
-    "Express.js": "word",
-    firebase: "word",
-  };
-  const default2Keys: string[] = Object.keys(defaultWords2);
-  const default2Length: number = default2Keys.length;
+  const defaultWords1: IWords = { };
+  languages1.map((l)=>defaultWords1[l] = "word")
+  const default1Length: number = languages1.length;
+
+  const defaultWords2: IWords = {};
+  languages2.map((l)=>defaultWords2[l] = "word")
+  const default2Length: number = languages2.length;
 
   const [query, setQuery] = useState<string>("");
   const [words1, setWords1] = useState<IWords>(defaultWords1);
@@ -60,14 +22,14 @@ const WordCarrousel = (): JSX.Element => {
     let find: boolean = false;
     values = values.filter((value) => value.trim() !== "");
     if (values.length) {
-      default1Keys.map((word) => {
+      languages1.map((word) => {
         Tword1[word] = "word not-found";
         values.some((value) => word.toUpperCase().includes(value.trim())) &&
           (Tword1[word] = "word found blue") &&
           (find = true);
         return null;
       });
-      default2Keys.map((word) => {
+      languages2.map((word) => {
         Tword2[word] = "word not-found";
         values.some((value) => word.toUpperCase().includes(value.trim())) &&
           (Tword2[word] = "word found blue") &&
@@ -85,19 +47,19 @@ const WordCarrousel = (): JSX.Element => {
   };
 
   /* With this, any word is going to be duplicated in screen*/
-  const line1 = [...default1Keys, ...default1Keys]; //duplicate the array
-  const line2 = [...default2Keys, ...default2Keys]; //duplicate the array
+  const line1 = [...languages1, ...languages1]; //duplicate the array
+  const line2 = [...languages2, ...languages2]; //duplicate the array
   const line3 = [
-    ...default1Keys.slice(default1Length / 2),
-    ...default1Keys.slice(0, default1Length / 2),
-    ...default1Keys.slice(default1Length / 2),
-    ...default1Keys.slice(0, default1Length / 2),
+    ...languages1.slice(default1Length / 2),
+    ...languages1.slice(0, default1Length / 2),
+    ...languages1.slice(default1Length / 2),
+    ...languages1.slice(0, default1Length / 2),
   ]; //half reverse and duplicate
   const line4 = [
-    ...default2Keys.slice(default2Length / 2),
-    ...default2Keys.slice(0, default2Length / 2),
-    ...default2Keys.slice(default2Length / 2),
-    ...default2Keys.slice(0, default2Length / 2),
+    ...languages2.slice(default2Length / 2),
+    ...languages2.slice(0, default2Length / 2),
+    ...languages2.slice(default2Length / 2),
+    ...languages2.slice(0, default2Length / 2),
   ]; //half reverse and duplicate
 
   return (
