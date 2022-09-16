@@ -57,13 +57,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 18));
+    transform: translateX(calc(-250px * 19));
   }
 }
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(calc(-250px * 18));
+    transform: translateX(calc(-250px * 19));
   }
   100% {
     transform: translateX(0);
@@ -130,13 +130,13 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-175px * 18));
+      transform: translateX(calc(-175px * 19));
     }
   }
   
   @keyframes scroll-right {
     0% {
-      transform: translateX(calc(-175px * 18));
+      transform: translateX(calc(-175px * 19));
     }
     100% {
       transform: translateX(0);

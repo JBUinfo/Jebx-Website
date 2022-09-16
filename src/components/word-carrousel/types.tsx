@@ -20,9 +20,10 @@ export const languages1 = [
     "MySQL",
     "Axios",
     "WPF",
-    "Go"
+    "Go",
+    "Tailwind"
 ]
-//Tailwind
+
 export const languages2 = [
     "MustacheJS",
     "Bash",
@@ -41,5 +42,6 @@ export const languages2 = [
     "Redux",
     "Express.js",
     "firebase",
-    "ElectronJS"
+    "ElectronJS",
+    "Ganache"
 ]

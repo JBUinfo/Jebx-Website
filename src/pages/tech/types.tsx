@@ -33,6 +33,7 @@ import web3js from "./imgs/web3js.png";
 import electronjs from "./imgs/electronjs.png";
 import go from "./imgs/go.png";
 import tailwindcss from "./imgs/tailwindcss.png";
+import ganache from "./imgs/ganache.png";
 
 
 export interface IImage {
@@ -82,4 +83,5 @@ export const images: IImage[] = [
     { name: "Go", src: go },
     { name: "ElectronJS", src: electronjs },
     { name: "TailwindCSS", src: tailwindcss },
+    { name: "Ganache", src: ganache },
   ];
