@@ -71,6 +71,12 @@
   margin-top: 40px;
 }
 
+.CV-container{
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
 @media only screen and (max-width: 1367px){
   .me-container .section-container {
     padding-bottom: 150px;

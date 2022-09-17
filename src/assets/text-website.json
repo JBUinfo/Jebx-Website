@@ -153,7 +153,12 @@
     "smartContracts": {
       "es": "Contratos inteligentes",
       "en": "Smart contracts"
+    },
+    "lorive": {
+      "es": "Lorive",
+      "en": "Lorive"
     }
+    
   },
   "TECH_PROJECT_DESCRIPTIONS": {
     "pokemon": {
@@ -258,6 +263,10 @@
       "es": "Un juego de NFTs necesitaba un programador de Smart Contracts. Coincidía con que yo me estaba leyendo la documentación de solidity y de Ethereum. Así pues, me dispuse a crear 5 smart contracts.",
       "en": "An NFTs video game needed a Smart Contracts programmer. It coincided with the fact that I was reading the solidity and Ethereum documentation. So, I set out to create 5 smart contracts."
     },
+    "lorive": {
+      "es": "Ya que 'solo' me quedaba aprender un lenguaje más (Golang) para conocerlos 'todos', decidí crear una replica de Google Drive pero de manera local. Hice uso de una raspberry pi y un HDD de 8TB.",
+      "en": "As I 'only' had to learn one more lenguage (Golang) to know 'all of them', i decided to create a Google Drive replic but in local. I used a rapsberry pi and a 8TB HDD."
+    },
     "kreborWebsite": {
       "es": "Krebor Technology S.L. necesita expandirse y no hay mejor forma que a través de internet. A la espera de recibir más información, espero lanzar su web en 2023.",
       "en": "Krebor Technology S.L. needs to expand and there is no better way than through the internet. Waiting to receive more information, I hope to launch the website in 2023."
@@ -336,6 +345,10 @@
   "ME_LONG_DESC": {
     "es": "Lo primero de todo, queria agradecerte el hecho de haber mirado mi web y mostrar interes en conocerme. Si te ha impresionado la web, creeme que yo lo estoy más (No soy el mejor eligiendo colores y creando diseños :P). Decirte tambien que soy una persona que le encanta aprender y siempre intento ser el mejor en todo lo que hago. Suelo mirar mucho Stackoverflow para ver 'performances' de codigos y técnologias porque, si algo se puede optimizar, lo haré.",
     "en": "First of all, i want to thank you for having looked at my website and showing interest in meeting me. If you are impressed by the website, believe me i'm more (I'm not the best choosing colors and creating designs :P). Also tell you that i'm a person who loves to learn and i always try to be the best in everything I do. I usually look at Stackoverflow a lot to see 'performances' of codes and technologies because if something can be optimized, i'll."
+  },
+  "DOWNLOAD_CV":{
+    "es": "Descargar CV",
+    "en": "Download CV"
   },
   "SINGLE_WORDS": {
     "months": {

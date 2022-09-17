@@ -1,6 +1,8 @@
 import "./me.styles.css";
 import text_website from "../../assets/text-website.json";
 import profPic from "./imgs/cipher citizen 869.png";
+import CV_ESP from "./assets/CV_Javier_Borbolla.pdf";
+import CV_ENG from "./assets/CV_Javier_Borbolla_English.pdf";
 import { LanguageContext } from "../../language-context";
 
 const Container = (): JSX.Element => {
@@ -45,6 +47,15 @@ const Container = (): JSX.Element => {
               <div className="myself-container">
                 <div className={"long-desc"}>
                   <span>{text_website.ME_LONG_DESC[language!]}</span>
+                </div>
+              </div>
+              <div className={"CV-container"}>
+                <div className={"left-title"}>
+                  <a href={"es" === language! ? CV_ESP : CV_ENG} download="CV Javier Borbolla">
+                    <span className={"timeline-title"}>
+                      {text_website.DOWNLOAD_CV[language!]}
+                    </span>
+                  </a>
                 </div>
               </div>
             </>

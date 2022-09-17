@@ -109,6 +109,10 @@ const Timeline = (): JSX.Element => {
       description: text_website.TECH_PROJECT_DESCRIPTIONS["smartContracts"],
     },
     {
+      shortTitle: text_website.TECH_PROJECT_TITLES["lorive"],
+      description: text_website.TECH_PROJECT_DESCRIPTIONS["lorive"],
+    },
+    {
       shortTitle: text_website.TECH_PROJECT_TITLES["kreborWebsite"],
       description: text_website.TECH_PROJECT_DESCRIPTIONS["kreborWebsite"],
     },

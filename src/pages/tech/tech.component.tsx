@@ -71,12 +71,17 @@ const Container = (): JSX.Element => {
     {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["thisWebsite"],
-      languages: "React, TS, HTML, CSS",
+      languages: "React, TypeScript, HTML, CSS",
     },
     {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["smartContracts"],
       languages: "Web3.js",
+    },
+    {
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["lorive"],
+      languages: "React, TypeScript, Taildwind CSS, ElectronJS",
     },
     {
       year: 2023,
@@ -131,12 +136,21 @@ const Container = (): JSX.Element => {
       languages: "NodeJS, Socket.io",
     },
     {
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["smartContracts"],
+      languages: "Ganache, Solidity",
+    },
+    {
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["lorive"],
+      languages: "Golang",
+    },
+    {
       year: 2023,
       title: text_website.TECH_PROJECT_TITLES["tradingDashboard"],
       languages: "NodeJS, MongoDB",
     },
   ];
-
   const others: IProject[] = [
     {
       year: 2020,
@@ -187,12 +201,7 @@ const Container = (): JSX.Element => {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["bookmarks"],
       languages: "NodeJS",
-    },
-    {
-      year: 2022,
-      title: text_website.TECH_PROJECT_TITLES["smartContracts"],
-      languages: "Solidity",
-    },
+    }
   ];
   return (
     <div className={"section-container"}>

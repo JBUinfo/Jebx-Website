@@ -7,6 +7,7 @@ import img1 from "./imgs/1.jpg";
 import img2 from "./imgs/2.jpg";
 import img3 from "./imgs/3.jpg";
 import img4 from "./imgs/4.jpg";
+import img5 from "./imgs/5.jpg";
 import text_website from "../../assets/text-website.json";
 import WordCarrousel from "../../components/word-carrousel/word-carrousel.component";
 import Timeline from "../../components/timeline/timeline.component";
@@ -15,7 +16,7 @@ const FirstContainer = (): JSX.Element => {
   const [previousImage, setPreviousImage] = useState<number>(0);
   const [actualImage, setActualImage] = useState<number>(0);
   const leet = new Array(20).fill(null);
-  const images = [img1,img2,img3,img4]
+  const images = [img1,img2,img3,img4,img5]
   useEffect(() => {
     const timer = setInterval(()=>{
       setPreviousImage(actualImage);
