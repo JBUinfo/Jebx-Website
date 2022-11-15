@@ -320,6 +320,32 @@
       "en": "AngularJS"
     }
   },
+  "STUDIES":{
+    "officialStudies": {
+      "es": "ESTUDIOS OFICIALES",
+      "en": "OFFICIAL STUDIES"
+    },
+    "smr":{
+      "es":"Grado medio en sistemas microinformaticos y redes (SMR)",
+      "en":"College degree in microsystems and networks"
+    },
+    "daw":{
+      "es":"Grado superior en desarrollo de aplicaciones web (DAW)",
+      "en":"College degree in web applications develop"
+    },
+    "master":{
+      "es":"Master en ciberseguridad - VIU",
+      "en":"Master degree in Cybersecurity - VIU"
+    },
+    "malware":{
+      "es":"Analisis de malware - UMA (Virustotal)",
+      "en":"Malware analysis - UMA (Virustotal)"
+    },
+    "cuda":{
+      "es":"Curso de extensión universitaria de Deep learning y CUDA - UMA (NVIDIA)",
+      "en":"University extension course of Deep learning and CUDA - UMA (NVIDIA)"
+    }
+  },
   "ME_SHORT_DESCRIPTION": {
     "es": "Si se puede optimizar, yo lo haré",
     "en": "If it can be optimized, i will do it"

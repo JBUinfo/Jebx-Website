@@ -2,14 +2,14 @@ import "./work.styles.css";
 import text_website from "../../assets/text-website.json";
 import { LanguageContext } from "../../language-context";
 
-const Container = (): JSX.Element => {
+const FirstContainer = (): JSX.Element => {
   interface IProject {
     year: number;
     title: { es: string; en: string };
     desciptions: { es: string; en: string };
   }
 
-  const front: IProject[] = [
+  const jobs: IProject[] = [
     {
       year: 2017,
       title: text_website.WORK_OFFICIAL_WORKS["wifiair"],
@@ -32,6 +32,33 @@ const Container = (): JSX.Element => {
     },
   ];
 
+  interface IStudies {
+    year: number;
+    title: { es: string; en: string };
+  }
+  const studies: IStudies[] = [
+    {
+      year: 2015,
+      title: text_website.STUDIES["smr"],
+    },
+    {
+      year: 2017,
+      title: text_website.STUDIES["daw"],
+    },
+    {
+      year: 2020,
+      title: text_website.STUDIES["master"],
+    },
+    {
+      year: 2021,
+      title: text_website.STUDIES["malware"],
+    },
+    {
+      year: 2021,
+      title: text_website.STUDIES["cuda"],
+    },
+  ];
+  
   return (
     <div className={"section-container"}>
       <div className={"explanation"}>
@@ -53,7 +80,7 @@ const Container = (): JSX.Element => {
           <LanguageContext.Consumer>
             {({ language }) => (
               <>
-                {front.map((f, i) => (
+                {jobs.map((f, i) => (
                   <ul key={i}>
                     <li>
                       <span className={"y" + f.year}>
@@ -73,12 +100,41 @@ const Container = (): JSX.Element => {
           </LanguageContext.Consumer>
         </div>
       </div>
+      <div className={"center"}>
+    <LanguageContext.Consumer>
+      {({ language }) => (
+        <>{text_website.STUDIES["officialStudies"][language!]}</>
+      )}
+    </LanguageContext.Consumer>
+  </div>
+  <div className={"center"}>
+    <div className="tech-list-front-end">
+      <LanguageContext.Consumer>
+        {({ language }) => (
+          <>
+            {studies.map((f, i) => (
+              <ul key={i}>
+                <li>
+                  <span className={"y" + f.year}>
+                    {"{" + f.year + "}"} -{" "}
+                  </span>
+                  <span className={"y" + f.year}>{f.title[language!]}</span>
+                </li>
+              </ul>
+            ))}
+          </>
+        )}
+      </LanguageContext.Consumer>
+    </div>
+  </div>
     </div>
   );
 };
 
-const WorkPage = (): JSX.Element => {
-  return <div className={"work-container"}>{Container()}</div>;
-};
+const WorkPage = (): JSX.Element => (
+  <div className={"work-container"}>
+    {FirstContainer()}
+  </div>
+)
 
 export default WorkPage;
