@@ -46,9 +46,9 @@
     "en": "I have had experience in this technologies."
   },
   "TECH_PROJECT_TITLES": {
-    "pokemon": {
-      "es": "Minijuego de Pokemon (Instituto)",
-      "en": "Pokemon minigame (High Scool)"
+    "digimon": {
+      "es": "Minijuego de Digimon (Instituto)",
+      "en": "Digimon minigame (High Scool)"
     },
     "socialNetwork": {
       "es": "Red social (Instituto)",
@@ -157,13 +157,17 @@
     "lorive": {
       "es": "Lorive",
       "en": "Lorive"
+    },
+    "pokemon2.0": {
+      "es": "Minijuego de pokemon (Twitch)",
+      "en": "Pokemon minigame (Twitch)"
     }
     
   },
   "TECH_PROJECT_DESCRIPTIONS": {
-    "pokemon": {
-      "es": "Fue un minijuego que simulaba batallas pokemon. Si ganabas X partidas, conseguias un pokemon aleatorio. Tuvimos que recrear todo el sistema de elementos (agua, fuego, veneno...) y hacer batallas de 3 vs 3.",
-      "en": "It was a minigame that simulated pokemon battles. If you won X games, you got a random pokemon. We had to recreate the whole system of elements (water, fire, poison...) and do 3 vs 3 battles."
+    "digimon": {
+      "es": "Fue un minijuego que simulaba batallas de digimons. Si ganabas X partidas, conseguias un digimon aleatorio. Tuvimos que recrear todo el sistema de elementos (agua, fuego, veneno...) y hacer batallas de 3 vs 3.",
+      "en": "It was a minigame that simulated digimons battles. If you won X games, you got a random digimon. We had to recreate the whole system of elements (water, fire, poison...) and do 3 vs 3 battles."
     },
     "socialNetwork": {
       "es": "Proyecto individual de final de grado. Recreé Twitter con la adición de un chat global. Aquí es donde aprendí que MongoDB no es el mejor haciendo 'SELECT' pero si 'INSERT' ",
@@ -266,6 +270,10 @@
     "lorive": {
       "es": "Ya que 'solo' me quedaba aprender un lenguaje más (Golang) para conocerlos 'todos', decidí crear una replica de Google Drive pero de manera local. Hice uso de una raspberry pi y un HDD de 8TB.",
       "en": "As I 'only' had to learn one more lenguage (Golang) to know 'all of them', i decided to create a Google Drive replic but in local. I used a rapsberry pi and a 8TB HDD."
+    },
+    "pokemon2.0": {
+      "es": "Creé una version mejora del minijuego de digimon del instituto. Por primera vez, he programado con NestJS y aplicado testing en la app completa. Además, he stremeando en Twitch todo el proceso",
+      "en": "I coded an improved version of the high school digimon minigame. For the first time, I coded with NestJS and applied testing on the whole app. Also, I streamed on Twitch the whole process."
     },
     "kreborWebsite": {
       "es": "Krebor Technology S.L. necesita expandirse y no hay mejor forma que a través de internet. A la espera de recibir más información, espero lanzar su web en 2023.",

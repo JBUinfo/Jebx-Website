@@ -3,6 +3,11 @@
   src: url("./assets/nk57-monospace-no-eb.ttf"); /* IE9 Compat Modes */
 }
 
+@font-face {
+  font-family: "nk57-i";
+  src: url("./assets/nk57-monospace-no-eb-it.ttf"); /* IE9 Compat Modes */
+}
+
 * {
   font-family: "nk57";
   font-size: 32px;
@@ -33,6 +38,10 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.italic *{
+  font-family: "nk57-i";
 }
 
 @media only screen and (max-width: 1367px) {

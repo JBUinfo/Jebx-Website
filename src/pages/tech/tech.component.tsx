@@ -10,7 +10,7 @@ const Container = (): JSX.Element => {
   const front: IProject[] = [
     {
       year: 2018,
-      title: text_website.TECH_PROJECT_TITLES["pokemon"],
+      title: text_website.TECH_PROJECT_TITLES["digimon"],
       languages: "HTML, CSS",
     },
     {
@@ -84,6 +84,11 @@ const Container = (): JSX.Element => {
       languages: "React, TypeScript, Taildwind CSS, ElectronJS",
     },
     {
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["pokemon2.0"],
+      languages: "React, TypeScript, Vite, CSS-Modules",
+    },
+    {
       year: 2023,
       title: text_website.TECH_PROJECT_TITLES["tradingDashboard"],
       languages: "React, Tailwind, HTML, CSS",
@@ -97,7 +102,7 @@ const Container = (): JSX.Element => {
   const back: IProject[] = [
     {
       year: 2018,
-      title: text_website.TECH_PROJECT_TITLES["pokemon"],
+      title: text_website.TECH_PROJECT_TITLES["digimon"],
       languages: "PHP, Mysql",
     },
     {
@@ -144,6 +149,11 @@ const Container = (): JSX.Element => {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["lorive"],
       languages: "Golang",
+    },
+    {
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["pokemon2.0"],
+      languages: "NestJS, SQLite, GraphQL",
     },
     {
       year: 2023,
