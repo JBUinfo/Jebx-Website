@@ -13,8 +13,10 @@ const Container = (): JSX.Element => {
           {({ language }) => (
             <>
               <div className="myself-container">
-                <div className={"profPic-container"} style={{backgroundImage:`url("${profPic}")`}}>
-                </div>
+                <div
+                  className={"profPic-container"}
+                  style={{ backgroundImage: `url("${profPic}")` }}
+                ></div>
                 <div className={"my-desc"}>
                   <div className={"center"}>
                     <span>Javier Borbolla Ureña</span>
@@ -51,7 +53,10 @@ const Container = (): JSX.Element => {
               </div>
               <div className={"CV-container"}>
                 <div className={"left-title"}>
-                  <a href={"es" === language! ? CV_ESP : CV_ENG} download="CV Javier Borbolla">
+                  <a
+                    href={"es" === language! ? CV_ESP : CV_ENG}
+                    download="CV Javier Borbolla"
+                  >
                     <span className={"timeline-title"}>
                       {text_website.DOWNLOAD_CV[language!]}
                     </span>
@@ -61,13 +66,91 @@ const Container = (): JSX.Element => {
             </>
           )}
         </LanguageContext.Consumer>
+        {SecondContainer()}
+        {ThirdContainer()}
       </div>
     </div>
   );
 };
 
+const SecondContainer = (): JSX.Element => {
+  return (
+    <div className={"lecture-container"}>
+      <LanguageContext.Consumer>
+        {({ language }) => (
+          <>
+            <div className={"title"}>
+              {text_website.ME_RECOMMENDED_READINGS_TITLE[language!]}
+            </div>
+            <div className={"description"}>
+              {text_website.ME_RECOMMENDED_READINGS_DESCRIPTION[language!]}
+            </div>
+            <div className="me-list-recommended-readings">
+              <>
+                {text_website.ME_RECOMMENDED_READINGS.map((e, i) => (
+                  <ul key={i}>
+                    <li>
+                      <a href={e.url[language!]}>
+                        <span>&gt; {e[language!][0]}</span>
+                      </a>
+                    </li>
+                    <ul>
+                      <li>
+                        <span>{e[language!][1]}</span>
+                      </li>
+                    </ul>
+                  </ul>
+                ))}
+              </>
+            </div>
+          </>
+        )}
+      </LanguageContext.Consumer>
+    </div>
+  );
+};
+
+const ThirdContainer = (): JSX.Element => {
+  return (
+    <div className={"lecture-container"}>
+      <LanguageContext.Consumer>
+        {({ language }) => (
+          <>
+            <div className={"title"}>
+              {text_website.ME_OFF_TOPIC_READINGS_TITLE[language!]}
+            </div>
+            <div className={"description"}>
+              {text_website.ME_OFF_TOPIC_READINGS_DESCRIPTION[language!]}
+            </div>
+            <div className="me-list-recommended-readings">
+              <>
+                {text_website.ME_OFF_TOPIC_READINGS.map((e, i) => (
+                  <ul key={i}>
+                    <li>
+                      <span>- {e[language!][0]}</span>
+                    </li>
+                    <ul>
+                      <li>
+                        <span>{e[language!][1]}</span>
+                      </li>
+                    </ul>
+                  </ul>
+                ))}
+              </>
+            </div>
+          </>
+        )}
+      </LanguageContext.Consumer>
+    </div>
+  );
+};
+
 const MePage = (): JSX.Element => {
-  return <div className={"me-container"}>{Container()}</div>;
+  return (
+    <div className={"me-container"}>
+      <>{Container()}</>
+    </div>
+  );
 };
 
 export default MePage;

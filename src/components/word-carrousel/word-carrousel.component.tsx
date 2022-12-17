@@ -1,8 +1,15 @@
 import { useState } from "react";
 import "./word-carrousel.styles.css";
-import { languages1, languages2, IWords } from "./types"
-const WordCarrousel = (): JSX.Element => {
+import { tech } from "../../pages/tech/types"
 
+interface IWords {
+  [key: string]: string;
+} // (word) : (css class)
+
+const WordCarrousel = (): JSX.Element => {
+  const languages1 = tech.slice(0,tech.length/2).map(e=>e.name)
+  const languages2 = tech.slice(tech.length/2).map(e=>e.name)
+  
   const defaultWords1: IWords = { };
   languages1.map((l)=>defaultWords1[l] = "word")
   const default1Length: number = languages1.length;

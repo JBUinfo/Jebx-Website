@@ -48,11 +48,11 @@
   "TECH_PROJECT_TITLES": {
     "digimon": {
       "es": "Minijuego de Digimon (Instituto)",
-      "en": "Digimon minigame (High Scool)"
+      "en": "Digimon minigame (High School)"
     },
     "socialNetwork": {
       "es": "Red social (Instituto)",
-      "en": "Social networks (High Scool)"
+      "en": "Social networks (High School)"
     },
     "movistar": {
       "es": "Movistar - Accenture",
@@ -162,7 +162,6 @@
       "es": "Minijuego de pokemon (Twitch)",
       "en": "Pokemon minigame (Twitch)"
     }
-    
   },
   "TECH_PROJECT_DESCRIPTIONS": {
     "digimon": {
@@ -328,30 +327,30 @@
       "en": "AngularJS"
     }
   },
-  "STUDIES":{
+  "STUDIES": {
     "officialStudies": {
       "es": "ESTUDIOS OFICIALES",
       "en": "OFFICIAL STUDIES"
     },
-    "smr":{
-      "es":"Grado medio en sistemas microinformaticos y redes (SMR)",
-      "en":"College degree in microsystems and networks"
+    "smr": {
+      "es": "Grado medio en sistemas microinformaticos y redes (SMR)",
+      "en": "College degree in microsystems and networks"
     },
-    "daw":{
-      "es":"Grado superior en desarrollo de aplicaciones web (DAW)",
-      "en":"College degree in web applications develop"
+    "daw": {
+      "es": "Grado superior en desarrollo de aplicaciones web (DAW)",
+      "en": "College degree in web applications develop"
     },
-    "master":{
-      "es":"Master en ciberseguridad - VIU",
-      "en":"Master degree in Cybersecurity - VIU"
+    "master": {
+      "es": "Master en ciberseguridad - VIU",
+      "en": "Master degree in Cybersecurity - VIU"
     },
-    "malware":{
-      "es":"Analisis de malware - UMA (Virustotal)",
-      "en":"Malware analysis - UMA (Virustotal)"
+    "malware": {
+      "es": "Analisis de malware - UMA (Virustotal)",
+      "en": "Malware analysis - UMA (Virustotal)"
     },
-    "cuda":{
-      "es":"Curso de extensión universitaria de Deep learning y CUDA - UMA (NVIDIA)",
-      "en":"University extension course of Deep learning and CUDA - UMA (NVIDIA)"
+    "cuda": {
+      "es": "Curso de extensión universitaria de Deep learning y CUDA - UMA (NVIDIA)",
+      "en": "University extension course of Deep learning and CUDA - UMA (NVIDIA)"
     }
   },
   "ME_SHORT_DESCRIPTION": {
@@ -380,7 +379,152 @@
     "es": "Lo primero de todo, queria agradecerte el hecho de haber mirado mi web y mostrar interes en conocerme. Si te ha impresionado la web, creeme que yo lo estoy más (No soy el mejor eligiendo colores y creando diseños :P). Decirte tambien que soy una persona que le encanta aprender y siempre intento ser el mejor en todo lo que hago. Suelo mirar mucho Stackoverflow para ver 'performances' de codigos y técnologias porque, si algo se puede optimizar, lo haré.",
     "en": "First of all, i want to thank you for having looked at my website and showing interest in meeting me. If you are impressed by the website, believe me i'm more (I'm not the best choosing colors and creating designs :P). Also tell you that i'm a person who loves to learn and i always try to be the best in everything I do. I usually look at Stackoverflow a lot to see 'performances' of codes and technologies because if something can be optimized, i'll."
   },
-  "DOWNLOAD_CV":{
+  "ME_RECOMMENDED_READINGS_TITLE": {
+    "es": "Lecturas recomendadas",
+    "en": "Recommended readings"
+  },
+  "ME_RECOMMENDED_READINGS_DESCRIPTION": {
+    "es": "Iré listando en esta sección diferentes articulos y libros que me han resultado interesantes.",
+    "en": "I will list in this section different articles and books that I find interesting."
+  },
+  "ME_RECOMMENDED_READINGS": [
+    {
+      "url": {
+        "es": "https://alexkondov.com/tao-of-react/",
+        "en": "https://alexkondov.com/tao-of-react/"
+      },
+      "es": [
+        "Tao of React",
+        "Articulo escrito por Alex Kondov donde se detallan multitud de consejos para mejorar la programación con React."
+      ],
+      "en": [
+        "Tao of React",
+        "Article written by Alex Kondov detailing many tips to improve programming with React."
+      ]
+    },
+    {
+      "url": {
+        "es": "https://alexkondov.com/tao-of-node/",
+        "en": "https://alexkondov.com/tao-of-node/"
+      },
+      "es": [
+        "Tao of NodeJS.",
+        "Articulo escrito por Alex Kondov donde se detallan multitud de consejos para mejorar la programación con NodeJS."
+      ],
+      "en": [
+        "Tao of NodeJS",
+        "Article written by Alex Kondov detailing many tips to improve programming with NodeJS."
+      ]
+    },
+    {
+      "url": {
+        "es": "https://alexkondov.com/articles/",
+        "en": "https://alexkondov.com/articles/"
+      },
+      "es": [
+        "Articulos de Alex Kondov",
+        "Articulos donde puedes mejorar la arquitectura y diseño de software."
+      ],
+      "en": [
+        "Articles by Alex Kondov",
+        "Articles where you can improve software architecture and design."
+      ]
+    },
+    {
+      "url": {
+        "es": "https://www.patterns.dev",
+        "en": "https://www.patterns.dev"
+      },
+      "es": [
+        "Patterns",
+        "Web/Libro donde se explican diferentes patrones de diseño para componentes de react y software en general."
+      ],
+      "en": [
+        "Patterns",
+        "Web/Book where different design patterns for react components and software in general are explained."
+      ]
+    },
+    {
+      "url": {
+        "es": "https://www.amazon.es/Mini-Filosof%C3%ADa-peque%C3%B1o-libro-grandes/dp/8418927240",
+        "en": "https://www.amazon.es/Mini-Philosophy-Small-Book-Ideas/dp/1472282175"
+      },
+      "es": [
+        "Mini Filosofía: Un pequeño libro sobre grandes ideas - Jonny Thomson.",
+        "Libro escrito por un profresor universitario donde expone la idea de que los jovenes de hoy en dia no estudian filosofia debido a que no está escrita en un lenguaje actual. Este profesor decidió resumir las ideas principales de grandes filosofos y exponerlas con palabras y ejemplos actuales."
+      ],
+      "en": [
+        "Mini Philosophy: A Small Book of Big Ideas - Jonny Thomson.",
+        "Book written by a university professor where he exposes the idea that young people today do not study philosophy because it is not written in a current language. This professor decided to summarize the main ideas of great philosophers and expose them with current words and examples."
+      ]
+    },
+    {
+      "url": {
+        "es": "https://www.amazon.es/Blockchain-revoluci%C3%B3n-industrial-internet-colecci%C3%B3n/dp/849875447X",
+        "en": "https://www.amazon.es/Blockchain-revoluci%C3%B3n-industrial-internet-colecci%C3%B3n/dp/849875447X"
+      },
+      "es": [
+        "Blockchain: la revolución industrial de internet - Alexander Preukschat.",
+        "No es mi mejor recomendación pero este libro exponse algunos ejemplos de como podria llegar a usarse blockchain en un futuro. Recomiendo este libro a personas que no están muy familiarizadas con esta tecnología."
+      ],
+      "en": [
+        "'Blockchain: la revolución industrial de internet' - Alexander Preukschat.",
+        "It is not my best recommendation but this book exposes some examples of how blockchain could be used in the future. I recommend this book to people who are not very familiar with this technology."
+      ]
+    }
+  ],
+  "ME_OFF_TOPIC_READINGS_TITLE": {
+    "es": "Libros off-topic",
+    "en": "Off topic books"
+  },
+  "ME_OFF_TOPIC_READINGS_DESCRIPTION": {
+    "es": "Estos libros no tienen relación con la informaática pero quiero recomendarlos porque me han resultado divertidos de leer.",
+    "en": "These books are not related to computer science but I want to recommend them because I found them fun to read."
+  },
+  "ME_OFF_TOPIC_READINGS": [
+    {
+      "es": [
+        "Detective Esqueleto - Derek Landy.",
+        "16 libros y 7 historias sobre un detective esqueleto y su ayudante. Estos libros de fantasía están orientados a un público joven pero, yo con 23 años sigo leyendo la saga."
+      ],
+      "en": [
+        "Skulduggery Pleasant - Derek Landy.",
+        "16 books and 7 stories about a skeleton detective and his assistant. These fantasy books are geared towards a young audience but, at 23 years old, I am still reading the saga."
+      ]
+    },
+    {
+      "es": [
+        "Comics de Hora de aventuras.",
+        "Resultan muy complementarios si eres fan de la serie de televisión. Cuentan más lore que solo podrás descubrir si los lees."
+      ],
+      "en": [
+        "Adventures times comics.",
+        "They are very complementary if you are a fan of the TV series. They tell more lore that you can only discover if you read them."
+      ]
+    },
+    {
+      "es": [
+        "Trilogia de Metro (2033, 2034, 2035)",
+        "Cuenta la historia de un futuro distopico en una rusia devastada por bombas atómicas. La vida en el subsuelo es más complicada de lo que parece. Lectura recomendada para todos los públicos. El inicio del primer libro puede volverse un poco 'pesado' pero recomiendo encarecidamente la lectura de esta trilogia."
+      ],
+      "en": [
+        "Metro's trilogy (2033, 2034, 2035)",
+        "It tells the story of a dystopian future in a Russia devastated by atomic bombs. Life underground is more complicated than it seems. Recommended reading for all audiences. The beginning of the first book can become a little 'heavy' but I highly recommend reading this trilogy."
+      ]
+    },
+    {
+      "es": [
+        "Saga fundación - Isaac Asimov",
+        "Algunos nombran a Isaac como el padre del cyberpunk. Siempre es interesante descubrir como veían en el pasado las cosas del futuro."
+      ],
+      "en": [
+        "Saga foundation - Isaac Asimov",
+        "Some name Isaac as the father of cyberpunk. It's always interesting to find out how they saw, in the past, things in the future.        "
+      ]
+    }
+  ],
+
+  "DOWNLOAD_CV": {
     "es": "Descargar CV",
     "en": "Download CV"
   },

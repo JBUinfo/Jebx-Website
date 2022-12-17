@@ -1,12 +1,9 @@
 import "./tech.styles.css";
 import { LanguageContext } from "../../language-context";
 import text_website from "../../assets/text-website.json";
-import { IProject, images } from "./types"
-
+import { IProject, tech } from "./types";
 
 const Container = (): JSX.Element => {
-
-
   const front: IProject[] = [
     {
       year: 2018,
@@ -36,7 +33,8 @@ const Container = (): JSX.Element => {
     {
       year: 2020,
       title: text_website.TECH_PROJECT_TITLES["covid"],
-      languages: "React, Redux, CSS, Styled Components, React Semantic UI",
+      languages:
+        "React, Redux, CSS, Styled Components, React Semantic UI, Axios",
     },
     {
       year: 2021,
@@ -71,7 +69,7 @@ const Container = (): JSX.Element => {
     {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["thisWebsite"],
-      languages: "React, TypeScript, HTML, CSS",
+      languages: "React, TypeScript, HTML, CSS, Tailwind",
     },
     {
       year: 2022,
@@ -86,7 +84,8 @@ const Container = (): JSX.Element => {
     {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["pokemon2.0"],
-      languages: "React, TypeScript, Vite, CSS-Modules",
+      languages:
+        "React, TypeScript, Vite, Vitest (Jest), CSS-Modules, Tailwind, Cypress",
     },
     {
       year: 2023,
@@ -96,7 +95,7 @@ const Container = (): JSX.Element => {
     {
       year: 2023,
       title: text_website.TECH_PROJECT_TITLES["kreborWebsite"],
-      languages: "React, Redux, HTML, CSS",
+      languages: "React, HTML, CSS",
     },
   ];
   const back: IProject[] = [
@@ -108,7 +107,7 @@ const Container = (): JSX.Element => {
     {
       year: 2019,
       title: text_website.TECH_PROJECT_TITLES["socialNetwork"],
-      languages: "Socket.io, NodeJS, MongoDB",
+      languages: "Socket.io, NodeJS, MongoDB, Express",
     },
     {
       year: 2019,
@@ -138,7 +137,12 @@ const Container = (): JSX.Element => {
     {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["radio"],
-      languages: "NodeJS, Socket.io",
+      languages: "NodeJS, Socket.io, Express",
+    },
+    {
+      year: 2022,
+      title: text_website.TECH_PROJECT_TITLES["thisWebsite"],
+      languages: "Firebase",
     },
     {
       year: 2022,
@@ -153,12 +157,18 @@ const Container = (): JSX.Element => {
     {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["pokemon2.0"],
-      languages: "NestJS, SQLite, GraphQL",
+      languages:
+        "NodeJS, NestJS, SQLite, GraphQL, NodeJS Testing, Express, Cypress",
+    },
+    {
+      year: 2023,
+      title: text_website.TECH_PROJECT_TITLES["kreborWebsite"],
+      languages: "Firebase, NextJS",
     },
     {
       year: 2023,
       title: text_website.TECH_PROJECT_TITLES["tradingDashboard"],
-      languages: "NodeJS, MongoDB",
+      languages: "NodeJS, MongoDB, Express",
     },
   ];
   const others: IProject[] = [
@@ -211,7 +221,7 @@ const Container = (): JSX.Element => {
       year: 2022,
       title: text_website.TECH_PROJECT_TITLES["bookmarks"],
       languages: "NodeJS",
-    }
+    },
   ];
   return (
     <div className={"section-container"}>
@@ -225,19 +235,12 @@ const Container = (): JSX.Element => {
 
       <div className={"center"}>
         <div className="img-logo-container">
-          {images.map((image, i) => {
-            return (
-              <div className="each-img-container">
-                <img
-                  key={i}
-                  alt={image.name}
-                  src={image.src}
-                  className={"img-logo"}
-                />
-                <span> {image.name} </span>
-              </div>
-            );
-          })}
+          {tech.map((image, i) => (
+            <div key={i} className="each-img-container">
+              <img alt={image.name} src={image.src} className={"img-logo"} />
+              <span> {image.name} </span>
+            </div>
+          ))}
         </div>
       </div>
       <div className={"center"}>FRONT END</div>

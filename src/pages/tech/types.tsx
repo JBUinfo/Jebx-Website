@@ -34,6 +34,19 @@ import electronjs from "./imgs/electronjs.png";
 import go from "./imgs/go.png";
 import tailwindcss from "./imgs/tailwindcss.png";
 import ganache from "./imgs/ganache.png";
+import cplusplus from "./imgs/c++.png";
+import axios from "./imgs/axios.png";
+import graphql from "./imgs/graphql.png";
+import nextjs from "./imgs/nextjs.png";
+import jest_img from "./imgs/jest.png";
+import vite from "./imgs/vite.png";
+import vitest from "./imgs/vitest.png";
+import firebase from "./imgs/firebase.png";
+import nestjs from "./imgs/nestjs.png";
+import cypress from "./imgs/cypress.png";
+import sqlite from "./imgs/sqlite.png";
+import mustachejs from "./imgs/mustache.png";
+import express from "./imgs/express.png";
 
 
 export interface IImage {
@@ -47,7 +60,7 @@ export interface IProject {
     languages: string;
 }
 
-export const images: IImage[] = [
+export const tech: IImage[] = [
     { name: "Redux", src: redux },
     { name: "WPF", src: wpf },
     { name: "Typescript", src: typescript },
@@ -65,7 +78,7 @@ export const images: IImage[] = [
     { name: "Angular", src: angular },
     { name: "Assembly", src: assembly },
     { name: "Bash", src: bash },
-    { name: "Blueprism", src: blueprism },
+    { name: "Blue Prism", src: blueprism },
     { name: "Bootstrap", src: bootstrap },
     { name: "C#", src: cSharp },
     { name: "CSS", src: css },
@@ -84,4 +97,16 @@ export const images: IImage[] = [
     { name: "ElectronJS", src: electronjs },
     { name: "TailwindCSS", src: tailwindcss },
     { name: "Ganache", src: ganache },
+    { name: "Axios", src: axios },
+    { name: "MustacheJS", src: mustachejs },
+    { name: "Express", src: express },
+    { name: "Firebase", src: firebase },
+    { name: "NestJS", src: nestjs },
+    { name: "GraphQL", src: graphql },
+    { name: "NextJS", src: nextjs },
+    { name: "Vitest", src: vitest },
+    { name: "Vite", src: vite },
+    { name: "Jest", src: jest_img },
+    { name: "Cypress", src: cypress },
+    { name: "SQlite", src: sqlite },
   ];

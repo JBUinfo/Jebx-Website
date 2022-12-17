@@ -71,13 +71,49 @@
   margin-top: 40px;
 }
 
-.CV-container{
+.CV-container {
   margin-top: 20px;
   cursor: pointer;
 }
 
+.lecture-container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 60%;
+}
 
-@media only screen and (max-width: 1367px){
+.lecture-container:last-of-type {
+  margin-top: 50px;
+
+  margin-bottom: 50px;
+}
+
+.me-list-recommended-readings ul {
+  margin-top: 20px;
+}
+
+.me-list-recommended-readings ul li span {
+  font-size: 1.3em;
+}
+
+.me-list-recommended-readings ul li a span {
+  font-size: 0.6em;
+  letter-spacing: 2px;
+  display: flex;
+  flex-flow: column;
+  width: 60%;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.me-list-recommended-readings ul ul li span {
+  font-size: 0.8em;
+  color: #ff9200;
+  display: flex;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1367px) {
   .me-container .section-container {
     padding-bottom: 150px;
   }
@@ -86,14 +122,26 @@
     margin-top: 60px;
   }
 
-  .me-container * ul{
+  .me-container * ul {
     padding: 0px;
     font-size: 0.85em;
+  }
+
+  .me-list-recommended-readings ul li a span {
+    font-size: 0.8em;
+  }
+
+  .me-list-recommended-readings ul ul li span {
+    font-size: 1.3em;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 1281px) {
   .myself-container {
+    width: 80%;
+  }
+  .lecture-container {
     width: 80%;
   }
 }
@@ -123,31 +171,11 @@
   .long-desc {
     margin-top: unset;
   }
+  .me-list-recommended-readings ul li a span {
+    width: 100%;
+    font-size: 0.7em;
+  }
 }
 
-@media only screen and (max-height: 376px) {
-  .myself-container {
-    display: flex;
-    flex-flow: column;
-    width: 90%;
-    margin-top: 50px;
-  }
-
-  .profPic-container {
-    width: 100%;
-  }
-
-  .my-desc {
-    margin-top: 50px;
-    width: 100%;
-  }
-  .about-me {
-    width: 100%;
-  }
-  .my-music {
-    width: 100%;
-  }
-  .long-desc {
-    margin-top: unset;
-  }
+@media only screen and (max-width: 376px) {
 }
