@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import { LanguageContext } from "./language-context";
-import "./App.css";
 
 import Header from "./components/header/header.component";
 import HomePage from "./pages/home/home.component";
@@ -22,7 +21,7 @@ const App: React.FC = () => {
     <LanguageContext.Provider
       value={{ language: language, toggleLanguage: toggleLanguage }}
     >
-      <div className="big-box-container">
+      <div>
         <BrowserRouter>
           <Header />
           <Routes>

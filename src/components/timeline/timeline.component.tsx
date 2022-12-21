@@ -1,8 +1,9 @@
-import "./timeline.styles.css";
 import text_website from "../../assets/text-website.json";
 import { LanguageContext } from "../../language-context";
+import { useContext } from "react";
 
 const Timeline = (): JSX.Element => {
+  const { language } = useContext(LanguageContext);
   interface IProject {
     shortTitle: { es: string; en: string };
     description: { es: string; en: string };
@@ -157,62 +158,78 @@ const Timeline = (): JSX.Element => {
   ];
 
   return (
-    <div className={"scroll-box"}>
-      <LanguageContext.Consumer>
-        {({ language }) => (
-          <>
-            {projects.map(
-              (project, i /**title or description left or right*/) => (
-                <div key={i} className={"timeline-box"}>
-                  {0 === i % 2 ? (
-                    <>
-                      <div className={"left-box left-desc"}>
-                        <span className={"timeline-description"}>
-                          {project.description[language!]}
+    <div className="max-sm:overflow-scroll max-sm:h-96 max-xl:mt-10 max-xl:h-1/2 mt-24 overflow-x-hidden overflow-y-scroll w-screen h-3/5">
+      <>
+        {projects.map((project, i /**title or description left or right*/) => (
+          <div key={i} className="max-sm:h-full h-1/2 w-full flex">
+            {0 === i % 2 ? (
+              <>
+                <div className="h-full w-1/2 border-r-4 border-black flex">
+                  <span className="max-sm:text-xs max-xl:text-sm w-4/5 block m-auto text-base">
+                    {project.description[language!]}
+                  </span>
+                </div>
+                <div className="h-full w-1/2 border-l-4 border-[orange] items-center flex">
+                  {project.url ? (
+                    <a
+                      href={project.url}
+                      className="max-sm:max-w-[9rem] max-xl:max-w-sm max-lg:max-w-xs font-['nk57i']"
+                    >
+                      <div className="hover:bg-[#dc8f00] hover:scale-[1.02] shadow-[8px_8px_6px_0px_black]  ml-5 max-w-lg flex py-1 px-2 bg-[orange] w-fit rounded text-shadow-blue">
+                        <span className="text-center w-full text-sm leading-5 break-words">
+                          {project.shortTitle[language!]}
                         </span>
                       </div>
-                      <div className={"right-box right-desc"}>
-                        {project.url ? (
-                          <a href={project.url} className={"italic"}>
-                            <div className={"timeline-title"}>
-                              <span>{project.shortTitle[language!]}</span>
-                            </div>
-                          </a>
-                        ) : (
-                          <div className={"timeline-title"}>
-                            <span>{project.shortTitle[language!]}</span>
-                          </div>
-                        )}
-                      </div>
-                    </>
+                    </a>
                   ) : (
-                    <>
-                      <div className={"left-box left-title"}>
-                        {project.url ? (
-                          <a href={project.url} className={"italic"}>
-                            <div className={"timeline-title"}>
-                              <span>{project.shortTitle[language!]}</span>
-                            </div>
-                          </a>
-                        ) : (
-                          <div className={"timeline-title"}>
-                            <span>{project.shortTitle[language!]}</span>
-                          </div>
-                        )}
-                      </div>
-                      <div className={"right-box right-title"}>
-                        <span className={"timeline-description"}>
-                          {project.description[language!]}
-                        </span>
-                      </div>
-                    </>
+                    <div className="max-sm:max-w-[9rem] max-xl:max-w-sm max-lg:max-w-xs ml-5 max-w-lg flex py-1 px-2 bg-[orange] w-fit rounded text-shadow-blue">
+                      <span className="text-center w-full text-sm leading-5 break-words">
+                        {project.shortTitle[language!]}
+                      </span>
+                    </div>
                   )}
                 </div>
-              )
+              </>
+            ) : (
+              <>
+                <div
+                  className={"h-full w-1/2 border-r-4 border-black left-title"}
+                >
+                  <div className="justify-end flex items-center h-full mr-5">
+                    {project.url ? (
+                      <a
+                        href={project.url}
+                        className="max-sm:max-w-[9rem] max-xl:max-w-sm max-lg:max-w-xs font-['nk57i']"
+                      >
+                        <div className="hover:bg-[#dc8f00] hover:scale-[1.02] shadow-[8px_8px_6px_0px_black]  max-w-lg flex py-1 px-2 bg-[orange] w-fit rounded text-shadow-blue">
+                          <span className="text-center w-full text-sm leading-5 break-words">
+                            {project.shortTitle[language!]}
+                          </span>
+                        </div>
+                      </a>
+                    ) : (
+                      <div className="max-sm:max-w-[9rem] max-xl:max-w-sm max-lg:max-w-xs max-w-lg flex py-1 px-2 bg-[orange] w-fit rounded text-shadow-blue ">
+                        <span className="text-center w-full text-sm leading-5 break-words">
+                          {project.shortTitle[language!]}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div
+                  className={
+                    "h-full w-1/2 border-l-4 border-[orange] items-center flex"
+                  }
+                >
+                  <span className={"max-sm:text-xs max-xl:text-sm  ml-5 w-4/5"}>
+                    {project.description[language!]}
+                  </span>
+                </div>
+              </>
             )}
-          </>
-        )}
-      </LanguageContext.Consumer>
+          </div>
+        ))}
+      </>
     </div>
   );
 };

@@ -42,8 +42,8 @@
     ]
   },
   "TECH_FIRST_TITLE": {
-    "es": "He tenido experiencia usando estas tecnologías.",
-    "en": "I have had experience in this technologies."
+    "es": "Tengo experiencia usando estas tecnologías.",
+    "en": "I have experience in this technologies."
   },
   "TECH_PROJECT_TITLES": {
     "digimon": {
@@ -483,6 +483,7 @@
   },
   "ME_OFF_TOPIC_READINGS": [
     {
+      "url": null,
       "es": [
         "Detective Esqueleto - Derek Landy.",
         "16 libros y 7 historias sobre un detective esqueleto y su ayudante. Estos libros de fantasía están orientados a un público joven pero, yo con 23 años sigo leyendo la saga."
@@ -493,6 +494,7 @@
       ]
     },
     {
+      "url": null,
       "es": [
         "Comics de Hora de aventuras.",
         "Resultan muy complementarios si eres fan de la serie de televisión. Cuentan más lore que solo podrás descubrir si los lees."
@@ -503,6 +505,7 @@
       ]
     },
     {
+      "url": null,
       "es": [
         "Trilogia de Metro (2033, 2034, 2035)",
         "Cuenta la historia de un futuro distopico en una rusia devastada por bombas atómicas. La vida en el subsuelo es más complicada de lo que parece. Lectura recomendada para todos los públicos. El inicio del primer libro puede volverse un poco 'pesado' pero recomiendo encarecidamente la lectura de esta trilogia."
@@ -513,6 +516,7 @@
       ]
     },
     {
+      "url": null,
       "es": [
         "Saga fundación - Isaac Asimov",
         "Algunos nombran a Isaac como el padre del cyberpunk. Siempre es interesante descubrir como veían en el pasado las cosas del futuro."

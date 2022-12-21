@@ -34,7 +34,6 @@ import electronjs from "./imgs/electronjs.png";
 import go from "./imgs/go.png";
 import tailwindcss from "./imgs/tailwindcss.png";
 import ganache from "./imgs/ganache.png";
-import cplusplus from "./imgs/c++.png";
 import axios from "./imgs/axios.png";
 import graphql from "./imgs/graphql.png";
 import nextjs from "./imgs/nextjs.png";
@@ -47,66 +46,66 @@ import cypress from "./imgs/cypress.png";
 import sqlite from "./imgs/sqlite.png";
 import mustachejs from "./imgs/mustache.png";
 import express from "./imgs/express.png";
-
+//import cplusplus from "./imgs/c++.png";
 
 export interface IImage {
-    name: string;
-    src: string;
+  name: string;
+  src: string;
 }
 
 export interface IProject {
-    year: number;
-    title: { es: string; en: string };
-    languages: string;
+  year: number;
+  title: { es: string; en: string };
+  languages: string;
 }
 
 export const tech: IImage[] = [
-    { name: "Redux", src: redux },
-    { name: "WPF", src: wpf },
-    { name: "Typescript", src: typescript },
-    { name: "Trading View", src: tradingView },
-    { name: "Styled Components", src: styledComponents },
-    { name: "Solidity", src: solidity },
-    { name: "Web3.js", src: web3js },
-    { name: "Socket.IO", src: socketio },
-    { name: "Semantic UI", src: semanticUI },
-    { name: "React", src: react },
-    { name: "R", src: R },
-    { name: "Python", src: python },
-    { name: "PHP", src: php },
-    { name: "NodeJS", src: nodejs },
-    { name: "Angular", src: angular },
-    { name: "Assembly", src: assembly },
-    { name: "Bash", src: bash },
-    { name: "Blue Prism", src: blueprism },
-    { name: "Bootstrap", src: bootstrap },
-    { name: "C#", src: cSharp },
-    { name: "CSS", src: css },
-    { name: "Docker", src: docker },
-    { name: "Elasticsearch", src: elastic },
-    { name: "Figma", src: figma },
-    { name: "Git", src: git },
-    { name: "HTML", src: html },
-    { name: "Javascript", src: javascript },
-    { name: "JQuery", src: jquery },
-    { name: "JWT", src: jwt },
-    { name: "MongoDB", src: mongoDB },
-    { name: "MySQL", src: mysql },
-    { name: "Nmap", src: nmap },
-    { name: "Go", src: go },
-    { name: "ElectronJS", src: electronjs },
-    { name: "TailwindCSS", src: tailwindcss },
-    { name: "Ganache", src: ganache },
-    { name: "Axios", src: axios },
-    { name: "MustacheJS", src: mustachejs },
-    { name: "Express", src: express },
-    { name: "Firebase", src: firebase },
-    { name: "NestJS", src: nestjs },
-    { name: "GraphQL", src: graphql },
-    { name: "NextJS", src: nextjs },
-    { name: "Vitest", src: vitest },
-    { name: "Vite", src: vite },
-    { name: "Jest", src: jest_img },
-    { name: "Cypress", src: cypress },
-    { name: "SQlite", src: sqlite },
-  ];
+  { name: "Redux", src: redux },
+  { name: "WPF", src: wpf },
+  { name: "Typescript", src: typescript },
+  { name: "Trading View", src: tradingView },
+  { name: "Styled Components", src: styledComponents },
+  { name: "Solidity", src: solidity },
+  { name: "Web3.js", src: web3js },
+  { name: "Socket.IO", src: socketio },
+  { name: "Semantic UI", src: semanticUI },
+  { name: "React", src: react },
+  { name: "R", src: R },
+  { name: "Python", src: python },
+  { name: "PHP", src: php },
+  { name: "NodeJS", src: nodejs },
+  { name: "Angular", src: angular },
+  { name: "Assembly", src: assembly },
+  { name: "Bash", src: bash },
+  { name: "Blue Prism", src: blueprism },
+  { name: "Bootstrap", src: bootstrap },
+  { name: "C#", src: cSharp },
+  { name: "CSS", src: css },
+  { name: "Docker", src: docker },
+  { name: "Elasticsearch", src: elastic },
+  { name: "Figma", src: figma },
+  { name: "Git", src: git },
+  { name: "HTML", src: html },
+  { name: "Javascript", src: javascript },
+  { name: "JQuery", src: jquery },
+  { name: "JWT", src: jwt },
+  { name: "MongoDB", src: mongoDB },
+  { name: "MySQL", src: mysql },
+  { name: "Nmap", src: nmap },
+  { name: "Go", src: go },
+  { name: "ElectronJS", src: electronjs },
+  { name: "TailwindCSS", src: tailwindcss },
+  { name: "Ganache", src: ganache },
+  { name: "Axios", src: axios },
+  { name: "MustacheJS", src: mustachejs },
+  { name: "Express", src: express },
+  { name: "Firebase", src: firebase },
+  { name: "NestJS", src: nestjs },
+  { name: "GraphQL", src: graphql },
+  { name: "NextJS", src: nextjs },
+  { name: "Vitest", src: vitest },
+  { name: "Vite", src: vite },
+  { name: "Jest", src: jest_img },
+  { name: "Cypress", src: cypress },
+  { name: "SQlite", src: sqlite },
+];
