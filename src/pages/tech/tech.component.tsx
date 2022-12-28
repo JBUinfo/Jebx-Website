@@ -83,8 +83,7 @@ const front: IProject[] = [
   {
     year: 2022,
     title: text_website.TECH_PROJECT_TITLES["pokemon2.0"],
-    languages:
-      "React, TypeScript, Vite, Vitest (Jest), CSS-Modules, Tailwind, Cypress",
+    languages: "React, TypeScript, Vite, Vitest (Jest), CSS-Modules, Tailwind",
   },
   {
     year: 2023,
@@ -156,13 +155,12 @@ const back: IProject[] = [
   {
     year: 2022,
     title: text_website.TECH_PROJECT_TITLES["pokemon2.0"],
-    languages:
-      "NodeJS, NestJS, SQLite, GraphQL, NodeJS Testing, Express, Cypress",
+    languages: "NodeJS, NestJS, SQLite, GraphQL, NodeJS Testing, Express",
   },
   {
     year: 2023,
     title: text_website.TECH_PROJECT_TITLES["kreborWebsite"],
-    languages: "Firebase, NextJS",
+    languages: "Firebase",
   },
   {
     year: 2023,

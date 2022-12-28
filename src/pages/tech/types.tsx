@@ -102,10 +102,8 @@ export const tech: IImage[] = [
   { name: "Firebase", src: firebase },
   { name: "NestJS", src: nestjs },
   { name: "GraphQL", src: graphql },
-  { name: "NextJS", src: nextjs },
   { name: "Vitest", src: vitest },
   { name: "Vite", src: vite },
   { name: "Jest", src: jest_img },
-  { name: "Cypress", src: cypress },
   { name: "SQlite", src: sqlite },
 ];
