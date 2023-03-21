@@ -71,8 +71,8 @@ const Header = (): JSX.Element => {
         headerLineColor!
       )}`}
     >
-      <div className="flex align-left items-center w-1/2">
-        <img alt="NFT profile" src={profile} className="h-10 w-8" />
+      <div className="flex align-left items-center w-1/2 h-full">
+        <img alt="NFT profile" src={profile} className="h-full w-auto pt-1" />
         <div className="h-8 flex float-left items-center">
           {left.map((e, i) => (
             <Link
