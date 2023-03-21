@@ -304,6 +304,10 @@
       "es": "Jazztel - NTT Data (3 meses)",
       "en": "Jazztel - NTT Data (3 months)"
     },
+    "copernicus": {
+      "es": "Copernicus",
+      "en": "Copernicus"
+    },
     "officialWorks": {
       "es": "TRABAJOS OFICIALES",
       "en": "OFFICIAL WORKS"
@@ -325,6 +329,10 @@
     "nttdata": {
       "es": "AngularJS",
       "en": "AngularJS"
+    },
+    "copernicus": {
+      "es": "ReactJS, Redux, Typescript, Primereact",
+      "en": "ReactJS, Redux, Typescript, Primereact"
     }
   },
   "STUDIES": {
@@ -351,6 +359,10 @@
     "cuda": {
       "es": "Curso de extensión universitaria de Deep learning y CUDA - UMA (NVIDIA)",
       "en": "University extension course of Deep learning and CUDA - UMA (NVIDIA)"
+    },
+    "udemy": {
+      "es": "Udemy: 2x deep learning + 1x Solidity",
+      "en": "Udemy: 2x deep learning + 1x Solidity"
     }
   },
   "ME_SHORT_DESCRIPTION": {
@@ -491,6 +503,17 @@
       "en": [
         "Skulduggery Pleasant - Derek Landy.",
         "16 books and 7 stories about a skeleton detective and his assistant. These fantasy books are geared towards a young audience but, at 23 years old, I am still reading the saga."
+      ]
+    },
+    {
+      "url": null,
+      "es": [
+        "Dead Space",
+        "Es una saga de un par de libros, comics, series y juegos. Recomiendo jugar al primer y segundo juego y, posteriormente, leer el primer libro 'Martir'. En español solo llegó a salir este primer tomo."
+      ],
+      "en": [
+        "Dead Space",
+        "It is a saga of a couple of books, comics, series and games. I recommend playing the first and second games and then reading the first book 'Martyr'."
       ]
     },
     {

@@ -1,8 +1,10 @@
-import { LanguageContext } from "../../language-context";
+import { LanguageContext } from "../../context/language-context";
 import text_website from "../../assets/text-website.json";
 import { IProject, tech } from "./types";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { selectColorYear } from "../../utils/select-color";
+import { HeaderColor } from "../../components/header/header.component";
+import { HeaderColorContext } from "../../context/header-color-context";
 
 const front: IProject[] = [
   {
@@ -228,6 +230,11 @@ interface ISections {
 
 const TechPage = (): JSX.Element => {
   const { language } = useContext(LanguageContext);
+  const { toggleColor } = useContext(HeaderColorContext);
+
+  useEffect(() => {
+    toggleColor!(HeaderColor.ORANGE);
+  }, [toggleColor]);
   const sections: Array<ISections> = [
     { title: "FRONT END", content: front },
     { title: "BACK END", content: back },

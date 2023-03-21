@@ -1,7 +1,9 @@
 import text_website from "../../assets/text-website.json";
-import { LanguageContext } from "../../language-context";
-import { useContext } from "react";
+import { LanguageContext } from "../../context/language-context";
+import { useContext, useEffect } from "react";
 import { selectColorYear } from "../../utils/select-color";
+import { HeaderColorContext } from "../../context/header-color-context";
+import { HeaderColor } from "../../components/header/header.component";
 
 interface IProject {
   year: number;
@@ -29,6 +31,11 @@ const jobs: IProject[] = [
     year: 2022,
     title: text_website.WORK_OFFICIAL_WORKS["nttdata"],
     desciptions: text_website.WORK_DESCIPTION_WORKS["nttdata"],
+  },
+  {
+    year: 2023,
+    title: text_website.WORK_OFFICIAL_WORKS["copernicus"],
+    desciptions: text_website.WORK_DESCIPTION_WORKS["copernicus"],
   },
 ];
 
@@ -58,6 +65,11 @@ const studies: IProject[] = [
     title: text_website.STUDIES["cuda"],
     desciptions: { es: "", en: "" },
   },
+  {
+    year: 2022,
+    title: text_website.STUDIES["udemy"],
+    desciptions: { es: "", en: "" },
+  },
 ];
 interface ISections {
   title: string;
@@ -66,6 +78,11 @@ interface ISections {
 
 const WorkPage = (): JSX.Element => {
   const { language } = useContext(LanguageContext);
+  const { toggleColor } = useContext(HeaderColorContext);
+
+  useEffect(() => {
+    toggleColor!(HeaderColor.ORANGE);
+  }, [toggleColor]);
   const sections: Array<ISections> = [
     {
       title: text_website.WORK_OFFICIAL_WORKS["officialWorks"][language!],

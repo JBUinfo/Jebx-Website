@@ -53,10 +53,7 @@ const WordCarrousel = (): JSX.Element => {
         return null;
       });
     }
-    if (!find) {
-      Tword1 = { ...defaultWords1 };
-      Tword2 = { ...defaultWords2 };
-    }
+
     setQuery(event.target.value);
     setWords1(Tword1);
     setWords2(Tword2);
@@ -83,7 +80,7 @@ const WordCarrousel = (): JSX.Element => {
       <input
         value={query}
         onChange={inputHandler}
-        placeholder={"C#, NodeJS, React..."}
+        placeholder={"🔍 C#, NodeJS, React..."}
         className="max-sm:text-xl text-9xl outline-0 font-[pixl] py-0 px-2 rounded-lg text-black text-2xl absolute"
       />
       <div className="carroussel">

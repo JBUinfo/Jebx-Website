@@ -9,6 +9,7 @@ module.exports = {
       green: "#4dfe28",
       orange: "orange",
       blue: "#28feea",
+      customBlue: "#18e7b8",
       y2015: "#ffffff",
       y2017: "#b9d0e4",
       y2018: "#92c1ea",
@@ -38,6 +39,14 @@ module.exports = {
     },
     extend: {
       keyframes: {
+        "navbar-in": {
+          "0%": { right: "-100px" },
+          "100%": { right: "0px" },
+        },
+        "navbar-out": {
+          "0%": { right: "0px" },
+          "100%": { right: "-100px" },
+        },
         "get-in": {
           "0%": { transform: "translateX(calc(200vw))" },
           "100%": { transform: "translateX(100vw)" },
@@ -84,6 +93,9 @@ module.exports = {
         },
       },
       animation: {
+        "navbar-in": "navbar-in 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards",
+        "navbar-out":
+          "navbar-out 2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards",
         "get-in": "get-in 2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards",
         "get-out": "get-out 2s cubic-bezier(0.76, 0.05, 0.86, 0.06) forwards",
         "leet-carrousel": "leet-scroll-left 25s linear infinite",

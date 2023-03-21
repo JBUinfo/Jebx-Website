@@ -1,5 +1,5 @@
 import text_website from "../../assets/text-website.json";
-import { LanguageContext } from "../../language-context";
+import { LanguageContext } from "../../context/language-context";
 import { useContext } from "react";
 
 const Timeline = (): JSX.Element => {
@@ -182,7 +182,7 @@ const Timeline = (): JSX.Element => {
                       </div>
                     </a>
                   ) : (
-                    <div className="max-sm:max-w-[9rem] max-xl:max-w-sm max-lg:max-w-xs ml-5 max-w-lg flex py-1 px-2 bg-[orange] w-fit rounded text-shadow-blue">
+                    <div className="max-sm:max-w-[9rem] max-xl:max-w-sm max-lg:max-w-xs ml-5 max-w-lg flex py-1 px-2 bg-[#1312123d] w-fit rounded">
                       <span className="text-center w-full text-sm leading-5 break-words">
                         {project.shortTitle[language!]}
                       </span>
@@ -208,7 +208,7 @@ const Timeline = (): JSX.Element => {
                         </div>
                       </a>
                     ) : (
-                      <div className="max-sm:max-w-[9rem] max-xl:max-w-sm max-lg:max-w-xs max-w-lg flex py-1 px-2 bg-[orange] w-fit rounded text-shadow-blue ">
+                      <div className="max-sm:max-w-[9rem] max-xl:max-w-sm max-lg:max-w-xs max-w-lg flex py-1 px-2 bg-[#1312123d] w-fit rounded ">
                         <span className="text-center w-full text-sm leading-5 break-words">
                           {project.shortTitle[language!]}
                         </span>

@@ -2,8 +2,10 @@ import text_website from "../../assets/text-website.json";
 import profPic from "./imgs/cipher citizen 869.png";
 import CV_ESP from "./assets/CV_Javier_Borbolla.pdf";
 import CV_ENG from "./assets/CV_Javier_Borbolla_English.pdf";
-import { LanguageContext } from "../../language-context";
-import { useContext } from "react";
+import { LanguageContext } from "../../context/language-context";
+import { useContext, useEffect } from "react";
+import { HeaderColorContext } from "../../context/header-color-context";
+import { HeaderColor } from "../../components/header/header.component";
 
 interface IArticule {
   url: {
@@ -22,7 +24,11 @@ interface IReading {
 
 const MePage = (): JSX.Element => {
   const { language } = useContext(LanguageContext);
+  const { toggleColor } = useContext(HeaderColorContext);
 
+  useEffect(() => {
+    toggleColor!(HeaderColor.CUSTOM_BLUE);
+  }, [toggleColor]);
   const readings: Array<IReading> = [
     {
       title: text_website.ME_RECOMMENDED_READINGS_TITLE[language!],
@@ -49,7 +55,7 @@ const MePage = (): JSX.Element => {
                 " max-lg:mt-8 max-2xl:w-full w-1/2 flex flex-col items-center "
               }
             >
-              <span className="text-center">Javier Borbolla Ureña</span>
+              <span className="text-center">Javier Borbolla Ureña (Jebx)</span>
               <div
                 className={
                   "max-sm:p-2 p-3 mt-4 rounded text-center bg-white w-4/5 shadow-[0px_0px_20px_0px_#f8a8ff] "

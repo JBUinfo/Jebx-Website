@@ -39,7 +39,7 @@
   }
 
   .carroussel {
-    @apply max-lg:w-5/6 relative mt-20 w-3/5 max-w-[1150px] h-72 overflow-hidden flex justify-around flex-col text-xl;
+    @apply max-lg:w-5/6 relative mt-20 w-3/5 h-72 overflow-hidden flex justify-around flex-col text-xl;
   }
   .carroussel::after {
     position: absolute;

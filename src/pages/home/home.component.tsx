@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { LanguageContext } from "../../language-context";
+import { LanguageContext } from "../../context/language-context";
 
 import img1 from "./imgs/1.jpg";
 import img2 from "./imgs/2.jpg";
@@ -11,6 +11,8 @@ import WordCarrousel from "../../components/word-carrousel/word-carrousel.compon
 import Timeline from "../../components/timeline/timeline.component";
 import TypEN from "../../components/type-it/type-en";
 import TypES from "../../components/type-it/type-es";
+import { HeaderColorContext } from "../../context/header-color-context";
+import { HeaderColor } from "../../components/header/header.component";
 
 interface IPropsSection {
   children: any;
@@ -25,12 +27,16 @@ const SectionContainer = ({ children }: IPropsSection): JSX.Element => {
 };
 
 const FirstContainer = (): JSX.Element => {
+  const leet = new Array(20).fill(null);
+  const images = [img1, img2, img3, img4, img5];
+
   const [previousImage, setPreviousImage] = useState<number>(0);
   const [actualImage, setActualImage] = useState<number>(0);
   const { language } = useContext(LanguageContext);
-  const leet = new Array(20).fill(null);
-  const images = [img1, img2, img3, img4, img5];
+  const { toggleColor } = useContext(HeaderColorContext);
+
   useEffect(() => {
+    toggleColor!(HeaderColor.ORANGE);
     const timer = setInterval(() => {
       setPreviousImage(actualImage);
       setActualImage(actualImage === images.length - 1 ? 0 : actualImage + 1);
@@ -117,7 +123,7 @@ const SecondContainer = (): JSX.Element => {
           {text_website.HOME_SECOND_DESCRIPTION[language!][0]} <br />
           {text_website.HOME_SECOND_DESCRIPTION[language!][1]}
         </div>
-        <div className={"max-sm:text-sm mt-2.5 text-sm text-green"}>
+        <div className={"max-sm:text-sm mt-2.5 text-md text-green"}>
           {text_website.HOME_SECOND_DESCRIPTION[language!][2]}
         </div>
       </div>
@@ -158,7 +164,7 @@ const HomePage = (): JSX.Element => {
   return (
     <div
       className={
-        "h-screen overflow-x-hidden overflow-y-scroll snap-y snap-mandatory"
+        "h-screen overflow-x-hidden overflow-y-scroll snap-y snap-mandatory pb-12 xl:pb-0"
       }
     >
       <SectionContainer>{FirstContainer()}</SectionContainer>
