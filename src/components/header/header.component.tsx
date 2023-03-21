@@ -91,9 +91,10 @@ const Header = (): JSX.Element => {
         onClick={() => setShowNavbar(!showNavbar)}
       >
         <img
+          alt="navbar button"
           className={" h-[26px]"}
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAYUlEQVR4nO3WyQnAMAwFUZcXp/+zDMF9TDrQJcYLmdfBRwimFEmSBgFuoLG/BtRsyMM5+i+GVCDYXwDX51+SJEmaCDN+iZ5dxIyfLMx4SZJ0Gsz4JXp2ETN+sjDjJUlloBfbFyzbu4GNjwAAAABJRU5ErkJggg=="
-        />{" "}
+        />
       </div>
       <div
         className={`max-sm:flex max-sm:right-0 max-sm:fixed max-sm:justify-around max-sm:flex-col max-sm:w-auto max-sm:top-0 max-sm:mt-[50px] max-sm:h-[200px] max-sm:pl-2 bg-black items-center text-center flex justify-end w-1/2 pr-2 max-sm ${

@@ -31,26 +31,23 @@ const WordCarrousel = (): JSX.Element => {
     let values: string[] = event.target.value.trim().toUpperCase().split(",");
     let Tword1: IWords = { ...defaultWords1 };
     let Tword2: IWords = { ...defaultWords2 };
-    let find: boolean = false;
     values = values.filter((value) => value.trim() !== "");
     if (values.length) {
-      languages1.map((word) => {
+      languages1.forEach((word) => {
         Tword1[word] =
           "max-sm:min-w-[150px] text-center min-w-[250px] opacity-20 animate-zoom-out";
-        values.some((value) => word.toUpperCase().includes(value.trim())) &&
-          (Tword1[word] =
-            "max-sm:min-w-[150px] text-center min-w-[250px] animate-zoom-in") &&
-          (find = true);
-        return null;
+        if (values.some((value) => word.toUpperCase().includes(value.trim()))) {
+          Tword1[word] =
+            "max-sm:min-w-[150px] text-center min-w-[250px] animate-zoom-in";
+        }
       });
-      languages2.map((word) => {
+      languages2.forEach((word) => {
         Tword2[word] =
           "max-sm:min-w-[150px] text-center min-w-[250px] opacity-20 animate-zoom-out";
-        values.some((value) => word.toUpperCase().includes(value.trim())) &&
-          (Tword2[word] =
-            "max-sm:min-w-[150px] text-center min-w-[250px] animate-zoom-in") &&
-          (find = true);
-        return null;
+        if (values.some((value) => word.toUpperCase().includes(value.trim()))) {
+          Tword2[word] =
+            "max-sm:min-w-[150px] text-center min-w-[250px] animate-zoom-in";
+        }
       });
     }
 
