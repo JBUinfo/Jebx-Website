@@ -78,7 +78,7 @@ const FirstContainer = (): JSX.Element => {
         })}
       </div>
       <div className={"h-screen"}>
-        <div className="max-sm:left-0 max-sm:top-0 max-sm:bg-[#00000000] max-xl:bg-[#0000001f] min-h-[450px] h-3/5 absolute bg-black w-96 bottom-0 left-48 bg-black">
+        <div className="max-sm:left-0 max-sm:top-[20px] max-sm:bg-[#00000000] max-xl:bg-[#0000001f] min-h-[450px] h-3/5 absolute bg-black w-96 bottom-0 left-48 bg-black">
           <div className={"h-[10%] overflow-hidden"}>
             <div className={"animate-leet-carrousel mt-2"}>
               {leet.map((k, i) => (

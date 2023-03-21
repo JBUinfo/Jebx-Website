@@ -15,7 +15,8 @@ export enum HeaderColor {
 const Header = (): JSX.Element => {
   const { language, toggleLanguage } = useContext(LanguageContext);
   const { headerLineColor } = useContext(HeaderColorContext);
-  const [showNavbar, setShowNavbar] = useState(false);
+  const [showNavbar, setShowNavbar] = useState("");
+
   const left = [
     {
       label: "Jebx",
@@ -88,7 +89,13 @@ const Header = (): JSX.Element => {
       </div>
       <div
         className="fixed top-0 right-0 mr-3 mt-3 w-auto md:hidden"
-        onClick={() => setShowNavbar(!showNavbar)}
+        onClick={() => {
+          setShowNavbar(
+            showNavbar === "" || showNavbar === "animate-navbar-out"
+              ? "animate-navbar-in"
+              : "animate-navbar-out"
+          );
+        }}
       >
         <img
           alt="navbar button"
@@ -97,9 +104,7 @@ const Header = (): JSX.Element => {
         />
       </div>
       <div
-        className={`max-sm:flex max-sm:right-0 max-sm:fixed max-sm:justify-around max-sm:flex-col max-sm:w-auto max-sm:top-0 max-sm:mt-[50px] max-sm:h-[200px] max-sm:pl-2 bg-black items-center text-center flex justify-end w-1/2 pr-2 max-sm ${
-          showNavbar ? "animate-navbar-in" : "animate-navbar-out"
-        }`}
+        className={`max-sm:flex max-sm:right-[-100px] max-sm:fixed max-sm:justify-around max-sm:flex-col max-sm:w-auto max-sm:top-0 max-sm:mt-[50px] max-sm:h-[200px] max-sm:pl-2 bg-black items-center text-center flex justify-end w-1/2 pr-2 max-sm ${showNavbar}`}
       >
         {right.map((e, i) => (
           <a key={i} className="sm:mr-2 hover:scale-110" href={e.url}>
