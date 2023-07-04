@@ -221,6 +221,11 @@ const others: IProject[] = [
     title: text_website.TECH_PROJECT_TITLES["bookmarks"],
     languages: "NodeJS",
   },
+  {
+    year: 2023,
+    title: text_website.TECH_PROJECT_TITLES["botTrading"],
+    languages: "Python, Keras",
+  },
 ];
 
 interface ISections {

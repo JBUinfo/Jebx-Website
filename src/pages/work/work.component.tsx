@@ -37,6 +37,11 @@ const jobs: IProject[] = [
     title: text_website.WORK_OFFICIAL_WORKS["copernicus"],
     desciptions: text_website.WORK_DESCIPTION_WORKS["copernicus"],
   },
+  {
+    year: 2023,
+    title: text_website.WORK_OFFICIAL_WORKS["gitkraken"],
+    desciptions: text_website.WORK_DESCIPTION_WORKS["gitkraken"],
+  },
 ];
 
 const studies: IProject[] = [

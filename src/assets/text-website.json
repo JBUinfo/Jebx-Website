@@ -161,6 +161,10 @@
     "pokemon2.0": {
       "es": "Minijuego de pokemon (Twitch)",
       "en": "Pokemon minigame (Twitch)"
+    },
+    "botTrading": {
+      "es": "Bot de trading de cryptomonedas",
+      "en": "Crypto trading bot"
     }
   },
   "TECH_PROJECT_DESCRIPTIONS": {
@@ -244,7 +248,6 @@
       "es": "Comencé a crear un bot de trading pero lo dejé a medias debido a que necesitaba trabajar. Se quedó en la fase de backtesting (Quedan la fase de estadisticas y conexión con Binance).",
       "en": "I started creating a trading bot but left it halfway because I needed to work. It stayed in the backtesting phase (The statistics phase and the Binance connection phase remain)."
     },
-
     "jazztel": {
       "es": "Necesitaba dinero y trabajé en NTT Data durante 3 meses. Fui colocado en la web de jazztel para encontrar y solucionar bugs.",
       "en": "I needed money and worked at NTT Data for 3 months. I was placed on the jazztel website to find and fix bugs."
@@ -257,7 +260,6 @@
       "es": "Un amigo me pidió crear un script que descargase todos los videos de YT que tenía guardados en los marcadores de Chrome. Además, había que descargarlos dentro con sus respectivas carpetas. Aquí descubrí lo mal que exporta Chrome los marcadores.",
       "en": "A friend asked me to create a script that would download all the YT videos I had saved in Chrome bookmarks. In addition, they had to be downloaded inside with their respective folders. Here I discovered how badly Chrome exports bookmarks."
     },
-
     "thisWebsite": {
       "es": "Posiblemente uno de los proyectos que más satisfecho me han dejado. Normalmente nunca elijo yo el diseño pero... en este caso si!",
       "en": "Possibly one of the projects that have left me the most satisfied. Normally I never choose the design but... in this case yes!"
@@ -278,9 +280,9 @@
       "es": "Krebor Technology S.L. necesita expandirse y no hay mejor forma que a través de internet. A la espera de recibir más información, espero lanzar su web en 2023.",
       "en": "Krebor Technology S.L. needs to expand and there is no better way than through the internet. Waiting to receive more information, I hope to launch the website in 2023."
     },
-    "tradingDashboard": {
-      "es": "Con la esperanza de volver al mundo del trading, haré un panel de administración para todos mis trades.",
-      "en": "Hoping to return to the world of trading, I will make a management panel for all my trades."
+    "botTrading": {
+      "es": "Tenía que terminar lo que empecé... Después de muuuucho tiempo pensando, conseguí terminar el bot de trading usando una IA con Keras.",
+      "en": "I had to finish what I started... After a long time of thinking, I managed to finish the trading bot using an AI with Keras."
     }
   },
   "WORK_FIRST_TITLE": {
@@ -308,6 +310,10 @@
       "es": "Copernicus",
       "en": "Copernicus"
     },
+    "gitkraken": {
+      "es": "GitKraken (gk-cli)",
+      "en": "GitKraken (gk-cli)"
+    },
     "officialWorks": {
       "es": "TRABAJOS OFICIALES",
       "en": "OFFICIAL WORKS"
@@ -333,6 +339,10 @@
     "copernicus": {
       "es": "ReactJS, Redux, Typescript, Primereact",
       "en": "ReactJS, Redux, Typescript, Primereact"
+    },
+    "gitkraken": {
+      "es": "Golang",
+      "en": "Golang"
     }
   },
   "STUDIES": {

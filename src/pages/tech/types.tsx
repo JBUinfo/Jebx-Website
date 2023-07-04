@@ -44,6 +44,7 @@ import nestjs from "./imgs/nestjs.png";
 import sqlite from "./imgs/sqlite.png";
 import mustachejs from "./imgs/mustache.png";
 import express from "./imgs/express.png";
+import keras from "./imgs/keras.png";
 //import cplusplus from "./imgs/c++.png";
 
 export interface IImage {
@@ -104,4 +105,5 @@ export const tech: IImage[] = [
   { name: "Vite", src: vite },
   { name: "Jest", src: jest_img },
   { name: "SQlite", src: sqlite },
+  { name: "Keras", src: keras },
 ];

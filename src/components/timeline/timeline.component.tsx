@@ -151,8 +151,8 @@ const Timeline = (): JSX.Element => {
       url: "https://krebor.com",
     },
     {
-      shortTitle: text_website.TECH_PROJECT_TITLES["tradingDashboard"],
-      description: text_website.TECH_PROJECT_DESCRIPTIONS["tradingDashboard"],
+      shortTitle: text_website.TECH_PROJECT_TITLES["botTrading"],
+      description: text_website.TECH_PROJECT_DESCRIPTIONS["botTrading"],
       url: "",
     },
   ];
