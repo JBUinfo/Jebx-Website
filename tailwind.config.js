@@ -11,11 +11,11 @@ module.exports = {
       blue: "#28feea",
       customBlue: "#18e7b8",
       y2015: "#ffffff",
-      y2017: "#b9d0e4",
+      y2017: "#c8dff0", // Mejorado: azul más claro para mejor contraste
       y2018: "#92c1ea",
       y2019: "#92eaea",
-      y2020: "#92ea9f",
-      y2021: "#eae492",
+      y2020: "#a8f5b8", // Mejorado: verde más brillante
+      y2021: "#f5f0a0", // Mejorado: amarillo más visible
       y2022: "#ea9292",
       y2023: "#d792ea",
     },

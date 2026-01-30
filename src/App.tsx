@@ -1,46 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
-
-import { LanguageContext } from "./context/language-context";
-
-import Header, { HeaderColor } from "./components/header/header.component";
-import HomePage from "./pages/home/home.component";
-import TechPage from "./pages/tech/tech.component";
-import WorkPage from "./pages/work/work.component";
-import MePage from "./pages/me/me.component";
-import { HeaderColorContext } from "./context/header-color-context";
+import DesignGallery from "./gallery/DesignGallery";
+import Design01App from "./designs/design-01/Design01App";
+import Design02App from "./designs/design-02/Design02App";
+import Design03App from "./designs/design-03/Design03App";
 
 const App: React.FC = () => {
-  const [language, setLanguage] = useState<"es" | "en">("en");
-  const [headerLineColor, setHeaderLineColor] = useState<HeaderColor>(
-    HeaderColor.ORANGE
-  );
-  useEffect(() => {
-    navigator.language.includes("es") ? setLanguage("es") : setLanguage("en");
-  }, []);
-  const toggleLanguage = () => {
-    setLanguage("es" === language ? "en" : "es");
-  };
-  const toggleColor = (color: HeaderColor) => {
-    setHeaderLineColor(color);
-  };
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage }}>
-      <HeaderColorContext.Provider value={{ headerLineColor, toggleColor }}>
-        <div>
-          <BrowserRouter>
-            <Header />
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/home" element={<HomePage />} />
-              <Route path="/tech" element={<TechPage />} />
-              <Route path="/work" element={<WorkPage />} />
-              <Route path="/me" element={<MePage />} />
-            </Routes>
-          </BrowserRouter>
-        </div>
-      </HeaderColorContext.Provider>
-    </LanguageContext.Provider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DesignGallery />} />
+        <Route path="/design/design-01/*" element={<Design01App />} />
+        <Route path="/design/design-02/*" element={<Design02App />} />
+        <Route path="/design/design-03/*" element={<Design03App />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
